@@ -1,0 +1,7 @@
+{
+  "extends": "@aqarak/config/tsconfig/base.json",
+  "compilerOptions": {
+    "types": []
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "*.config.ts"]
+}

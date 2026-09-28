@@ -1,0 +1,116 @@
+{
+  "entities": {
+    "unit": "Unit",
+    "contract": "Contract",
+    "tawtheeq_record": "Tawtheeq record",
+    "instalment": "Instalment",
+    "cheque": "Cheque",
+    "invoice": "Invoice",
+    "receipt": "Receipt",
+    "ticket": "Ticket",
+    "document_version": "Document version",
+    "drafted_action": "Drafted action",
+    "approval": "Approval",
+    "membership": "Membership",
+    "invitation": "Invitation"
+  },
+  "unit": {
+    "vacant": "Vacant",
+    "listed": "Listed",
+    "reserved": "Reserved",
+    "occupied": "Occupied",
+    "notice_given": "Notice given",
+    "under_maintenance": "Under maintenance",
+    "blocked": "Blocked"
+  },
+  "contract": {
+    "draft": "Draft",
+    "awaiting_owner_approval": "Awaiting owner approval",
+    "awaiting_tenant_acceptance": "Awaiting tenant acceptance",
+    "concluded": "Concluded",
+    "ended": "Ended",
+    "cancelled": "Cancelled"
+  },
+  "tawtheeq_record": {
+    "awaiting_registration": "Awaiting registration",
+    "submitted_on_portal": "Submitted on portal",
+    "under_review": "Under review",
+    "discrepancies_open": "Discrepancies open",
+    "awaiting_owner_reapproval": "Awaiting owner re-approval",
+    "registered": "Registered",
+    "skipped": "Skipped",
+    "closed": "Closed"
+  },
+  "instalment": {
+    "open": "Open",
+    "partly_paid": "Partly paid",
+    "paid": "Paid",
+    "waived": "Waived",
+    "cancelled": "Cancelled"
+  },
+  "cheque": {
+    "pending": "Pending",
+    "received": "Received",
+    "deposited": "Deposited",
+    "cleared": "Cleared",
+    "partly_paid": "Partly paid",
+    "bounced": "Bounced",
+    "replaced": "Replaced",
+    "returned_to_drawer": "Returned to drawer"
+  },
+  "invoice": {
+    "draft": "Draft",
+    "issued": "Issued",
+    "partly_paid": "Partly paid",
+    "paid": "Paid",
+    "credited": "Credited"
+  },
+  "receipt": {
+    "issued": "Issued",
+    "voided": "Voided"
+  },
+  "ticket": {
+    "reported": "Reported",
+    "triaged": "Triaged",
+    "awaiting_quote": "Awaiting quote",
+    "awaiting_cost_approval": "Awaiting cost approval",
+    "scheduled": "Scheduled",
+    "in_progress": "In progress",
+    "on_hold": "On hold",
+    "work_completed": "Work completed",
+    "closed": "Closed",
+    "cancelled": "Cancelled"
+  },
+  "document_version": {
+    "pending_review": "Pending review",
+    "accepted": "Accepted",
+    "rejected": "Rejected",
+    "superseded": "Superseded"
+  },
+  "drafted_action": {
+    "drafting": "Drafting",
+    "ready": "Ready",
+    "committed": "Committed",
+    "rejected": "Rejected",
+    "expired": "Expired",
+    "failed": "Failed"
+  },
+  "approval": {
+    "requested": "Requested",
+    "approved": "Approved",
+    "changes_requested": "Changes requested",
+    "voided": "Voided"
+  },
+  "membership": {
+    "invited": "Invited",
+    "active": "Active",
+    "suspended": "Suspended",
+    "removed": "Removed"
+  },
+  "invitation": {
+    "pending": "Pending",
+    "accepted": "Accepted",
+    "expired": "Expired",
+    "revoked": "Revoked"
+  }
+}

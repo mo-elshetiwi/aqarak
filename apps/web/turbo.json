@@ -1,0 +1,22 @@
+{
+  "$schema": "https://turborepo.dev/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "lint": {
+      "dependsOn": ["typecheck"]
+    },
+    "build": {
+      "dependsOn": ["^build", "typecheck", "lint"],
+      "env": ["AQARAK_API_MODE", "AQARAK_API_BASE_URL"],
+      "passThroughEnv": ["AQARAK_SESSION_SECRET", "AQARAK_APP_ORIGIN"]
+    },
+    "test": {
+      "env": ["AQARAK_API_MODE", "AQARAK_API_BASE_URL"],
+      "passThroughEnv": ["AQARAK_SESSION_SECRET", "AQARAK_APP_ORIGIN"]
+    },
+    "e2e": {
+      "env": ["AQARAK_API_MODE", "AQARAK_API_BASE_URL"],
+      "passThroughEnv": ["AQARAK_SESSION_SECRET", "AQARAK_APP_ORIGIN"]
+    }
+  }
+}

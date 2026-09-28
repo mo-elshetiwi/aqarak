@@ -1,0 +1,22 @@
+{
+  "title": "Company settings",
+  "nameEn": "English name",
+  "nameAr": "Arabic name",
+  "licence": "Trade licence number",
+  "trn": "TRN (optional)",
+  "kind": "Company kind",
+  "ownerApproval": "Owner approval default",
+  "on": "On",
+  "ownerApprovalDescription": "Owner approval is on by default. Each owner's choice is recorded at onboarding and can be changed per property.",
+  "save": "Save changes",
+  "saved": "Changes saved.",
+  "reload": "Reload",
+  "invalidName": "Enter a name of 2 to 120 characters.",
+  "invalidLicence": "Enter a trade licence number of 1 to 40 characters.",
+  "invalidTrn": "Enter exactly 15 digits for the TRN, or leave it empty.",
+  "VERSION_CONFLICT": "Someone changed this company while you were working. Reload to see the latest settings.",
+  "FORBIDDEN": "You do not have permission to change company settings.",
+  "VALIDATION_FAILED": "Check the company details and try again.",
+  "SESSION_INVALID": "Your session has ended. Sign in again.",
+  "UNAVAILABLE": "We could not load or save company settings. Check your connection and try again."
+}

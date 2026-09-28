@@ -1,0 +1,72 @@
+{
+  "id": "0b0683bb-f8d5-4195-9ed7-ef244f78cfdd",
+  "version": 1,
+  "fullName": {
+    "en": "Synthetic Owner J2",
+    "ar": "مالك تجريبي"
+  },
+  "selfManaged": false,
+  "linked": false,
+  "email": "synthetic.owner.j2@example.com",
+  "phoneE164": "+971500000199",
+  "preferredLanguage": "ar",
+  "eidNumberMasked": null,
+  "passportNoMasked": null,
+  "bank": null,
+  "mandate": {
+    "id": "02aa7aef-4371-4cec-88d5-1027e424e882",
+    "version": 1,
+    "ownerGate": false,
+    "costThresholdFils": "200000",
+    "feeBp": 500,
+    "startsOn": "2026-09-28",
+    "endsOn": null,
+    "status": "active",
+    "propertyIds": [
+      "88009c5f-0178-4e3c-aeee-158c06afd4eb"
+    ]
+  },
+  "ownerGate": {
+    "value": false,
+    "source": "mandate",
+    "recorded": true
+  },
+  "properties": [
+    {
+      "id": "88009c5f-0178-4e3c-aeee-158c06afd4eb",
+      "name": {
+        "en": "Synthetic Residence J2",
+        "ar": "مبنى تجريبي"
+      },
+      "unitCount": 2
+    }
+  ],
+  "documents": [],
+  "onboarding": {
+    "status": "incomplete",
+    "missing": [
+      "emirates_id",
+      "management_agreement",
+      "tawtheeq_authorisation"
+    ]
+  },
+  "invitation": null,
+  "history": [
+    {
+      "eventType": "owner_mandate.created",
+      "occurredAt": "2026-09-28T03:04:56.665Z",
+      "actorDisplayName": "J2 Smoke Manager (synthetic)",
+      "actorRole": "manager",
+      "channel": "web_form",
+      "reason": null
+    },
+    {
+      "eventType": "owner.created",
+      "occurredAt": "2026-09-28T03:04:48.490Z",
+      "actorDisplayName": "J2 Smoke Manager (synthetic)",
+      "actorRole": "manager",
+      "channel": "web_form",
+      "reason": null
+    }
+  ]
+}

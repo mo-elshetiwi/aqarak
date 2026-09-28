@@ -1,0 +1,92 @@
+{
+  "runId": "held-out-2026-09-28",
+  "gitSha": "b2755c5d19342c3e5d7feb312a99675206ae2b8b",
+  "scorerVersion": "1.2.0",
+  "statistics": {
+    "confidence": 0.95,
+    "resamples": 2000,
+    "seed": 20260928,
+    "fieldAccuracy": "document-cluster bootstrap",
+    "proportions": "committed Wilson intervals",
+    "wer": "clip-cluster bootstrap",
+    "differences": "paired bootstrap over shared inputs only"
+  },
+  "registrySha256": "074aa98e6ed3f5014f42ce66104cd7c7b88bfd7a5aaf77bc588583ab2a575200",
+  "frozenSettingsVerifiedAt": "2026-09-28T05:38:30.489446+00:00",
+  "protectedFilesUnchangedSincePreflight": true,
+  "classes": {
+    "mc1_document_extraction": {
+      "candidate": "gpt-6-sol",
+      "items": 90,
+      "split": "held_out",
+      "splitSha256": "7b56033c93ae80e36da97d5e827661f195326ee6b496e5981fc669388696bf99",
+      "datasetManifestSha256": "5b8552c909425efb1542507a0881a798794a98412231241c680488c314ce9e96",
+      "splitFileSha256": "0f7dc1c6e27692d1129c99093a54984ebfd80510456f27fcf86c8d5d6cd7030d",
+      "capUsd": 3,
+      "concurrency": 4,
+      "collectionCommand": "pnpm --filter @aqarak/evaluation screen -- --class mc1_document_extraction --split held_out --candidates gpt-6-sol --run-id held-out-2026-09-28 --cap-usd 3 --concurrency 4",
+      "collectionExitCode": 0,
+      "scoreCommand": "pnpm --filter @aqarak/evaluation score -- --run-id held-out-2026-09-28 --class mc1_document_extraction --candidates gpt-6-sol --limitations results/held-out-2026-09-28/mc1_document_extraction/limitations.txt",
+      "scoreExitCode": 0,
+      "firstCallStartedAt": "2026-09-28T05:31:06.870Z",
+      "lastCallFinishedAt": "2026-09-28T05:33:59.333Z",
+      "callReceipts": 90,
+      "statuses": {
+        "ok": 90
+      },
+      "costMicroUsd": 975570,
+      "schemaRetries": 0,
+      "transportRetries": 0,
+      "reportedUsageAudioSeconds": 0,
+      "receiptsSha256": "98efc06911ef94b1c1c27bdd765515e9eeef4b8dec7c9a55fdc5873f30cbf6d5",
+      "effectiveSettingsMatchScreening": true,
+      "headerSplitHashMatchesCommittedManifest": true
+    },
+    "mc3_speech_to_text": {
+      "candidate": "gpt-transcribe",
+      "items": 400,
+      "split": "held_out",
+      "splitSha256": "66f3c64427d5165553413db9cca39d319bd92c6033e76c66c89e56c31a4d850f",
+      "datasetManifestSha256": "7941a30b61d567d90ea84eb4624ba00a5e74d7183a391a9c79518278b832fbaf",
+      "splitFileSha256": "7941a30b61d567d90ea84eb4624ba00a5e74d7183a391a9c79518278b832fbaf",
+      "sources": [
+        {
+          "name": "mixat",
+          "manifest_sha256": "55fe0d05b4876a6f5e68ca0d8866f335b1a39d20e6073033f45fd57f74f69de6"
+        },
+        {
+          "name": "fleurs",
+          "manifest_sha256": "785b84172e9bac67c191c8c9fdc702a229ad458a34c8a10c3776c66648b05ec1"
+        }
+      ],
+      "capUsd": 1,
+      "concurrency": 4,
+      "referenceFields": {
+        "mixat": "transcript",
+        "fleurs": "transcription"
+      },
+      "fleursSampleRateHz": 16000,
+      "collectionCommand": "pnpm --filter @aqarak/evaluation screen -- --class mc3_speech_to_text --split held_out --candidates gpt-transcribe --run-id held-out-2026-09-28 --cap-usd 1 --concurrency 4",
+      "collectionExitCode": 0,
+      "scoreCommand": "pnpm --filter @aqarak/evaluation score -- --run-id held-out-2026-09-28 --class mc3_speech_to_text --candidates gpt-transcribe --limitations results/held-out-2026-09-28/mc3_speech_to_text/limitations.txt",
+      "scoreExitCode": 0,
+      "firstCallStartedAt": "2026-09-28T05:31:07.231Z",
+      "lastCallFinishedAt": "2026-09-28T05:34:13.534Z",
+      "callReceipts": 400,
+      "statuses": {
+        "ok": 400
+      },
+      "costMicroUsd": 340275,
+      "schemaRetries": 0,
+      "transportRetries": 0,
+      "reportedUsageAudioSeconds": 4537,
+      "receiptsSha256": "0cdb7502c88da7839a453b91609a775023bde4139103664ce750e62af42eadfc",
+      "effectiveSettingsMatchScreening": true,
+      "headerSplitHashMatchesCommittedManifest": true
+    }
+  },
+  "totalCostMicroUsd": 1315845,
+  "speechRawRoot": "$AQARAK_DATA_DIR/runs/held-out-2026-09-28/",
+  "speechManifestConvention": "I hash the committed combined speech-splits-v1.json as the run dataset manifest; it includes both source-manifest hashes. I record its held_out_sha256 separately as the ordered id/audio-hash-pair digest.",
+  "collectionRepair": "I corrected screening-only split selection, held-out source loading, namespaced clip receipts and report labels before the first held-out call. I left the versioned scoring calculations, prompts, model schemas and registry unchanged."
+}

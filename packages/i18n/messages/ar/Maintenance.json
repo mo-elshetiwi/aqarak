@@ -1,0 +1,83 @@
+{
+  "title": "الصيانة",
+  "report": "الإبلاغ عن مشكلة",
+  "empty": "لا توجد بلاغات بعد",
+  "status": {
+    "reported": "تم الإبلاغ",
+    "triaged": "تم الفرز",
+    "awaiting_quote": "بانتظار عرض السعر",
+    "awaiting_cost_approval": "بانتظار الموافقة على التكلفة",
+    "scheduled": "تمت الجدولة",
+    "in_progress": "قيد التنفيذ",
+    "on_hold": "معلق",
+    "work_completed": "اكتمل العمل",
+    "closed": "مغلق",
+    "cancelled": "ملغى"
+  },
+  "category": {
+    "ac": "التكييف",
+    "plumbing": "السباكة",
+    "electrical": "الكهرباء",
+    "appliances": "الأجهزة",
+    "pest_control": "مكافحة الآفات",
+    "cleaning": "التنظيف",
+    "carpentry": "النجارة",
+    "painting": "الدهان",
+    "lift": "المصعد",
+    "fire_safety": "السلامة من الحريق",
+    "other": "أخرى"
+  },
+  "priority": {
+    "emergency": "طارئ",
+    "urgent": "عاجل",
+    "routine": "اعتيادي"
+  },
+  "safetyFlag": {
+    "gas_smell": "رائحة غاز",
+    "electrical_sparking": "شرر كهربائي",
+    "water_into_electrics": "ماء قرب الكهرباء",
+    "lift_entrapment": "احتجاز داخل المصعد",
+    "other_safety_hazard": "خطر آخر على السلامة"
+  },
+  "reportedDate": "تم الإبلاغ في {date}",
+  "loadMore": "تحميل المزيد",
+  "unavailable": "هذا البلاغ غير متاح لك",
+  "couldNotLoad": "تعذر تحميل البلاغات.",
+  "invalidInput": "تحقق من تفاصيل البلاغ وحاول مرة أخرى.",
+  "retry": "حاول مرة أخرى",
+  "offline": "أنت غير متصل بالإنترنت. تظل البلاغات المحملة سابقًا متاحة.",
+  "yourWords": "كلماتك",
+  "description": "الوصف",
+  "safety": "السلامة",
+  "photos": "الصور",
+  "photoUnavailable": "الصورة غير متاحة",
+  "photo": "الصورة {number}",
+  "loadingPhoto": "جارٍ تحميل الصورة",
+  "voiceNote": "ملاحظة صوتية، {duration}",
+  "durationUnavailable": "المدة غير متاحة",
+  "whatNext": "ماذا يحدث بعد ذلك",
+  "nextActor": "الخطوة التالية لدى: {actor}",
+  "actor": {
+    "office": "المكتب",
+    "owner": "المالك",
+    "technician": "الفني",
+    "tenant": "أنت",
+    "none": "لا يلزم إجراء آخر"
+  },
+  "backToReports": "العودة إلى الصيانة",
+  "notProvided": "غير مذكور",
+  "noSafetyFlags": "لم يُبلّغ عن مخاطر على السلامة",
+  "noPhotos": "لا توجد صور مرفقة",
+  "nextStep": {
+    "reported": "يراجع المكتب التصنيف والأولوية.",
+    "triaged": "ينسق المكتب أعمال الإصلاح.",
+    "awaiting_quote": "ينتظر المكتب عرض السعر.",
+    "awaiting_cost_approval": "يوافق المالك على التكلفة.",
+    "scheduled": "تم حجز زيارة.",
+    "in_progress": "أعمال الإصلاح جارية.",
+    "on_hold": "ينتظر الإصلاح توفر القطع أو إتاحة الدخول.",
+    "work_completed": "يرجى تأكيد اكتمال الإصلاح.",
+    "closed": "هذا البلاغ مغلق.",
+    "cancelled": "تم إلغاء هذا البلاغ."
+  }
+}

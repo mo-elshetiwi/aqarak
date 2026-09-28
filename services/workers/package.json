@@ -1,0 +1,28 @@
+{
+  "name": "@aqarak/workers",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "eslint": "9.39.5",
+    "typescript": "catalog:",
+    "@aqarak/config": "workspace:*",
+    "vitest": "catalog:",
+    "@types/node": "24.19.0",
+    "eslint-config-prettier": "10.1.8"
+  },
+  "dependencies": {
+    "@aqarak/db": "workspace:*",
+    "@aws-sdk/client-rds-data": "3.1141.0",
+    "@aws-sdk/client-secrets-manager": "3.1141.0",
+    "@aws-lambda-powertools/logger": "2.35.0"
+  },
+  "exports": {
+    ".": "./src/handlers/migrate-database.ts"
+  }
+}

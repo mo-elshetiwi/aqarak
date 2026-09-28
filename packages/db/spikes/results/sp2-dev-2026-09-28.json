@@ -1,0 +1,429 @@
+{
+  "date": "2026-09-28",
+  "synthetic": true,
+  "gitCommit": "c5e552be174d19a6cbf4c02dd9d70a976deaeda9",
+  "measurement": {
+    "databaseRegion": "us-east-1",
+    "profile": "aqarak-dev",
+    "localClient": "macOS CLI; geographic network location unverified",
+    "inRegionClient": "Lambda in us-east-1",
+    "startedAt": "2026-09-28T04:01:17.861Z",
+    "completedAt": "2026-09-28T04:03:04.341462+00:00",
+    "engineVersionObservedAt": "2026-09-28T04:04:41.623Z"
+  },
+  "engineVersion": "PostgreSQL 17.9 on aarch64-unknown-linux-gnu, compiled by aarch64-unknown-linux-gnu-gcc (GCC) 10.5.0, 64-bit",
+  "passed": true,
+  "decision": "Accepted",
+  "requiredChecks": [
+    "ISO-05",
+    "AUD-01",
+    "PAR-01",
+    "LRG-01",
+    "LAT-01",
+    "AUD-CHAIN",
+    "LAT-IN-REGION"
+  ],
+  "companyIds": [
+    "0ff371d3-c43b-43df-b3e5-61362750a677",
+    "5fc0ec79-e356-455b-b92c-19b1078ed4d2"
+  ],
+  "checks": [
+    {
+      "id": "ISO-05",
+      "passed": true,
+      "details": {
+        "withoutContext": 0,
+        "outsideTransaction": 0,
+        "otherCompany": 0,
+        "sameTransaction": 1
+      },
+      "timings": {
+        "startedAt": "2026-09-28T04:01:17.861Z",
+        "elapsedMs": 7361.010875
+      }
+    },
+    {
+      "id": "AUD-01",
+      "passed": true,
+      "details": {
+        "companyId": "c161bba1-4180-4b0f-9923-2ed82c948adc",
+        "rawCommitMessage": "ERROR: Entity version requires exactly one covering audit event in the same transaction; SQLState: AQ002",
+        "rolledBack": true
+      },
+      "timings": {
+        "startedAt": "2026-09-28T04:01:25.222Z",
+        "elapsedMs": 3937.4333749999996
+      }
+    },
+    {
+      "id": "PAR-01",
+      "passed": true,
+      "details": {
+        "types": [
+          "uuid",
+          "text",
+          "boolean",
+          "integer",
+          "bigint",
+          "date",
+          "timestamptz",
+          "jsonb"
+        ],
+        "timezone": "UTC",
+        "bigint": "9007199254740993",
+        "instant": "2026-01-02T03:04:05.123456Z",
+        "documentVersionId": "7f9fd0e0-db71-466b-82bd-fea901c4b7ec",
+        "policyDecision": {
+          "policy_version": "sp2",
+          "result": "allow",
+          "reasons": [
+            "SP2 spike عقارك",
+            {
+              "nested": [true, 7, null]
+            },
+            "control\u0001"
+          ]
+        }
+      },
+      "timings": {
+        "startedAt": "2026-09-28T04:01:29.160Z",
+        "elapsedMs": 3686.5304159999996
+      }
+    },
+    {
+      "id": "LRG-01",
+      "passed": true,
+      "details": {
+        "nearLimitRow": {
+          "documentId": "2ecab666-6082-44c1-b6b3-bde28dde1f9a",
+          "titleBytes": 48128,
+          "rowBytes": 48521,
+          "sha256": "56f61a6022d416cb64c6058705a15528b099f37c67ff82b84140577ca8a01118",
+          "intact": true
+        },
+        "oversizedRowBytes": 102400,
+        "oversizedRowRejected": true,
+        "changedBytesRejected": true,
+        "pointer": {
+          "bucket": "dev-storagestack-documentsbucket9ec9deb9-mddfkybcyvgx",
+          "key": "c/0ff371d3-c43b-43df-b3e5-61362750a677/doc/0e1009c0-47bc-4746-9796-e2821cd05274/v/42948186-e0f7-442f-9c75-e1a6dbe305b8/original",
+          "versionId": "Uhxzpp5jUoF8SPSrWl2SYnbGzOvO_7bE",
+          "sha256": "c3bfc7d2d0619aaca6fc8e2db4c4ff13059ce3c7f22c13bce512ece83362ed69",
+          "byteSize": 102400
+        },
+        "documentId": "0e1009c0-47bc-4746-9796-e2821cd05274",
+        "documentVersionId": "42948186-e0f7-442f-9c75-e1a6dbe305b8"
+      },
+      "timings": {
+        "startedAt": "2026-09-28T04:01:32.846Z",
+        "elapsedMs": 12292.904625000001
+      }
+    },
+    {
+      "id": "LAT-01",
+      "passed": true,
+      "details": {
+        "location": "Measured from the local CLI client location",
+        "warmups": 2,
+        "samples": 20,
+        "write": {
+          "p50Ms": 1253.9200000000055,
+          "p95Ms": 1473.9735000000073,
+          "samplesMs": [
+            1204.614708000001, 1196.015916999997, 1194.7708339999954,
+            1240.2362500000017, 1308.5563750000001, 1251.9444579999981,
+            1220.7946250000023, 1305.039082999996, 1265.6007909999971,
+            1290.2267090000023, 1302.033374999999, 1253.9200000000055,
+            2222.8870000000024, 1344.9518329999992, 1244.8420840000035,
+            1473.9735000000073, 1257.6478750000097, 1195.0529999999999,
+            1321.568459000002, 1225.4110409999994
+          ]
+        },
+        "read": {
+          "p50Ms": 1026.0316250000033,
+          "p95Ms": 1656.7611250000045,
+          "samplesMs": [
+            1656.7611250000045, 950.9386250000025, 981.2726249999978,
+            968.7182910000047, 1046.893333, 1097.583458000001,
+            960.2805420000004, 1033.1538750000036, 1111.3583339999968,
+            984.0886249999967, 1437.3184580000016, 1732.312791999997,
+            1030.940582999996, 1026.0316250000033, 1158.0029579999973,
+            1000.2647080000024, 1020.098582999999, 1274.9790829999984,
+            930.5772080000024, 988.2250839999906
+          ]
+        },
+        "companyId": "aefcb0c0-eddb-465b-b9af-0195e2208f56"
+      },
+      "timings": {
+        "startedAt": "2026-09-28T04:01:45.139Z",
+        "elapsedMs": 57288.376500000006
+      }
+    },
+    {
+      "id": "AUD-CHAIN",
+      "passed": true,
+      "details": {
+        "content": {
+          "rowHash": "0ba068deed33b80852212dcff4dfe9c1a21d2be6068ce4d9b6a056e391ae5995",
+          "keys": [
+            "actor_account_id",
+            "actor_role",
+            "after_hash",
+            "before_hash",
+            "changed_fields",
+            "channel",
+            "company_id",
+            "drafted_action_id",
+            "event_id",
+            "event_type",
+            "field_provenance",
+            "idempotency_key",
+            "initiator",
+            "model_call_ids",
+            "occurred_at",
+            "on_behalf_of",
+            "policy_decision",
+            "prompt_version",
+            "reason",
+            "registry_entry",
+            "retention_class",
+            "seq",
+            "subject_id",
+            "subject_type",
+            "tool_version",
+            "trace_id",
+            "tx_id",
+            "version_after",
+            "version_before",
+            "visibility"
+          ],
+          "verified": true
+        },
+        "chain": {
+          "companyIds": [
+            "0ff371d3-c43b-43df-b3e5-61362750a677",
+            "5fc0ec79-e356-455b-b92c-19b1078ed4d2"
+          ],
+          "canonicalCases": 6,
+          "verified": true
+        }
+      },
+      "timings": {
+        "startedAt": "2026-09-28T04:02:42.427Z",
+        "elapsedMs": 6426.385458000004
+      }
+    },
+    {
+      "id": "LAT-IN-REGION",
+      "passed": true,
+      "details": {
+        "location": "Lambda client in us-east-1",
+        "warmups": 2,
+        "samples": 20,
+        "write": {
+          "p50Ms": 180.14498899999307,
+          "p95Ms": 190.19307599999593,
+          "samplesMs": [
+            180.01485599999432, 177.50010999999358, 182.65121300000465,
+            184.97496699998737, 176.40386900000158, 181.85780100000557,
+            177.4206589999958, 190.19307599999593, 184.0756939999992,
+            179.8858210000035, 178.37566099999822, 187.2753499999817,
+            179.35671600000933, 180.14498899999307, 182.7511039999954,
+            176.4662289999833, 179.32480799997575, 190.01131399997394,
+            182.39817699999548, 195.3281019999995
+          ]
+        },
+        "read": {
+          "p50Ms": 126.33916099998169,
+          "p95Ms": 220.9650510000065,
+          "samplesMs": [
+            121.61081199999899, 120.29732899999362, 125.05124899998191,
+            124.86133100002189, 121.60730199998943, 130.22727599999052,
+            126.33916099998169, 121.38438100001076, 281.9184490000189,
+            125.31955399998697, 128.02578200001153, 129.69145400001435,
+            127.50166899999022, 128.65613600000506, 124.79048100000364,
+            126.7686120000144, 185.15733700001147, 127.46087500001886,
+            121.79140699998243, 220.9650510000065
+          ]
+        },
+        "companyId": "679f7361-989b-4686-aac9-825abeae8059",
+        "writeP95LimitMs": 800
+      },
+      "timings": {
+        "startedAt": "2026-09-28T04:02:55.444506+00:00",
+        "completedAt": "2026-09-28T04:03:04.341462+00:00",
+        "elapsedSeconds": 8.897
+      }
+    }
+  ],
+  "firstRun": {
+    "file": "sp2-dev-2026-09-28-run1.json",
+    "sha256": "7c035b030ce0c9d13c1173dac610789d3e85d6355e18ad71f4d331652e247051",
+    "preservedByteForByte": false,
+    "redaction": "local absolute path prefixes and scratch directory names were replaced; no measured value or check result changed",
+    "fixtureChange": "I changed the five doc.document doc_type literals from 'synthetic' to 'other'.",
+    "assertionsChanged": false
+  },
+  "deployment": {
+    "stackName": "Dev-DatabaseOpsStack",
+    "status": "UPDATE_COMPLETE",
+    "lastUpdatedAt": "2026-09-28T03:59:01.015000+00:00",
+    "outputs": [
+      {
+        "OutputKey": "MigrateFunctionName",
+        "OutputValue": "Dev-DatabaseOpsStack-MigrateDatabaseFunctionB038EB-U3rgqL6OlT6w"
+      }
+    ]
+  },
+  "inRegionFunction": {
+    "functionName": "Dev-DatabaseOpsStack-MigrateDatabaseFunctionB038EB-U3rgqL6OlT6w",
+    "runtime": "nodejs24.x",
+    "architectures": ["arm64"],
+    "memorySize": 512,
+    "timeout": 300,
+    "lastModified": "2026-09-28T03:59:05.000+0000",
+    "lastUpdateStatus": "Successful",
+    "codeSha256": "IGIQtNMre0uZCDVyHl6+iFJgw5ipui5ArX3kOeVhxYQ="
+  },
+  "inRegionInvocation": {
+    "StatusCode": 200,
+    "ExecutedVersion": "$LATEST"
+  },
+  "migrations": {
+    "firstInvocation": {
+      "action": "migrate",
+      "roles": ["aqarak_app", "aqarak_pipeline", "aqarak_scheduler"],
+      "migrations": {
+        "applied": [],
+        "skipped": [
+          "0001_foundation.sql",
+          "0002_core_and_documents.sql",
+          "0003_linear_canonical_text.sql",
+          "0004_align_audit_event_content.sql",
+          "0005_parties_and_estate.sql",
+          "0006_contracts.sql",
+          "0007_operations.sql",
+          "0008_money.sql",
+          "0009_work_maintenance_and_models.sql"
+        ]
+      }
+    },
+    "secondInvocation": {
+      "action": "migrate",
+      "roles": ["aqarak_app", "aqarak_pipeline", "aqarak_scheduler"],
+      "migrations": {
+        "applied": [],
+        "skipped": [
+          "0001_foundation.sql",
+          "0002_core_and_documents.sql",
+          "0003_linear_canonical_text.sql",
+          "0004_align_audit_event_content.sql",
+          "0005_parties_and_estate.sql",
+          "0006_contracts.sql",
+          "0007_operations.sql",
+          "0008_money.sql",
+          "0009_work_maintenance_and_models.sql"
+        ]
+      }
+    },
+    "ledger": [
+      {
+        "name": "0001_foundation.sql",
+        "sha256": "bd200424caca596fe5e1df1676add4e299d891d8258bee59dc8d256669d32072"
+      },
+      {
+        "name": "0002_core_and_documents.sql",
+        "sha256": "efae2dd58a4cd24440136e8ef5384f5d4d5f0f6f176f9fd6fdb2b3d3bbff2b5e"
+      },
+      {
+        "name": "0003_linear_canonical_text.sql",
+        "sha256": "b87747def4c8dd4fb84e840051e067c81730ab22b00dce583038e868e17b9e88"
+      },
+      {
+        "name": "0004_align_audit_event_content.sql",
+        "sha256": "971cf1ab5c95ed3f9a371339fdc176f05b7c8d4da9078cd8b136a9bbb017f802"
+      },
+      {
+        "name": "0005_parties_and_estate.sql",
+        "sha256": "79bb76f0a697a714cbdd2850942cebfb1bc63aa9ec5e98590a27ba224e4fff3f"
+      },
+      {
+        "name": "0006_contracts.sql",
+        "sha256": "fe801155fb86358c6b13fccf63240b104cc8fb862291d8f6f234f0919395c81b"
+      },
+      {
+        "name": "0007_operations.sql",
+        "sha256": "d201bd24cc791336a8aa41bf20f1eb30b76b141a86aaedeb9231d70a8874912c"
+      },
+      {
+        "name": "0008_money.sql",
+        "sha256": "edbcc6d51eba65e1081d7e73947560f7ace7e1ebcf28143dd4eeadfb98bb568e"
+      },
+      {
+        "name": "0009_work_maintenance_and_models.sql",
+        "sha256": "9129e45e449708263fc43344d462642779d2059f97b66c754dc335e76dccc5d8"
+      }
+    ],
+    "localSha256": {
+      "0008_money.sql": "edbcc6d51eba65e1081d7e73947560f7ace7e1ebcf28143dd4eeadfb98bb568e",
+      "0004_align_audit_event_content.sql": "971cf1ab5c95ed3f9a371339fdc176f05b7c8d4da9078cd8b136a9bbb017f802",
+      "0001_foundation.sql": "bd200424caca596fe5e1df1676add4e299d891d8258bee59dc8d256669d32072",
+      "0007_operations.sql": "d201bd24cc791336a8aa41bf20f1eb30b76b141a86aaedeb9231d70a8874912c",
+      "0002_core_and_documents.sql": "efae2dd58a4cd24440136e8ef5384f5d4d5f0f6f176f9fd6fdb2b3d3bbff2b5e",
+      "0005_parties_and_estate.sql": "79bb76f0a697a714cbdd2850942cebfb1bc63aa9ec5e98590a27ba224e4fff3f",
+      "0003_linear_canonical_text.sql": "b87747def4c8dd4fb84e840051e067c81730ab22b00dce583038e868e17b9e88",
+      "0009_work_maintenance_and_models.sql": "9129e45e449708263fc43344d462642779d2059f97b66c754dc335e76dccc5d8",
+      "0006_contracts.sql": "fe801155fb86358c6b13fccf63240b104cc8fb862291d8f6f234f0919395c81b"
+    },
+    "appliedFilesMatchLedger": true
+  },
+  "runtimeRoleProof": {
+    "sql": "select current_user as database_user, (select count(*)::text from core.company) as unscoped_companies",
+    "rows": [
+      {
+        "database_user": "aqarak_app",
+        "unscoped_companies": "0"
+      }
+    ],
+    "observedAt": "2026-09-28T04:04:16.630120+00:00"
+  },
+  "catalogue": {
+    "file": "catalogue-dev-initial-2026-09-28.json",
+    "passed": true,
+    "tableCount": 61,
+    "companyTableCount": 57,
+    "roles": [
+      {
+        "name": "aqarak_app",
+        "rolsuper": false,
+        "rolbypassrls": false
+      },
+      {
+        "name": "aqarak_pipeline",
+        "rolsuper": false,
+        "rolbypassrls": false
+      },
+      {
+        "name": "aqarak_scheduler",
+        "rolsuper": false,
+        "rolbypassrls": false
+      }
+    ]
+  },
+  "domainChecks": {
+    "file": "domain-invariants-2026-09-28-rerun.json",
+    "passed": true,
+    "checkCount": 19
+  },
+  "applicationOutputsUnchanged": true,
+  "commandEvidence": "gate-rerun-commands-2026-09-28.json",
+  "limitations": [
+    "I measured synthetic rows on one day, not production load, sustained throughput, concurrent-company contention, failover or a latency service-level guarantee.",
+    "I did not measure a cold resume from auto-pause. The in-Region measurement excludes two warm-up write/read pairs.",
+    "I did not verify the geographic network location of my local macOS CLI. Its latency is diagnostic and has no 800 ms threshold.",
+    "I retain the synthetic companies, document rows and the versioned 102400-byte S3 object as evidence.",
+    "I did not run an external audit anchoring service or a concurrent transaction stress test.",
+    "I inspected effective table privileges and policy definitions in a read-only repeatable-read catalogue snapshot; I did not issue runtime DELETE, TRUNCATE or REFERENCES operations.",
+    "I retain F1 as the prepared architectural fallback. It was not needed by this gate and was not implemented or deployed."
+  ]
+}

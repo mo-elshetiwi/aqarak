@@ -1,0 +1,664 @@
+{
+  "name": "synthetic-docs-v1",
+  "version": "1.0.0",
+  "generator_version": "1.0.0",
+  "master_seed": 20260928,
+  "command": "python evaluation/generator/generate.py --out evaluation/datasets/synthetic-docs-v1",
+  "counts": {
+    "emirates_id": 40,
+    "tawtheeq_contract": 40,
+    "title_deed": 40,
+    "total": 120
+  },
+  "conditions": {
+    "emirates_id": {
+      "readable": 286,
+      "absent": 34,
+      "occluded": 44,
+      "distractor": 36
+    },
+    "tawtheeq_contract": {
+      "readable": 488,
+      "absent": 65,
+      "occluded": 72,
+      "distractor": 55
+    },
+    "title_deed": {
+      "readable": 324,
+      "absent": 34,
+      "occluded": 41,
+      "distractor": 41
+    }
+  },
+  "fonts": [
+    {
+      "file": "DejaVuSans.ttf",
+      "sha256": "3fdf69cabf06049ea70a00b5919340e2ce1e6d02b0cc3c4b44fb6801bd1e0d22",
+      "source": "matplotlib/mpl-data/fonts/ttf"
+    },
+    {
+      "file": "DejaVuSans-Bold.ttf",
+      "sha256": "b184b89e3c1075f22f6b71575b6fc20d4972b3cfd3b23322ca6fd596dcaef167",
+      "source": "matplotlib/mpl-data/fonts/ttf"
+    }
+  ],
+  "runtime": {
+    "python": "3.14.7",
+    "pillow": "12.3.0",
+    "numpy": "2.5.3",
+    "opencv": "5.0.0.93",
+    "raqm": "0.10.5"
+  },
+  "files": [
+    {
+      "path": "images/emirates_id-001.jpg",
+      "bytes": 71704,
+      "sha256": "2d7b5e18fc615b503d884ff5bf326a381812a2a8e6f040e18361e501b2efba30"
+    },
+    {
+      "path": "images/emirates_id-002.jpg",
+      "bytes": 80082,
+      "sha256": "76402ee0f49b7cd587d937756d7840419ce5d7c791edea61165cc8a838edab14"
+    },
+    {
+      "path": "images/emirates_id-003.jpg",
+      "bytes": 66853,
+      "sha256": "e09746c188099d70da6bc457cb63cd1cfa7cabec9e536af9886058e3c011046f"
+    },
+    {
+      "path": "images/emirates_id-004.jpg",
+      "bytes": 85511,
+      "sha256": "2e6774569e8ddc4220697c44f66af660905a6840d773246bd1841a14e7849ac6"
+    },
+    {
+      "path": "images/emirates_id-005.jpg",
+      "bytes": 68207,
+      "sha256": "7dcecfd9fc021a087efe604fdfeb81cfa591c708b15884e491606d9eb0872569"
+    },
+    {
+      "path": "images/emirates_id-006.jpg",
+      "bytes": 65138,
+      "sha256": "1450aff777c273349de01af7b5913f5df85001af30e9bf43f0543de20f93ed11"
+    },
+    {
+      "path": "images/emirates_id-007.jpg",
+      "bytes": 70996,
+      "sha256": "82883d99a390117f5923a972ef9c89f8a01eb0d2187a18682d81a9b0bf73bd36"
+    },
+    {
+      "path": "images/emirates_id-008.jpg",
+      "bytes": 63170,
+      "sha256": "a687ae7153f3b3df3ceb80faa25e0f07202f4639f1f5a7aebf7b7ac36d3a32cf"
+    },
+    {
+      "path": "images/emirates_id-009.jpg",
+      "bytes": 88111,
+      "sha256": "be5fedf6585d4a973b55ae57ffcf36eb78bac697fc6e4277c47e09754653ff03"
+    },
+    {
+      "path": "images/emirates_id-010.jpg",
+      "bytes": 80571,
+      "sha256": "90998afa4b94fd57d8230d977e0fa4c098bc345dae8b714b697f0dda690d9889"
+    },
+    {
+      "path": "images/emirates_id-011.jpg",
+      "bytes": 62623,
+      "sha256": "10bb3b806928a603365398a98bf0d0c91b3886899d52446b2680d203862a0d83"
+    },
+    {
+      "path": "images/emirates_id-012.jpg",
+      "bytes": 64414,
+      "sha256": "61616cc164aa99ad5e19d5901d492d7a21389353b8df51d4c9d5b4f23c1c6f97"
+    },
+    {
+      "path": "images/emirates_id-013.jpg",
+      "bytes": 72547,
+      "sha256": "ca547781bf0605275231731aca9085bed15b3e141c5d038f6205048cbcacc665"
+    },
+    {
+      "path": "images/emirates_id-014.jpg",
+      "bytes": 78259,
+      "sha256": "8b7bdc9264240ad9656bebabcff61340874b0ca5d1f8b686ef5393df66bbc5f7"
+    },
+    {
+      "path": "images/emirates_id-015.jpg",
+      "bytes": 66303,
+      "sha256": "322118a573ea96a2fbf541aef5331a067db43cf35d0ec1aedafd3be67f10ec99"
+    },
+    {
+      "path": "images/emirates_id-016.jpg",
+      "bytes": 61803,
+      "sha256": "53c1aa72f5e09f1ee82d8f94d416f82aa9fe30cb81083f4b71f085e671342338"
+    },
+    {
+      "path": "images/emirates_id-017.jpg",
+      "bytes": 80447,
+      "sha256": "7a9861ac01aef70f50e0097d96a13e5be584dc97561a5036d01f28985b8fb9a0"
+    },
+    {
+      "path": "images/emirates_id-018.jpg",
+      "bytes": 65239,
+      "sha256": "b54acbbcb0e7ae1b3ddad3e1351000feb34306e259e8808fc452e54f6ecf485f"
+    },
+    {
+      "path": "images/emirates_id-019.jpg",
+      "bytes": 59836,
+      "sha256": "b6dc9778cc214f7cf44e2aeac62702397b9d817b1a8914ad924ffe56553b8695"
+    },
+    {
+      "path": "images/emirates_id-020.jpg",
+      "bytes": 62264,
+      "sha256": "a81e4cacfd79d3f1318fc3e9a23657388ad8505d58b7c6908412afc61dc7c97d"
+    },
+    {
+      "path": "images/emirates_id-021.jpg",
+      "bytes": 77594,
+      "sha256": "052d517173559d403fc980bf3964e4007b2b1c563045a3a08cee64ed62d190a9"
+    },
+    {
+      "path": "images/emirates_id-022.jpg",
+      "bytes": 72043,
+      "sha256": "0bfdfe424686033cef3b9bb96b7700828a10987a05b3becfa723e5aee06275b9"
+    },
+    {
+      "path": "images/emirates_id-023.jpg",
+      "bytes": 91930,
+      "sha256": "5c427eeefbab0b3830da871c96b2499c417349c6787b3f6cee0548e82c2cd84a"
+    },
+    {
+      "path": "images/emirates_id-024.jpg",
+      "bytes": 106962,
+      "sha256": "717a5a92dd05ef3430ba942f16f08b64245097308ff24f6baf0dddd680130e74"
+    },
+    {
+      "path": "images/emirates_id-025.jpg",
+      "bytes": 59898,
+      "sha256": "cf28f0415e4acb0edd35a9718908cdf454e6e65210e9bae685c8a847dc89b37d"
+    },
+    {
+      "path": "images/emirates_id-026.jpg",
+      "bytes": 91092,
+      "sha256": "8b05a384736b90d8c467bb2b13062fcf9d8e462b5c5bfd0a2e3cf53978641fd7"
+    },
+    {
+      "path": "images/emirates_id-027.jpg",
+      "bytes": 71342,
+      "sha256": "62e62f4872b47f909d6036e33cb39504cf448409ad3c533a453c17990ce73204"
+    },
+    {
+      "path": "images/emirates_id-028.jpg",
+      "bytes": 109725,
+      "sha256": "3385645367f397a10d3a7dcfe85cdc0ba3579e6360119b0787297a675449cf1f"
+    },
+    {
+      "path": "images/emirates_id-029.jpg",
+      "bytes": 69908,
+      "sha256": "6de888b7e092e3ff24ec1796a42b3bcf3158c511a05258887c5907a8af6808c1"
+    },
+    {
+      "path": "images/emirates_id-030.jpg",
+      "bytes": 57400,
+      "sha256": "e9e8e0422c33c6a938e60075b7462e7bee6ac64ec29d03be54788e390499a7eb"
+    },
+    {
+      "path": "images/emirates_id-031.jpg",
+      "bytes": 64155,
+      "sha256": "a626760b7adfb2bbbb3d567ee34df96d845aa4c1abb90d4e536ca04dbabb3af6"
+    },
+    {
+      "path": "images/emirates_id-032.jpg",
+      "bytes": 63066,
+      "sha256": "6a135374acb6caf1f013a8e77c5a52d7adf27eeab7a7959c2d3222db4c93ebe6"
+    },
+    {
+      "path": "images/emirates_id-033.jpg",
+      "bytes": 57208,
+      "sha256": "cbd91c41dfec6dea7918ac93d309196720add0ca8c04f76befaf5c865ac3621b"
+    },
+    {
+      "path": "images/emirates_id-034.jpg",
+      "bytes": 63581,
+      "sha256": "95d71e1300e906a086572e01ed3f6c301351c3d2b94425373d41312e4c5c6f08"
+    },
+    {
+      "path": "images/emirates_id-035.jpg",
+      "bytes": 95169,
+      "sha256": "21ad065fb35e85cdbb63402751d7989a808657f19d77cdcee9fb882825e2ed85"
+    },
+    {
+      "path": "images/emirates_id-036.jpg",
+      "bytes": 85028,
+      "sha256": "600c0039c687df91b8259105fd3deffc041bbc04086bab49124760482783d0d2"
+    },
+    {
+      "path": "images/emirates_id-037.jpg",
+      "bytes": 80856,
+      "sha256": "7a68a16c2a96347c822e391fef6c66eac7584ded1d682db5084fc3f26c9a6b26"
+    },
+    {
+      "path": "images/emirates_id-038.jpg",
+      "bytes": 56181,
+      "sha256": "ec0a7e10c548b859870f85e5f388d2eb572906ea943a9a30a39fa6960e665046"
+    },
+    {
+      "path": "images/emirates_id-039.jpg",
+      "bytes": 78162,
+      "sha256": "4d5d71790f0d7d35b70e1b3b8344ac1498e2d1f462dd364e8c2c4ed513a233c7"
+    },
+    {
+      "path": "images/emirates_id-040.jpg",
+      "bytes": 69174,
+      "sha256": "f2d7e63844349738b3f821d0e96026f54e23894e98eda1398237b28bc286c6ab"
+    },
+    {
+      "path": "images/tawtheeq_contract-001.jpg",
+      "bytes": 205986,
+      "sha256": "2f48d08d3bed07fd9b770665dd0992c4c594c99c3b55a63c51f3128b0e53d7f6"
+    },
+    {
+      "path": "images/tawtheeq_contract-002.jpg",
+      "bytes": 190098,
+      "sha256": "50c13e0ef8504cdd82efbfa06c13df50e9931dff596a6064fac6539ed547ba9d"
+    },
+    {
+      "path": "images/tawtheeq_contract-003.jpg",
+      "bytes": 170212,
+      "sha256": "35ee53d2f29cd10a0fff5c778326a39cd223fd9209fdc5b43b18429a85d6905e"
+    },
+    {
+      "path": "images/tawtheeq_contract-004.jpg",
+      "bytes": 225049,
+      "sha256": "677c7afe22f483924e76817b7f72c0b0609dfa9214a2fd71a6aabbd13eb5f7f7"
+    },
+    {
+      "path": "images/tawtheeq_contract-005.jpg",
+      "bytes": 177651,
+      "sha256": "ab6508a44cce4d4f0ca07f2eebd85002d39f0d900df49400d69cf99fbddca971"
+    },
+    {
+      "path": "images/tawtheeq_contract-006.jpg",
+      "bytes": 119982,
+      "sha256": "593acfdcb8c5069976781cffb3fd74833e16620e4c3c993dbc4525cd6f107f8d"
+    },
+    {
+      "path": "images/tawtheeq_contract-007.jpg",
+      "bytes": 164700,
+      "sha256": "d96eeea5a212a74c720df8ca80244894adff931012554c30439721912d5cfa1b"
+    },
+    {
+      "path": "images/tawtheeq_contract-008.jpg",
+      "bytes": 151085,
+      "sha256": "ea507f08469a30a2727623e0af5e13e2659869e16a566f5093f5c50cd575b378"
+    },
+    {
+      "path": "images/tawtheeq_contract-009.jpg",
+      "bytes": 160751,
+      "sha256": "ce37d6c606253e677f06b4b5622c543a2d1028a633d9968b1d8888b8e16f4272"
+    },
+    {
+      "path": "images/tawtheeq_contract-010.jpg",
+      "bytes": 207217,
+      "sha256": "17febac5956fc853daa11853936921402ac095ceb6260f2f0d4ed98866614363"
+    },
+    {
+      "path": "images/tawtheeq_contract-011.jpg",
+      "bytes": 175428,
+      "sha256": "e39921034d81c34bb8b1191fc380ac5bbb20c3f49bd843bd96dce1ef747e303b"
+    },
+    {
+      "path": "images/tawtheeq_contract-012.jpg",
+      "bytes": 138348,
+      "sha256": "d95adafd153eb243bf07529a849d4685a825605640e8c18c48fb151494d135f4"
+    },
+    {
+      "path": "images/tawtheeq_contract-013.jpg",
+      "bytes": 265288,
+      "sha256": "1f9baf8a805d9a3f3154e3fa72eb117aa286f52595c6c2ed9b6268c76e0f3b2a"
+    },
+    {
+      "path": "images/tawtheeq_contract-014.jpg",
+      "bytes": 217435,
+      "sha256": "03dda4df44460604f9eeb925e30d7456933c23b4d9f412e5fe3a2906a6c27b0a"
+    },
+    {
+      "path": "images/tawtheeq_contract-015.jpg",
+      "bytes": 226041,
+      "sha256": "a9e8349ac9ee63bea6e205dd501097761120fd20e7db8d7ade05a58fe69ad053"
+    },
+    {
+      "path": "images/tawtheeq_contract-016.jpg",
+      "bytes": 224496,
+      "sha256": "0e7b01e279edd12720038e09267a518e5c3dcae8b37340fc57d0f77bb55d0609"
+    },
+    {
+      "path": "images/tawtheeq_contract-017.jpg",
+      "bytes": 255888,
+      "sha256": "3fa709288f2c553d919a121242edc3ea2536c2e07384e5683a43b44b5f99c0af"
+    },
+    {
+      "path": "images/tawtheeq_contract-018.jpg",
+      "bytes": 171606,
+      "sha256": "6eaac5dcefe7b6bcf4aa46d0a7a73d55420c6d8205426bab61da051848c0e939"
+    },
+    {
+      "path": "images/tawtheeq_contract-019.jpg",
+      "bytes": 166343,
+      "sha256": "898895f6f25c917d398a257e71179bdc5642ff2d265ad0aaf46bf9432425a38b"
+    },
+    {
+      "path": "images/tawtheeq_contract-020.jpg",
+      "bytes": 178306,
+      "sha256": "200a2779c3c9087c10bd37e8359e1318db020a89fbfa036f348bf747e08b76fa"
+    },
+    {
+      "path": "images/tawtheeq_contract-021.jpg",
+      "bytes": 130389,
+      "sha256": "f2f636399551fd2cc730ff5a3a19f1c47aed5fffe7c9eba0a70c87555673ccdd"
+    },
+    {
+      "path": "images/tawtheeq_contract-022.jpg",
+      "bytes": 137013,
+      "sha256": "e0b1980576c6a93719a14a7ee1c4afc01322cb36667231fa0c42a37dad70c894"
+    },
+    {
+      "path": "images/tawtheeq_contract-023.jpg",
+      "bytes": 164996,
+      "sha256": "6213a47d2660933a4c27e94a07d01a7bce122133431805f554dde9618d632384"
+    },
+    {
+      "path": "images/tawtheeq_contract-024.jpg",
+      "bytes": 165497,
+      "sha256": "af77e1bb0ee0e0dcbe88bd6c2630196d87b0f98525bd398a77c2a70deb04197b"
+    },
+    {
+      "path": "images/tawtheeq_contract-025.jpg",
+      "bytes": 165831,
+      "sha256": "00ff274b8c9906d23301931bd48e15916ccd37d9a8d4bd19bb957360370205da"
+    },
+    {
+      "path": "images/tawtheeq_contract-026.jpg",
+      "bytes": 136019,
+      "sha256": "ddd4666a6d3ee1ec0c0b89e9b546db60c75a40af39ba5bbb762e7844366993f8"
+    },
+    {
+      "path": "images/tawtheeq_contract-027.jpg",
+      "bytes": 144676,
+      "sha256": "2335546d1cc211c21713976f454ac471f748bd4b21499611ea2de202839fc767"
+    },
+    {
+      "path": "images/tawtheeq_contract-028.jpg",
+      "bytes": 218305,
+      "sha256": "7e39055dbaebba3e910667db5645b28743db89cfd3a2136bbac281a8351e4fe1"
+    },
+    {
+      "path": "images/tawtheeq_contract-029.jpg",
+      "bytes": 236779,
+      "sha256": "cd6b4def24dd5407f6b7febde117363da5379b3d44e8b6a10393a643881142a0"
+    },
+    {
+      "path": "images/tawtheeq_contract-030.jpg",
+      "bytes": 219898,
+      "sha256": "4662c0806a3c49ed870cd08fd850d4cf6404e5831582ae7e148a80d229589d01"
+    },
+    {
+      "path": "images/tawtheeq_contract-031.jpg",
+      "bytes": 192892,
+      "sha256": "afeef640193ce5590ba1599a58e81be796e5e50cc95a10af3d278620e4a2042d"
+    },
+    {
+      "path": "images/tawtheeq_contract-032.jpg",
+      "bytes": 163342,
+      "sha256": "2afeeb4af1533054223f89a352a99ededdcaa7aee17b10407caa94d5d9a14b58"
+    },
+    {
+      "path": "images/tawtheeq_contract-033.jpg",
+      "bytes": 172189,
+      "sha256": "f2bf8a8e032468477b60f85772aa0d20c4f4546148700b8048ebd8442c025eca"
+    },
+    {
+      "path": "images/tawtheeq_contract-034.jpg",
+      "bytes": 174020,
+      "sha256": "ae2a43edc326a9caf9ab743f24dd443617bfd2dda82d9040d1ea3a3b1d58fe92"
+    },
+    {
+      "path": "images/tawtheeq_contract-035.jpg",
+      "bytes": 180570,
+      "sha256": "f39c05e623210c92a5012eeec8089c2f3685cd2a1e4901107334d771d4a39de0"
+    },
+    {
+      "path": "images/tawtheeq_contract-036.jpg",
+      "bytes": 160637,
+      "sha256": "cea1cb70feddbcdb37989f530bb2105f11494daf2fc127bfa3a63e357f589c38"
+    },
+    {
+      "path": "images/tawtheeq_contract-037.jpg",
+      "bytes": 132166,
+      "sha256": "5dc7c39d334b23e51908449ff67c0552819041c810f2fc8816d14d841b5b2093"
+    },
+    {
+      "path": "images/tawtheeq_contract-038.jpg",
+      "bytes": 162309,
+      "sha256": "15237edbbbf74bff7012b501e4ef3d4ce56a765b0a304eb2cb07cb5ec56b9a4e"
+    },
+    {
+      "path": "images/tawtheeq_contract-039.jpg",
+      "bytes": 127711,
+      "sha256": "fdf0d0c5a0a1d379f5b2821665b807aa836726ed1ee960abe38138510346fc06"
+    },
+    {
+      "path": "images/tawtheeq_contract-040.jpg",
+      "bytes": 215039,
+      "sha256": "b0b2ba6549c2e9a7373025c7d01444c2da78d7fd6b412cfab8660c207a9063c4"
+    },
+    {
+      "path": "images/title_deed-001.jpg",
+      "bytes": 170693,
+      "sha256": "969fa1054689600ff6841530de633a8571ad6e3e16fd4ac901e8f4e5f32e66b5"
+    },
+    {
+      "path": "images/title_deed-002.jpg",
+      "bytes": 120254,
+      "sha256": "ab82208e6d81171249d78258f4476a5e355746a1d4d28a113cd2de0da23d4044"
+    },
+    {
+      "path": "images/title_deed-003.jpg",
+      "bytes": 200728,
+      "sha256": "9d45019c64a3bdc31c6824a3db87d4b17815d650e149d3eed43d90644f7b1b7a"
+    },
+    {
+      "path": "images/title_deed-004.jpg",
+      "bytes": 141363,
+      "sha256": "bf8a5ef8d153df208158a931bb92fb62888bd57813a74ec9d1eb3fdcd92a0768"
+    },
+    {
+      "path": "images/title_deed-005.jpg",
+      "bytes": 206653,
+      "sha256": "ff3e1cbac0866e61aeb6798affc246f8739a57c9fb9a7ec4accc4828a37e6b51"
+    },
+    {
+      "path": "images/title_deed-006.jpg",
+      "bytes": 175912,
+      "sha256": "4462f8ed31a46216f86c98b4a3f90f87b3a2c039461903736c9310cc5f773162"
+    },
+    {
+      "path": "images/title_deed-007.jpg",
+      "bytes": 176939,
+      "sha256": "2f3a6a0e3fe9b86e4d964292e0cb8f8234bd13884cc1b84832989c4a71f8feff"
+    },
+    {
+      "path": "images/title_deed-008.jpg",
+      "bytes": 184428,
+      "sha256": "a094111b0d512f4872eb943da078c4d3dd5a4a17125763993d7be4123b0d5ffe"
+    },
+    {
+      "path": "images/title_deed-009.jpg",
+      "bytes": 140708,
+      "sha256": "e13a4ea66acd183ea3a8a15d60b964d752467e911b450dfc38bd556125b2126f"
+    },
+    {
+      "path": "images/title_deed-010.jpg",
+      "bytes": 174681,
+      "sha256": "f9a817acc3fa90302eeb92edc37dcbbf4bc4e8a9662e7fc2b1621ed890a7a1a2"
+    },
+    {
+      "path": "images/title_deed-011.jpg",
+      "bytes": 155465,
+      "sha256": "abf1b43cd595d2c4ecd8945e455c7b463c33eaa7ea12be989d0ecfc1613e4f5b"
+    },
+    {
+      "path": "images/title_deed-012.jpg",
+      "bytes": 151003,
+      "sha256": "bff244751cb4ae77f2d1fe2b38775271dfcf6dd53a71b26136d08340cc02d6d8"
+    },
+    {
+      "path": "images/title_deed-013.jpg",
+      "bytes": 135380,
+      "sha256": "ad5423860298d565f737e9ef6c1e9e3c81d81fc30e8970af4b4db473f5081bbe"
+    },
+    {
+      "path": "images/title_deed-014.jpg",
+      "bytes": 177490,
+      "sha256": "b6c2c382b3b3d3acd5510afec8d9bae3a8e70dff9386e02a1823121284585f99"
+    },
+    {
+      "path": "images/title_deed-015.jpg",
+      "bytes": 136840,
+      "sha256": "de2ce5d5b129a0703dcd521a68897543eb9067a119dd1947c5fd2eb2b864c550"
+    },
+    {
+      "path": "images/title_deed-016.jpg",
+      "bytes": 164433,
+      "sha256": "a1953250915d867441898067b51a3370b62cd977dd14772eb0e3a1d723e520d2"
+    },
+    {
+      "path": "images/title_deed-017.jpg",
+      "bytes": 142314,
+      "sha256": "bd9e79e29124452ae1a5ab60332d7176916be7483efe4244366f94f1a51a574c"
+    },
+    {
+      "path": "images/title_deed-018.jpg",
+      "bytes": 121726,
+      "sha256": "f39875155e989daa9797e61484783ca93cae1941571a14680224df87f9c47685"
+    },
+    {
+      "path": "images/title_deed-019.jpg",
+      "bytes": 130086,
+      "sha256": "42c079065b0047cf287fa6b684aae9f1a5b7abf0ee4d62d92cbde5b3fcaa015e"
+    },
+    {
+      "path": "images/title_deed-020.jpg",
+      "bytes": 118373,
+      "sha256": "1ab013313a696726eb7f9237b8794e08df94ee7e8ad3c77634ff095c553550f9"
+    },
+    {
+      "path": "images/title_deed-021.jpg",
+      "bytes": 167827,
+      "sha256": "21289eac68245e3c7225b69499cad036655e1071937d17f809292feb74007692"
+    },
+    {
+      "path": "images/title_deed-022.jpg",
+      "bytes": 199101,
+      "sha256": "530554de3b7706be96a7f81c40e7170290ad7ec3a812aaf746f5235b7b068dc6"
+    },
+    {
+      "path": "images/title_deed-023.jpg",
+      "bytes": 151438,
+      "sha256": "04ab342b3e8fe2a7bbe80d13fc8576891ef1685209941de97e1013ee3c92b44f"
+    },
+    {
+      "path": "images/title_deed-024.jpg",
+      "bytes": 197324,
+      "sha256": "2b3d77976118f8659c0cb101af4d9ec11011ba0b76febb15cfcb123e5c5d151a"
+    },
+    {
+      "path": "images/title_deed-025.jpg",
+      "bytes": 159466,
+      "sha256": "1df7ac7120ee4ebd759fe7a029b7496a9bcf7031675d93c110c86b33e399f902"
+    },
+    {
+      "path": "images/title_deed-026.jpg",
+      "bytes": 138217,
+      "sha256": "3edc621a937e7bfeb353c38de43db88b3d3ef2970d0e11fa0c1e2e6f608bce08"
+    },
+    {
+      "path": "images/title_deed-027.jpg",
+      "bytes": 153551,
+      "sha256": "4ae8adb7f49136decbab05e46f9dbabeca520122584b17d9f65f851747ee63b3"
+    },
+    {
+      "path": "images/title_deed-028.jpg",
+      "bytes": 111798,
+      "sha256": "8b2bdb6d5d786054dc11329b86a947937c0a0c0515ae500f1f7ce68263452665"
+    },
+    {
+      "path": "images/title_deed-029.jpg",
+      "bytes": 128458,
+      "sha256": "68640f93caab1581785987ed49915e335a8bc19a5a480fe38d61bf7fef5398c8"
+    },
+    {
+      "path": "images/title_deed-030.jpg",
+      "bytes": 117919,
+      "sha256": "15245e6717a1dd22d47e2cf20aeadbdedd2c7182f83ee75f13535ad29aea861d"
+    },
+    {
+      "path": "images/title_deed-031.jpg",
+      "bytes": 130211,
+      "sha256": "82a7160ca4c31ba1c16b32d31324b4d078bfd38e93d976250b629aea26906f0d"
+    },
+    {
+      "path": "images/title_deed-032.jpg",
+      "bytes": 178099,
+      "sha256": "14c96109ffc54ec492ace1baa9986e235e7c1bdab237a9e56f16d9264362e274"
+    },
+    {
+      "path": "images/title_deed-033.jpg",
+      "bytes": 193240,
+      "sha256": "eaed7f70eb678fedea6d6a7fd25888b51e86e34b8ab507ff6126414ec39f42f6"
+    },
+    {
+      "path": "images/title_deed-034.jpg",
+      "bytes": 134810,
+      "sha256": "c5e601e7096120a6a61a398d4e034cb412ade33ef4bebaea8504d3deaf3faf49"
+    },
+    {
+      "path": "images/title_deed-035.jpg",
+      "bytes": 135535,
+      "sha256": "5b877eef5259e4db1fe7ea9af68a4874a4975c9d19068dffe79e3bc8070a6c95"
+    },
+    {
+      "path": "images/title_deed-036.jpg",
+      "bytes": 123857,
+      "sha256": "0032675c9b4cb05fdc412bd52cfa9be515c5d50318d20da00b4877994e46e310"
+    },
+    {
+      "path": "images/title_deed-037.jpg",
+      "bytes": 146043,
+      "sha256": "76ee5808dcf048db6a54a9c8009bb387aabbc194413c78b2356a6228bf75f16f"
+    },
+    {
+      "path": "images/title_deed-038.jpg",
+      "bytes": 144717,
+      "sha256": "28ddcb4492ef1f9d262724565b126d59a7e112c751aa8b8a379458aefddf5c55"
+    },
+    {
+      "path": "images/title_deed-039.jpg",
+      "bytes": 136703,
+      "sha256": "dafd28edc82d5282126f5928a60c0466358ef844359873b250b7379d7418b8ac"
+    },
+    {
+      "path": "images/title_deed-040.jpg",
+      "bytes": 152636,
+      "sha256": "20165cecf50d4596e362c11d22195db1b9ca72815634e8e593fa2dfb461b6aea"
+    },
+    {
+      "path": "labels.jsonl",
+      "bytes": 455492,
+      "sha256": "cb138914e67544ab36524906b9a76076c09a560e91c0114a879f16a16bb75f52"
+    },
+    {
+      "path": "splits.json",
+      "bytes": 3495,
+      "sha256": "0f7dc1c6e27692d1129c99093a54984ebfd80510456f27fcf86c8d5d6cd7030d"
+    }
+  ]
+}

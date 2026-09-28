@@ -1,0 +1,30 @@
+{
+  "$schema": "https://turborepo.dev/schema.json",
+  "globalEnv": [
+    "CI",
+    "NODE_ENV",
+    "NEXT_TELEMETRY_DISABLED",
+    "EXPO_NO_TELEMETRY",
+    "EXPO_OFFLINE"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build", "typecheck"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+    },
+    "typecheck": {},
+    "lint": {},
+    "test": {},
+    "synth": {
+      "outputs": ["cdk.out/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "e2e": {
+      "cache": false,
+      "dependsOn": ["build"]
+    }
+  }
+}

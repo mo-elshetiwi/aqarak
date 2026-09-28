@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "id": "88009c5f-0178-4e3c-aeee-158c06afd4eb",
+      "version": 1,
+      "name": {
+        "en": "Synthetic Residence J2",
+        "ar": "مبنى تجريبي"
+      },
+      "kind": "building",
+      "area": null,
+      "use": "residential",
+      "owners": [
+        {
+          "id": "0b0683bb-f8d5-4195-9ed7-ef244f78cfdd",
+          "fullName": {
+            "en": "Synthetic Owner J2",
+            "ar": "مالك تجريبي"
+          }
+        }
+      ],
+      "unitCount": 2,
+      "unitsByStatus": {
+        "vacant": 1,
+        "listed": 0,
+        "reserved": 0,
+        "occupied": 0,
+        "notice_given": 0,
+        "under_maintenance": 0,
+        "blocked": 1
+      },
+      "titleDeed": {
+        "reviewStatus": "accepted",
+        "processingStatus": "scan_clean"
+      },
+      "ownerGate": {
+        "value": false,
+        "source": "mandate"
+      }
+    }
+  ],
+  "nextCursor": null
+}

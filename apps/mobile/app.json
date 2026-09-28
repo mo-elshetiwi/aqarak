@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Aqarak",
+    "slug": "aqarak",
+    "scheme": "aqarak",
+    "version": "0.1.0",
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "backgroundColor": "#121826"
+        }
+      ],
+      "expo-status-bar",
+      "expo-secure-store",
+      [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "ios": ["en", "ar"],
+            "android": ["en", "ar"]
+          },
+          "supportsRTL": true
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Aqarak uses the camera when you photograph a document or a fault.",
+          "microphonePermission": "Aqarak uses the microphone when you record a fault with audio.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Aqarak uses the microphone when you record a voice note."
+        }
+      ],
+      "expo-document-picker"
+    ],
+    "userInterfaceStyle": "automatic",
+    "orientation": "portrait",
+    "android": {
+      "package": "ae.aqarak.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#121826"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "ae.aqarak.app"
+    },
+    "locales": {
+      "en": "./locales/en.json",
+      "ar": "./locales/ar.json"
+    },
+    "icon": "./assets/icon.png"
+  }
+}

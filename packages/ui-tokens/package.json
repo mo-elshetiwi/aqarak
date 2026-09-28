@@ -1,0 +1,26 @@
+{
+  "name": "@aqarak/ui-tokens",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "tokens:css": "tsx scripts/render-css.mjs",
+    "palette:report": "tsx scripts/render-brand-palette.mjs",
+    "test:brand": "tsx scripts/verify-brand.mjs"
+  },
+  "devDependencies": {
+    "eslint": "9.39.5",
+    "typescript": "catalog:",
+    "@aqarak/config": "workspace:*",
+    "vitest": "catalog:",
+    "eslint-config-prettier": "10.1.8",
+    "tsx": "4.23.15"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./tokens.css": "./tokens.css",
+    "./color": "./src/color.ts"
+  }
+}

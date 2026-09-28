@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="1560" viewBox="0 0 2480 1560" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic Emirates ID example</title>
+  <desc id="desc">A fictional teaching card. Not an identity document. No government marks or real portrait.</desc>
+  <rect width="2480" height="1560" rx="90" fill="#f8faf9"/>
+  <rect x="35" y="35" width="2410" height="1490" rx="65" fill="none" stroke="#42665c" stroke-width="8"/>
+  <path d="M40 260H2440" stroke="#b8cdc5" stroke-width="4"/>
+  <g font-family="Arial, sans-serif" fill="#233c33">
+    <text x="110" y="145" font-size="66" font-weight="bold">SYNTHETIC · FICTIONAL SAMPLE</text>
+    <text x="2360" y="230" text-anchor="end" font-size="54" direction="rtl">نموذج تجريبي · بيانات خيالية</text>
+    <rect x="110" y="380" width="470" height="610" rx="32" fill="#dce8e2"/>
+    <circle cx="345" cy="580" r="110" fill="#819f91"/>
+    <path d="M170 900Q175 715 345 715Q515 715 520 900Z" fill="#819f91"/>
+    <text x="680" y="460" font-size="80">Khalid Al Suwaidi</text>
+    <text x="2260" y="620" font-size="88" text-anchor="end" direction="rtl">خالد السويدي</text>
+    <text x="680" y="780" font-family="monospace" font-size="85">784-1978-4829163-5</text>
+    <text x="680" y="910" font-size="42">Nationality / الجنسية</text>
+    <text x="680" y="998" font-size="48">United Arab Emirates · الإمارات العربية المتحدة</text>
+    <text x="680" y="1080" font-size="42">Date of birth / الميلاد</text>
+    <text x="1640" y="1080" font-size="42">Expiry / الانتهاء</text>
+    <text x="680" y="1190" font-size="72">12/03/1978</text>
+    <text x="1640" y="1190" font-size="72">11/03/2029</text>
+    <text x="680" y="1330" font-size="44">Property coordinator · منسق عقارات</text>
+    <text x="1240" y="1450" text-anchor="middle" font-size="44">SYNTHETIC · نموذج تجريبي · NOT VALID FOR IDENTIFICATION</text>
+  </g>
+  <text x="1240" y="830" text-anchor="middle" font-family="Arial, sans-serif" font-size="235" font-weight="bold" fill="#42665c" opacity="0.16" transform="rotate(-18 1240 830)">SYNTHETIC</text>
+</svg>

@@ -1,0 +1,10 @@
+I use all 400 frozen held-out clips: 200 MIXAT clips, 100 FLEURS Egyptian Arabic clips and 100 FLEURS US English clips. I report the pooled held-out WER as primary and preserve the separate language groups.
+I preserve scorer 1.2.0, with 2,000 bootstrap resamples, seed 20260928 and 95% intervals. I resample clips for WER and CER; the reported schema-valid proportion measures successful calls, not strict transcription-schema validation.
+I evaluate one screening survivor. Its paired difference to itself is identically zero and supplies no evidence of superiority or non-inferiority to another candidate.
+I compare screening and held-out estimates descriptively in my class decision record. Screening contains only MIXAT, whereas the held-out primary includes FLEURS; composition and disjoint items prevent a paired between-split comparison.
+I use the MIXAT transcript field and the FLEURS transcription field, applying the same committed normaliser to references and hypotheses. I keep all speech references, audio and raw hypotheses outside the repository.
+I sample podcast and read speech rather than operational property-management voice notes. Shared speakers and source programmes limit the independence assumed by clip-level intervals.
+I retain ordinary WER, which penalises legitimate spelling alternatives; I do not substitute another metric after seeing held-out output. Egyptian Arabic is a regression guard, not a Gulf dialect sample.
+I keep the API version unpinned as registered. Successful transcription does not establish grounded action extraction, safe execution, or the complete control gate.
+I adopt no rejected screening candidate as a validated fallback. Typing remains my degraded path; the registry and deployment are unchanged.
+I interpret the generated survives status and screening-gates wording only as the committed rejection-rule check; it does not establish every ADR gate or product readiness.

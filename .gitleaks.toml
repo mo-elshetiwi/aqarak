@@ -1,0 +1,8 @@
+[extend]
+useDefault = true
+
+[allowlist]
+# AWS Secrets Manager ARNs are resource identifiers, not secrets.
+description = "AWS Secrets Manager resource identifiers"
+regexTarget = "line"
+regexes = ['''arn:aws:secretsmanager:[a-z0-9-]+:[0-9]{12}:secret:[A-Za-z0-9/_+=.@-]+''']

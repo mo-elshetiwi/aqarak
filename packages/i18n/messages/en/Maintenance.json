@@ -1,0 +1,83 @@
+{
+  "title": "Maintenance",
+  "report": "Report a problem",
+  "empty": "No reports yet",
+  "status": {
+    "reported": "Reported",
+    "triaged": "Triaged",
+    "awaiting_quote": "Awaiting quote",
+    "awaiting_cost_approval": "Awaiting cost approval",
+    "scheduled": "Scheduled",
+    "in_progress": "In progress",
+    "on_hold": "On hold",
+    "work_completed": "Work completed",
+    "closed": "Closed",
+    "cancelled": "Cancelled"
+  },
+  "category": {
+    "ac": "Air conditioning",
+    "plumbing": "Plumbing",
+    "electrical": "Electrical",
+    "appliances": "Appliances",
+    "pest_control": "Pest control",
+    "cleaning": "Cleaning",
+    "carpentry": "Carpentry",
+    "painting": "Painting",
+    "lift": "Lift",
+    "fire_safety": "Fire safety",
+    "other": "Other"
+  },
+  "priority": {
+    "emergency": "Emergency",
+    "urgent": "Urgent",
+    "routine": "Routine"
+  },
+  "safetyFlag": {
+    "gas_smell": "Gas smell",
+    "electrical_sparking": "Electrical sparking",
+    "water_into_electrics": "Water near electrics",
+    "lift_entrapment": "Trapped in lift",
+    "other_safety_hazard": "Other safety hazard"
+  },
+  "reportedDate": "Reported {date}",
+  "loadMore": "Load more",
+  "unavailable": "This report is not available to you",
+  "couldNotLoad": "Could not load reports.",
+  "invalidInput": "Check the report details and try again.",
+  "retry": "Try again",
+  "offline": "You are offline. Previously loaded reports remain available.",
+  "yourWords": "Your words",
+  "description": "Description",
+  "safety": "Safety",
+  "photos": "Photos",
+  "photoUnavailable": "Photo unavailable",
+  "photo": "Photo {number}",
+  "loadingPhoto": "Loading photo",
+  "voiceNote": "Voice note, {duration}",
+  "durationUnavailable": "duration unavailable",
+  "whatNext": "What happens next",
+  "nextActor": "Next: {actor}",
+  "actor": {
+    "office": "Office",
+    "owner": "Owner",
+    "technician": "Technician",
+    "tenant": "You",
+    "none": "No further action"
+  },
+  "backToReports": "Back to maintenance",
+  "notProvided": "Not provided",
+  "noSafetyFlags": "No safety flags reported",
+  "noPhotos": "No photos attached",
+  "nextStep": {
+    "reported": "The office reviews the category and priority.",
+    "triaged": "The office is arranging the repair.",
+    "awaiting_quote": "The office is waiting for a price.",
+    "awaiting_cost_approval": "The owner is approving the cost.",
+    "scheduled": "A visit is booked.",
+    "in_progress": "The repair is under way.",
+    "on_hold": "The repair is waiting for parts or access.",
+    "work_completed": "Please confirm the repair.",
+    "closed": "This report is closed.",
+    "cancelled": "This report was cancelled."
+  }
+}

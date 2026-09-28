@@ -1,0 +1,166 @@
+{
+  "id": "88009c5f-0178-4e3c-aeee-158c06afd4eb",
+  "version": 1,
+  "name": {
+    "en": "Synthetic Residence J2",
+    "ar": "مبنى تجريبي"
+  },
+  "kind": "building",
+  "area": null,
+  "use": "residential",
+  "owners": [
+    {
+      "id": "0b0683bb-f8d5-4195-9ed7-ef244f78cfdd",
+      "fullName": {
+        "en": "Synthetic Owner J2",
+        "ar": "مالك تجريبي"
+      }
+    }
+  ],
+  "unitCount": 2,
+  "unitsByStatus": {
+    "vacant": 1,
+    "listed": 0,
+    "reserved": 0,
+    "occupied": 0,
+    "notice_given": 0,
+    "under_maintenance": 0,
+    "blocked": 1
+  },
+  "titleDeed": {
+    "reviewStatus": "accepted",
+    "processingStatus": "scan_clean"
+  },
+  "ownerGate": {
+    "value": false,
+    "source": "mandate"
+  },
+  "plotNo": "C-99-9-99",
+  "titleDeedNo": "TD-J2-SMOKE-0001",
+  "prpNumber": "PRP-J2-SMOKE-110452",
+  "onwaniAddress": null,
+  "zone": "Synthetic Zone 1",
+  "ownerGateOverride": null,
+  "documents": [
+    {
+      "documentId": "90114d8e-bcac-4266-ab71-fefedb133bd6",
+      "docType": "title_deed",
+      "current": {
+        "versionId": "c30e8820-11b9-4a64-a1dc-a851cfcfe4c6",
+        "version": 4,
+        "versionNo": 1,
+        "processingStatus": "scan_clean",
+        "reviewStatus": "accepted",
+        "issueDate": "2026-01-15",
+        "expiryDate": null,
+        "validity": "valid",
+        "rejectReason": null,
+        "scanResult": null
+      },
+      "latest": {
+        "versionId": "c30e8820-11b9-4a64-a1dc-a851cfcfe4c6",
+        "version": 4,
+        "versionNo": 1,
+        "processingStatus": "scan_clean",
+        "reviewStatus": "accepted",
+        "issueDate": "2026-01-15",
+        "expiryDate": null,
+        "validity": "valid",
+        "rejectReason": null,
+        "scanResult": null
+      }
+    }
+  ],
+  "units": [
+    {
+      "id": "275cbb1d-f430-4551-82c5-bab6dc1234c4",
+      "version": 1,
+      "unitNo": "201",
+      "untNumber": "UNT-J2-110533-201",
+      "use": "residential",
+      "kind": "apartment",
+      "bedrooms": 1,
+      "areaSqm": "72.50",
+      "status": "vacant",
+      "blockReason": null
+    },
+    {
+      "id": "07ee9463-85b3-47b6-a5e8-5221a63ab565",
+      "version": 2,
+      "unitNo": "202",
+      "untNumber": null,
+      "use": "residential",
+      "kind": "apartment",
+      "bedrooms": 2,
+      "areaSqm": null,
+      "status": "blocked",
+      "blockReason": "owner_use"
+    }
+  ],
+  "history": [
+    {
+      "eventType": "document.updated",
+      "occurredAt": "2026-09-28T03:05:28.404Z",
+      "actorDisplayName": "J2 Smoke Manager (synthetic)",
+      "actorRole": "manager",
+      "channel": "web_form",
+      "reason": null
+    },
+    {
+      "eventType": "document_version.accepted",
+      "occurredAt": "2026-09-28T03:05:28.404Z",
+      "actorDisplayName": "J2 Smoke Manager (synthetic)",
+      "actorRole": "manager",
+      "channel": "web_form",
+      "reason": null
+    },
+    {
+      "eventType": "policy.denied",
+      "occurredAt": "2026-09-28T03:05:23.431Z",
+      "actorDisplayName": "J2 Smoke Manager (synthetic)",
+      "actorRole": "manager",
+      "channel": "web_form",
+      "reason": null
+    },
+    {
+      "eventType": "document_version.scan_clean",
+      "occurredAt": "2026-09-28T03:05:11.569Z",
+      "actorDisplayName": "J2 Smoke Manager (synthetic)",
+      "actorRole": "manager",
+      "channel": "web_form",
+      "reason": null
+    },
+    {
+      "eventType": "document_version.uploaded",
+      "occurredAt": "2026-09-28T03:05:11.569Z",
+      "actorDisplayName": "J2 Smoke Manager (synthetic)",
+      "actorRole": "manager",
+      "channel": "web_form",
+      "reason": null
+    },
+    {
+      "eventType": "document_version.created",
+      "occurredAt": "2026-09-28T03:05:02.626Z",
+      "actorDisplayName": "J2 Smoke Manager (synthetic)",
+      "actorRole": "manager",
+      "channel": "web_form",
+      "reason": null
+    },
+    {
+      "eventType": "document.created",
+      "occurredAt": "2026-09-28T03:05:02.626Z",
+      "actorDisplayName": "J2 Smoke Manager (synthetic)",
+      "actorRole": "manager",
+      "channel": "web_form",
+      "reason": null
+    },
+    {
+      "eventType": "property.created",
+      "occurredAt": "2026-09-28T03:04:52.571Z",
+      "actorDisplayName": "J2 Smoke Manager (synthetic)",
+      "actorRole": "manager",
+      "channel": "web_form",
+      "reason": null
+    }
+  ]
+}

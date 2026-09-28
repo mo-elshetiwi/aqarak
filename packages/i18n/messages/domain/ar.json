@@ -1,0 +1,711 @@
+{
+  "role": {
+    "manager": "مدير العقارات",
+    "owner": "المالك",
+    "tenant": "المستأجر",
+    "technician": "فني الصيانة",
+    "company_administrator": "مسؤول الشركة",
+    "accountant": "المحاسب"
+  },
+  "staffRole": {
+    "manager": "مدير العقارات",
+    "technician": "فني الصيانة",
+    "company_administrator": "مسؤول الشركة",
+    "accountant": "المحاسب"
+  },
+  "companyKind": {
+    "management_company": "شركة إدارة عقارات",
+    "self_managed_owner": "مالك يدير عقاراته"
+  },
+  "membershipStatus": {
+    "invited": "مدعو",
+    "active": "نشط",
+    "suspended": "موقوف",
+    "removed": "منتهي"
+  },
+  "invitationKind": {
+    "staff": "موظف",
+    "owner": "المالك",
+    "tenant": "المستأجر"
+  },
+  "invitationStatus": {
+    "pending": "معلقة",
+    "accepted": "مقبولة",
+    "expired": "منتهية",
+    "revoked": "ملغاة"
+  },
+  "tenantKind": {
+    "individual": "فرد",
+    "company": "شركة",
+    "government": "جهة حكومية",
+    "diplomatic": "جهة دبلوماسية"
+  },
+  "ownerMandateStatus": {
+    "active": "ساري",
+    "expired": "منتهي الصلاحية",
+    "ended": "منتهي"
+  },
+  "propertyKind": {
+    "building": "مبنى",
+    "villa": "فيلا",
+    "plot": "قطعة أرض"
+  },
+  "unitUse": {
+    "residential": "سكني",
+    "commercial": "تجاري"
+  },
+  "unitKind": {
+    "apartment": "شقة",
+    "villa": "فيلا",
+    "townhouse": "تاون هاوس",
+    "office": "مكتب",
+    "shop": "محل",
+    "warehouse": "مستودع",
+    "other": "أخرى"
+  },
+  "unitStatus": {
+    "vacant": "شاغرة",
+    "listed": "معروضة",
+    "reserved": "محجوزة",
+    "occupied": "مؤجرة",
+    "notice_given": "تم الإخطار بالإخلاء",
+    "under_maintenance": "تحت الصيانة",
+    "blocked": "موقوفة"
+  },
+  "occupantRelationship": {
+    "spouse": "زوج أو زوجة",
+    "child": "ابن أو ابنة",
+    "parent": "أب أو أم",
+    "relative": "قريب",
+    "domestic_worker": "عامل منزلي",
+    "other": "أخرى"
+  },
+  "contractStatus": {
+    "draft": "مسودة",
+    "awaiting_owner_approval": "بانتظار موافقة المالك",
+    "awaiting_tenant_acceptance": "بانتظار قبول المستأجر",
+    "concluded": "مبرم",
+    "ended": "منتهي",
+    "cancelled": "ملغى"
+  },
+  "contractOrigin": {
+    "app": "التطبيق",
+    "retroactive": "بأثر رجعي"
+  },
+  "contractCancelKind": {
+    "withdrawn_by_manager": "مسحوب من مدير العقارات",
+    "returned_by_owner": "معاد من المالك",
+    "returned_by_tenant": "معاد من المستأجر",
+    "cancelled_draft": "مسودة ملغاة"
+  },
+  "contractEndReason": {
+    "expired": "انتهاء المدة",
+    "renewed": "تم التجديد",
+    "terminated_by_notice": "إنهاء بإخطار",
+    "terminated_by_agreement": "إنهاء بالاتفاق",
+    "terminated_by_court_order": "إنهاء بأمر قضائي",
+    "cancelled_on_portal": "ملغى في البوابة"
+  },
+  "contractVersionKind": {
+    "standard": "اعتيادي",
+    "tawtheeq_adoption": "اعتماد بيانات توثيق"
+  },
+  "termPhase": {
+    "upcoming": "لم يبدأ",
+    "current": "ساري",
+    "renewal_window": "فترة التجديد",
+    "notice_deadline_passed": "انقضى موعد الإخطار",
+    "holding_over": "بعد انتهاء المدة"
+  },
+  "approvalSlot": {
+    "manager": "مدير العقارات",
+    "owner": "المالك",
+    "tenant": "المستأجر"
+  },
+  "approvalKind": {
+    "contract_approval": "اعتماد العقد",
+    "owner_reapproval": "إعادة موافقة المالك",
+    "skip_confirmation": "تأكيد تخطي التوثيق",
+    "cost_approval": "اعتماد التكلفة",
+    "retroactive_confirmation": "تأكيد التسجيل بأثر رجعي"
+  },
+  "approvalStatus": {
+    "requested": "مطلوبة",
+    "approved": "موافق عليها",
+    "returned": "معادة",
+    "voided": "ملغاة"
+  },
+  "tawtheeqPath": {
+    "normal": "المسار العادي",
+    "skip": "تخطي التوثيق",
+    "retroactive": "التسجيل بأثر رجعي"
+  },
+  "tawtheeqWorkflowState": {
+    "awaiting_registration": "بانتظار التوثيق",
+    "submitted_on_portal": "مقدم في البوابة",
+    "under_review": "قيد المطابقة",
+    "discrepancies_open": "اختلافات قيد المعالجة",
+    "awaiting_owner_reapproval": "بانتظار إعادة موافقة المالك",
+    "registered": "موثق",
+    "skipped": "بدون توثيق",
+    "closed": "مغلق في البوابة"
+  },
+  "tawtheeqPortalStatus": {
+    "not_started": "لم يبدأ",
+    "pending": "قيد الانتظار",
+    "registered": "موثق",
+    "renewed": "مجدد",
+    "skipped": "بدون توثيق",
+    "cancelled": "ملغى"
+  },
+  "discrepancyClass": {
+    "identity": "اختلاف الهوية",
+    "material": "اختلاف جوهري",
+    "minor": "اختلاف طفيف"
+  },
+  "discrepancyResolution": {
+    "adopt": "اعتماد البيانات",
+    "cancel_and_reregister": "الإلغاء وإعادة التسجيل",
+    "mark_equivalent": "اعتبار البيانات متكافئة"
+  },
+  "discrepancyStatus": {
+    "open": "مفتوح",
+    "resolved": "تمت المعالجة"
+  },
+  "handoverKind": {
+    "move_in": "استلام الوحدة",
+    "move_out": "تسليم الوحدة"
+  },
+  "instalmentStatus": {
+    "open": "غير مسدد",
+    "partly_paid": "مسدد جزئياً",
+    "paid": "مسدد",
+    "waived": "معفى",
+    "cancelled": "ملغى"
+  },
+  "chequeStatus": {
+    "pending": "بانتظار الاستلام",
+    "received": "مستلم",
+    "deposited": "مودع",
+    "cleared": "محصل",
+    "partly_paid": "مدفوع جزئياً",
+    "bounced": "مرتجع",
+    "replaced": "مستبدل",
+    "returned_to_drawer": "معاد للساحب"
+  },
+  "paymentMethod": {
+    "cash": "نقداً",
+    "transfer": "تحويل مصرفي",
+    "cheque": "شيك",
+    "card_elsewhere": "بطاقة عبر جهة خارجية"
+  },
+  "paymentSource": {
+    "app": "التطبيق",
+    "external": "مصدر خارجي"
+  },
+  "paymentStatus": {
+    "recorded": "مسجل",
+    "reversed": "معكوس"
+  },
+  "allocationStatus": {
+    "active": "نشط",
+    "voided": "ملغى"
+  },
+  "paymentReversalReason": {
+    "bounced": "شيك مرتجع",
+    "recorded_in_error": "مسجل بالخطأ"
+  },
+  "chargeKind": {
+    "maintenance": "صيانة",
+    "utility": "خدمات",
+    "penalty": "غرامة",
+    "fee": "رسوم",
+    "other": "أخرى"
+  },
+  "chargePayer": {
+    "owner": "المالك",
+    "tenant": "المستأجر",
+    "company": "الشركة"
+  },
+  "chargeStatus": {
+    "open": "مستحقة",
+    "invoiced": "مفوترة",
+    "settled": "مسددة",
+    "waived": "معفاة",
+    "cancelled": "ملغاة"
+  },
+  "depositStatus": {
+    "expected": "متوقع",
+    "held": "محتفظ به",
+    "refund_due": "مستحق الرد",
+    "refunded": "مردود",
+    "applied": "مخصوم",
+    "carried_over": "مرحل"
+  },
+  "invoiceStatus": {
+    "draft": "مسودة",
+    "issued": "صادرة",
+    "partly_paid": "مسددة جزئياً",
+    "paid": "مسددة",
+    "credited": "ملغاة بإشعار دائن"
+  },
+  "invoiceRecipientType": {
+    "tenant": "المستأجر",
+    "owner": "المالك"
+  },
+  "numberSeries": {
+    "INV": "INV",
+    "CN": "CN",
+    "RCPT": "RCPT",
+    "STMT": "STMT"
+  },
+  "receiptStatus": {
+    "issued": "صادر",
+    "voided": "ملغى"
+  },
+  "ownerStatementStatus": {
+    "draft": "مسودة",
+    "in_review": "قيد المراجعة",
+    "issued": "صادر",
+    "superseded": "مستبدل"
+  },
+  "ticketStatus": {
+    "reported": "تم الإبلاغ",
+    "triaged": "تم الفرز",
+    "awaiting_quote": "بانتظار عرض السعر",
+    "awaiting_cost_approval": "بانتظار اعتماد التكلفة",
+    "scheduled": "مجدول",
+    "in_progress": "قيد التنفيذ",
+    "on_hold": "معلق",
+    "work_completed": "تم الإنجاز",
+    "closed": "مغلق",
+    "cancelled": "ملغى"
+  },
+  "ticketCategory": {
+    "ac": "تكييف",
+    "plumbing": "سباكة",
+    "electrical": "كهرباء",
+    "appliances": "أجهزة",
+    "pest_control": "مكافحة الآفات",
+    "cleaning": "تنظيف",
+    "carpentry": "نجارة",
+    "painting": "دهان",
+    "lift": "مصعد",
+    "fire_safety": "السلامة من الحريق",
+    "other": "أخرى"
+  },
+  "ticketPriority": {
+    "emergency": "طارئة",
+    "urgent": "عاجلة",
+    "routine": "اعتيادية"
+  },
+  "costPayer": {
+    "owner": "المالك",
+    "tenant": "المستأجر",
+    "company": "الشركة",
+    "split": "تكلفة موزعة"
+  },
+  "quoteStatus": {
+    "requested": "مطلوب",
+    "received": "مستلم",
+    "approved": "معتمد",
+    "rejected": "مرفوض"
+  },
+  "dispatchStatus": {
+    "assigned": "مسند",
+    "accepted": "مقبول",
+    "declined": "مرفوض",
+    "done": "منجز",
+    "cancelled": "ملغى"
+  },
+  "documentType": {
+    "emirates_id": "الهوية الإماراتية",
+    "passport": "جواز السفر",
+    "title_deed": "سند الملكية",
+    "site_plan": "مخطط الموقع",
+    "management_agreement": "اتفاقية الإدارة",
+    "tawtheeq_authorisation": "تفويض توثيق",
+    "trade_licence": "الرخصة التجارية",
+    "signatory_id": "هوية المفوض بالتوقيع",
+    "civil_defence_certificate": "شهادة الدفاع المدني",
+    "hassantuk_certificate": "شهادة حصنتك",
+    "floor_plan": "المخطط الداخلي",
+    "maintenance_contract": "عقد الصيانة",
+    "fire_safety_contract": "عقد السلامة من الحريق",
+    "income_evidence": "إثبات الدخل",
+    "occupancy_certificate": "شهادة الإشغال",
+    "tawtheeq": "توثيق",
+    "contract": "عقد",
+    "receipt": "إيصال",
+    "invoice": "فاتورة",
+    "quote": "عرض سعر",
+    "transfer_slip": "إشعار تحويل",
+    "cheque_image": "صورة شيك",
+    "portal_summary": "ملخص البوابة",
+    "photo": "صورة",
+    "voice_note": "ملاحظة صوتية",
+    "video": "فيديو",
+    "other": "أخرى"
+  },
+  "documentSensitivity": {
+    "identity": "بيانات الهوية",
+    "financial": "بيانات مالية",
+    "general": "عام"
+  },
+  "documentProcessingStatus": {
+    "awaiting_upload": "بانتظار الرفع",
+    "uploaded": "تم الرفع",
+    "scan_clean": "اجتاز الفحص الأمني",
+    "scan_rejected": "مرفوض أمنياً",
+    "extracting": "قيد استخراج البيانات",
+    "extracted": "تم استخراج البيانات",
+    "extraction_failed": "تعذر استخراج البيانات"
+  },
+  "documentReviewStatus": {
+    "pending_review": "بانتظار المراجعة",
+    "accepted": "معتمد",
+    "rejected": "مرفوض",
+    "superseded": "مستبدل"
+  },
+  "documentValidity": {
+    "valid": "ساري",
+    "expiring_soon": "قارب على الانتهاء",
+    "expired": "منتهي"
+  },
+  "noteVisibility": {
+    "staff": "الموظفون",
+    "parties": "أطراف العقد"
+  },
+  "taskStatus": {
+    "open": "مفتوحة",
+    "done": "منجزة",
+    "cancelled": "ملغاة"
+  },
+  "reminderStatus": {
+    "scheduled": "مجدول",
+    "fired": "مرسل",
+    "dismissed": "مغلق"
+  },
+  "notificationChannel": {
+    "in_app": "داخل التطبيق",
+    "email": "البريد الإلكتروني",
+    "push": "إشعار فوري"
+  },
+  "notificationStatus": {
+    "queued": "في الانتظار",
+    "sent": "مرسل",
+    "failed": "فشل"
+  },
+  "draftedActionStatus": {
+    "drafting": "قيد الإعداد",
+    "ready": "بانتظار التأكيد",
+    "committed": "منفذ",
+    "rejected": "مرفوض",
+    "expired": "منتهي الصلاحية",
+    "failed": "فشل التنفيذ"
+  },
+  "initiator": {
+    "person": "شخص",
+    "co_worker": "المساعد المشارك",
+    "pipeline": "مسار المعالجة",
+    "scheduler": "المجدول"
+  },
+  "channel": {
+    "web_form": "نموذج الويب",
+    "mobile_form": "نموذج الهاتف",
+    "chat": "محادثة",
+    "voice": "صوت",
+    "system": "النظام",
+    "import": "استيراد"
+  },
+  "fieldProvenance": {
+    "ai_confirmed": "مستخرج ومؤكد من المستخدم",
+    "ai_edited": "مستخرج ومعدل من المستخدم",
+    "human_entered": "مدخل يدوياً"
+  },
+  "coWorkerToolFamily": {
+    "search": "بحث",
+    "read": "قراءة",
+    "explain": "شرح",
+    "draft_message": "صياغة رسالة",
+    "propose_note": "اقتراح ملاحظة",
+    "propose_task": "اقتراح مهمة",
+    "propose_reminder": "اقتراح تذكير",
+    "records_from_documents": "إعداد سجلات من المستندات",
+    "contracts_and_schedules": "إعداد العقود والجداول",
+    "tawtheeq_comparison": "مقارنة بيانات توثيق",
+    "triage": "فرز البلاغات",
+    "dispatch": "إعداد الإسناد",
+    "payments_from_uploads": "إعداد الدفعات من المرفقات",
+    "renewals": "إعداد التجديدات",
+    "portfolio_questions": "استفسارات المحفظة",
+    "statement_questions": "استفسارات كشف الحساب",
+    "ticket_reports": "إعداد بلاغات الصيانة",
+    "own_documents": "إعداد مستنداتي",
+    "own_contract": "عقدي",
+    "own_schedule": "جدول دفعاتي",
+    "own_tickets": "بلاغاتي",
+    "fault_reports": "إعداد بلاغات الأعطال",
+    "payment_evidence": "إعداد إثبات الدفع",
+    "assigned_jobs": "المهام المسندة",
+    "job_status": "إعداد تحديث حالة العمل",
+    "parts": "إعداد طلبات القطع",
+    "quote_drafts": "مسودات عروض الأسعار",
+    "settings": "إعداد الإعدادات",
+    "members": "إعداد العضويات",
+    "invitations": "إعداد الدعوات",
+    "templates": "إعداد القوالب",
+    "audit_search": "بحث سجل التدقيق",
+    "payments_from_receipts": "إعداد الدفعات من الإيصالات",
+    "payments_from_slips": "إعداد الدفعات من إشعارات التحويل",
+    "payments_from_cheque_images": "إعداد الدفعات من صور الشيكات",
+    "invoices": "إعداد الفواتير",
+    "receipts": "إعداد الإيصالات",
+    "arrears_messages": "صياغة رسائل المتأخرات",
+    "statements": "إعداد كشوف الحساب"
+  },
+  "permissionLevel": {
+    "A": "صلاحية إدارة",
+    "S": "صلاحية ضمن النطاق الشخصي",
+    "R": "قراءة فقط",
+    "P": "طلب فقط",
+    "G": "اعتماد مخصص"
+  },
+  "permissionOperation": {
+    "read": "قراءة",
+    "write": "تعديل",
+    "request": "طلب",
+    "approve": "اعتماد"
+  },
+  "capability": {
+    "company_settings": "إعدادات الشركة",
+    "staff_memberships": "عضويات الموظفين",
+    "party_links": "روابط الأطراف",
+    "owners": "الملاك",
+    "owner_bank_details": "البيانات المصرفية للمالك",
+    "properties_units": "العقارات والوحدات",
+    "tenants_occupants": "المستأجرون والشاغلون",
+    "identity_documents": "مستندات الهوية",
+    "contracts": "العقود",
+    "approval_steps": "خطوات الاعتماد",
+    "tawtheeq": "توثيق",
+    "payments": "الدفعات",
+    "invoices_receipts": "الفواتير والإيصالات",
+    "owner_statements": "كشوف حساب الملاك",
+    "ticket_report": "تقديم بلاغ صيانة",
+    "ticket_management": "إدارة بلاغات الصيانة",
+    "job_updates": "تحديثات العمل",
+    "notes": "الملاحظات",
+    "tasks_reminders": "المهام والتذكيرات",
+    "audit_read": "قراءة سجل التدقيق",
+    "export": "تصدير",
+    "co_worker": "المساعد المشارك"
+  },
+  "permissionApprovalStep": {
+    "submit": "إرسال للاعتماد",
+    "cost_within_owner_threshold": "تكلفة ضمن حد المالك",
+    "gated_approval": "موافقة المالك المطلوبة",
+    "reapproval": "إعادة الاعتماد",
+    "skip_confirmation": "تأكيد تخطي التوثيق",
+    "cost_above_owner_threshold": "تكلفة تتجاوز حد المالك",
+    "acceptance": "قبول العقد",
+    "completion_confirmation": "تأكيد الإنجاز"
+  },
+  "safetyCriticalFlag": {
+    "gas_smell": "رائحة غاز",
+    "electrical_sparking": "شرر كهربائي",
+    "water_into_electrics": "تسرب ماء إلى التوصيلات الكهربائية",
+    "lift_entrapment": "احتجاز في المصعد",
+    "other_safety_hazard": "خطر آخر على السلامة"
+  },
+  "uploadContentType": {
+    "application/pdf": "مستند PDF",
+    "image/jpeg": "صورة فوتوغرافية مضغوطة",
+    "image/png": "صورة نقطية",
+    "audio/mp4": "تسجيل صوتي مضغوط",
+    "audio/mpeg": "ملف صوتي مضغوط",
+    "audio/wav": "ملف صوتي موجي",
+    "video/mp4": "مقطع فيديو"
+  },
+  "coreErrorCode": {
+    "INVALID_TRANSITION": "هذا الإجراء غير متاح في الحالة الحالية.",
+    "VERSION_CONFLICT": "تغير السجل، حدّثه قبل المتابعة.",
+    "REASON_REQUIRED": "أدخل السبب للمتابعة.",
+    "INVALID_INPUT": "راجع البيانات المدخلة وحاول مجدداً."
+  },
+  "paymentsErrorCode": {
+    "EARLY_DEPOSIT": "أودع الشيك في تاريخه أو بعده.",
+    "REVERSAL_REQUIRED": "اعكس الدفعة المحصلة قبل تسجيل ارتجاع الشيك.",
+    "PAYMENT_REVERSED": "تم عكس هذه الدفعة.",
+    "ALLOCATION_EXCEEDS_PAYMENT": "يتجاوز التخصيص الرصيد المتاح من الدفعة.",
+    "ALLOCATION_EXCEEDS_BALANCE": "يتجاوز التخصيص الرصيد المستحق.",
+    "PAYMENT_ALREADY_REVERSED": "سبق عكس هذه الدفعة.",
+    "PAYMENT_HAS_REFUNDS": "توجد مبالغ مردودة من هذه الدفعة تمنع عكسها.",
+    "REFUND_EXCEEDS_CREDIT": "يتجاوز المبلغ المطلوب رده الرصيد المتاح.",
+    "RECEIPT_ALREADY_ISSUED": "يوجد إيصال لهذه الدفعة بالفعل.",
+    "DUPLICATE_EXTERNAL_RECEIPT": "سبق تسجيل هذا الإيصال الخارجي.",
+    "DEDUCTIONS_EXCEED_DEPOSIT": "تتجاوز الخصومات مبلغ التأمين المحتفظ به.",
+    "STATEMENT_NOT_BALANCED": "طابق أرصدة كشف الحساب قبل إصداره.",
+    "FORBIDDEN": "لا يمكنك تسجيل المعاملات المالية لهذه الشركة."
+  },
+  "contractErrorCode": {
+    "INVALID_TRANSITION": "هذا الإجراء غير متاح في الحالة الحالية.",
+    "VERSION_CONFLICT": "تغير السجل، حدّثه قبل المتابعة.",
+    "REASON_REQUIRED": "أدخل السبب للمتابعة.",
+    "INVALID_INPUT": "راجع البيانات المدخلة وحاول مجدداً.",
+    "UNIT_BLOCKED": "ألغِ إيقاف الوحدة قبل إنشاء عقد.",
+    "TENANT_REQUIRED": "أضف مستأجراً قبل المتابعة.",
+    "TENANT_DOCUMENTS_REQUIRED": "اعتمد مستندات المستأجر المطلوبة أولاً.",
+    "OWNER_ACCOUNT_REQUIRED": "يلزم وجود حساب نشط للمالك.",
+    "OVERLAPPING_CONTRACT": "يوجد عقد آخر يحجز هذه الوحدة خلال الفترة المحددة.",
+    "STALE_SUBJECT_HASH": "تغير المحتوى، راجع النسخة الأحدث.",
+    "NOT_NAMED_PARTY": "يمكن للطرف المحدد فقط تنفيذ هذا الإجراء.",
+    "NOT_OWN_SESSION": "استخدم حسابك الشخصي المسجل دخوله لهذا الإجراء.",
+    "APPROVER_NOT_DISTINCT": "يجب أن تصدر كل موافقة مطلوبة من شخص مختلف.",
+    "APPROVALS_REQUIRED": "احصل على الموافقات المطلوبة قبل المتابعة.",
+    "SUCCESSOR_EXISTS": "توجد مراجعة لهذا العقد بالفعل.",
+    "RETROACTIVE_EVIDENCE_MISSING": "استكمل الأدلة والتأكيدات اللازمة للتسجيل بأثر رجعي.",
+    "IDENTITY_MISMATCH": "لا تتطابق بيانات الهوية في المستند مع السجلات المرتبطة.",
+    "END_EVIDENCE_MISSING": "أرفق مستند إنهاء العقد أو محضر تسليم الوحدة.",
+    "SCHEDULE_TOTAL_MISMATCH": "صحح إجمالي الأقساط ومبالغ ضريبة القيمة المضافة."
+  },
+  "idempotencyErrorCode": {
+    "IDEMPOTENCY_KEY_REUSED": "استخدم مفتاح طلب جديداً لهذا الإجراء المعدل."
+  },
+  "permissionsErrorCode": {
+    "NOT_FOUND": "لم يتم العثور على السجل المطلوب.",
+    "NOT_PERMITTED": "ليست لديك صلاحية لتنفيذ هذا الإجراء.",
+    "REQUEST_ONLY": "قدم طلباً لإجراء هذا التغيير."
+  },
+  "unitsErrorCode": {
+    "INVALID_TRANSITION": "هذا الإجراء غير متاح في الحالة الحالية.",
+    "VERSION_CONFLICT": "تغير السجل، حدّثه قبل المتابعة.",
+    "REASON_REQUIRED": "أدخل السبب للمتابعة.",
+    "INVALID_INPUT": "راجع البيانات المدخلة وحاول مجدداً.",
+    "UNIT_BLOCKED": "ألغِ إيقاف الوحدة قبل إنشاء عقد."
+  },
+  "tawtheeqErrorCode": {
+    "INVALID_TRANSITION": "هذا الإجراء غير متاح في الحالة الحالية.",
+    "VERSION_CONFLICT": "تغير السجل، حدّثه قبل المتابعة.",
+    "REASON_REQUIRED": "أدخل السبب للمتابعة.",
+    "INVALID_INPUT": "راجع البيانات المدخلة وحاول مجدداً.",
+    "OWNER_CONFIRMATION_REQUIRED": "احصل على تأكيد المالك قبل تخطي التوثيق.",
+    "REGISTRATION_EVIDENCE_MISSING": "استكمل أدلة التوثيق المطلوبة.",
+    "DISCREPANCIES_UNRESOLVED": "عالج جميع اختلافات المستند قبل المتابعة.",
+    "OWNER_REAPPROVAL_REQUIRED": "احصل على موافقة المالك على المحتوى المعدل.",
+    "MARK_EQUIVALENT_NOT_ALLOWED": "لا يمكن اعتبار هذه القيم متكافئة.",
+    "IDENTITY_MISMATCH": "لا تتطابق بيانات الهوية في المستند مع السجلات المرتبطة.",
+    "NOT_NAMED_PARTY": "يمكن للطرف المحدد فقط تنفيذ هذا الإجراء.",
+    "NOT_OWN_SESSION": "استخدم حسابك الشخصي المسجل دخوله لهذا الإجراء.",
+    "STALE_SUBJECT_HASH": "تغير المحتوى، راجع النسخة الأحدث.",
+    "APPROVER_NOT_DISTINCT": "يجب أن تصدر كل موافقة مطلوبة من شخص مختلف."
+  },
+  "lifecyclesErrorCode": {
+    "ACTIVE_MEMBERSHIP_EXISTS": "لدى هذا الشخص عضوية موظف نشطة بالفعل.",
+    "INVITATION_EXPIRED": "انتهت صلاحية هذه الدعوة، اطلب دعوة جديدة.",
+    "INVITATION_EMAIL_MISMATCH": "استخدم البريد المدعو أو احصل على تأكيد مدير العقارات.",
+    "NOT_DRAFTED_FOR_ACTOR": "يمكن للشخص المحدد في هذه المسودة فقط تأكيدها.",
+    "BASE_VERSION_CHANGED": "تغير السجل الأصلي، أعد مسودة جديدة.",
+    "PERSON_REQUIRED": "يجب أن يؤكد شخص هذا الإجراء."
+  },
+  "lifecycleRefusalCode": {
+    "INVALID_TRANSITION": "هذا الإجراء غير متاح في الحالة الحالية.",
+    "VERSION_CONFLICT": "تغير السجل، حدّثه قبل المتابعة.",
+    "REASON_REQUIRED": "أدخل السبب للمتابعة.",
+    "INVALID_INPUT": "راجع البيانات المدخلة وحاول مجدداً.",
+    "ACTIVE_MEMBERSHIP_EXISTS": "لدى هذا الشخص عضوية موظف نشطة بالفعل.",
+    "INVITATION_EXPIRED": "انتهت صلاحية هذه الدعوة، اطلب دعوة جديدة.",
+    "INVITATION_EMAIL_MISMATCH": "استخدم البريد المدعو أو احصل على تأكيد مدير العقارات.",
+    "NOT_DRAFTED_FOR_ACTOR": "يمكن للشخص المحدد في هذه المسودة فقط تأكيدها.",
+    "BASE_VERSION_CHANGED": "تغير السجل الأصلي، أعد مسودة جديدة.",
+    "PERSON_REQUIRED": "يجب أن يؤكد شخص هذا الإجراء."
+  },
+  "maintenanceErrorCode": {
+    "INVALID_TRANSITION": "هذا الإجراء غير متاح في الحالة الحالية.",
+    "VERSION_CONFLICT": "تغير السجل، حدّثه قبل المتابعة.",
+    "REASON_REQUIRED": "أدخل السبب للمتابعة.",
+    "INVALID_INPUT": "راجع البيانات المدخلة وحاول مجدداً.",
+    "COST_APPROVAL_REQUIRED": "احصل على اعتماد التكلفة المطلوب قبل الجدولة.",
+    "RATING_EXISTS": "سبق تقييم هذا البلاغ.",
+    "NOT_AUTHORISED": "لست مخولاً بتنفيذ هذا الإجراء.",
+    "NOT_OWN_SESSION": "استخدم حسابك الشخصي المسجل دخوله لهذا الإجراء.",
+    "AFTER_PHOTO_REQUIRED": "أرفق صورة بعد الإنجاز قبل المتابعة.",
+    "COST_ALLOCATION_REQUIRED": "وزع التكلفة قبل إغلاق البلاغ.",
+    "CONFIRMATION_REQUIRED": "انتظر التأكيد أو انتهاء مهلة التأكيد."
+  },
+  "documentsErrorCode": {
+    "INVALID_TRANSITION": "هذا الإجراء غير متاح في الحالة الحالية.",
+    "VERSION_CONFLICT": "تغير السجل، حدّثه قبل المتابعة.",
+    "REASON_REQUIRED": "أدخل السبب للمتابعة.",
+    "INVALID_INPUT": "راجع البيانات المدخلة وحاول مجدداً.",
+    "SCAN_NOT_CLEAN": "يجب أن يجتاز المستند الفحص الأمني أولاً.",
+    "NOT_A_PERSON_COMMAND": "يمكن لشخص فقط تغيير مراجعة المستند.",
+    "NOT_A_PIPELINE_COMMAND": "يمكن لخدمة المعالجة فقط تسجيل هذا التحديث.",
+    "UNSUPPORTED_TYPE": "اختر نوع ملف مدعوماً.",
+    "UPLOAD_TOO_LARGE": "اختر ملفاً ضمن الحد المسموح لحجم الرفع.",
+    "CONTENT_TYPE_MISMATCH": "لا يتطابق محتوى الملف مع نوعه المعلن.",
+    "TOO_MANY_PAGES": "استخدم مستنداً لا يتجاوز عشرين صفحة."
+  },
+  "errors": {
+    "INVALID_TRANSITION": "هذا الإجراء غير متاح في الحالة الحالية.",
+    "VERSION_CONFLICT": "تغير السجل، حدّثه قبل المتابعة.",
+    "REASON_REQUIRED": "أدخل السبب للمتابعة.",
+    "INVALID_INPUT": "راجع البيانات المدخلة وحاول مجدداً.",
+    "EARLY_DEPOSIT": "أودع الشيك في تاريخه أو بعده.",
+    "REVERSAL_REQUIRED": "اعكس الدفعة المحصلة قبل تسجيل ارتجاع الشيك.",
+    "PAYMENT_REVERSED": "تم عكس هذه الدفعة.",
+    "ALLOCATION_EXCEEDS_PAYMENT": "يتجاوز التخصيص الرصيد المتاح من الدفعة.",
+    "ALLOCATION_EXCEEDS_BALANCE": "يتجاوز التخصيص الرصيد المستحق.",
+    "PAYMENT_ALREADY_REVERSED": "سبق عكس هذه الدفعة.",
+    "PAYMENT_HAS_REFUNDS": "توجد مبالغ مردودة من هذه الدفعة تمنع عكسها.",
+    "REFUND_EXCEEDS_CREDIT": "يتجاوز المبلغ المطلوب رده الرصيد المتاح.",
+    "RECEIPT_ALREADY_ISSUED": "يوجد إيصال لهذه الدفعة بالفعل.",
+    "DUPLICATE_EXTERNAL_RECEIPT": "سبق تسجيل هذا الإيصال الخارجي.",
+    "DEDUCTIONS_EXCEED_DEPOSIT": "تتجاوز الخصومات مبلغ التأمين المحتفظ به.",
+    "STATEMENT_NOT_BALANCED": "طابق أرصدة كشف الحساب قبل إصداره.",
+    "FORBIDDEN": "لا يمكنك تسجيل المعاملات المالية لهذه الشركة.",
+    "UNIT_BLOCKED": "ألغِ إيقاف الوحدة قبل إنشاء عقد.",
+    "TENANT_REQUIRED": "أضف مستأجراً قبل المتابعة.",
+    "TENANT_DOCUMENTS_REQUIRED": "اعتمد مستندات المستأجر المطلوبة أولاً.",
+    "OWNER_ACCOUNT_REQUIRED": "يلزم وجود حساب نشط للمالك.",
+    "OVERLAPPING_CONTRACT": "يوجد عقد آخر يحجز هذه الوحدة خلال الفترة المحددة.",
+    "STALE_SUBJECT_HASH": "تغير المحتوى، راجع النسخة الأحدث.",
+    "NOT_NAMED_PARTY": "يمكن للطرف المحدد فقط تنفيذ هذا الإجراء.",
+    "NOT_OWN_SESSION": "استخدم حسابك الشخصي المسجل دخوله لهذا الإجراء.",
+    "APPROVER_NOT_DISTINCT": "يجب أن تصدر كل موافقة مطلوبة من شخص مختلف.",
+    "APPROVALS_REQUIRED": "احصل على الموافقات المطلوبة قبل المتابعة.",
+    "SUCCESSOR_EXISTS": "توجد مراجعة لهذا العقد بالفعل.",
+    "RETROACTIVE_EVIDENCE_MISSING": "استكمل الأدلة والتأكيدات اللازمة للتسجيل بأثر رجعي.",
+    "IDENTITY_MISMATCH": "لا تتطابق بيانات الهوية في المستند مع السجلات المرتبطة.",
+    "END_EVIDENCE_MISSING": "أرفق مستند إنهاء العقد أو محضر تسليم الوحدة.",
+    "SCHEDULE_TOTAL_MISMATCH": "صحح إجمالي الأقساط ومبالغ ضريبة القيمة المضافة.",
+    "IDEMPOTENCY_KEY_REUSED": "استخدم مفتاح طلب جديداً لهذا الإجراء المعدل.",
+    "NOT_FOUND": "لم يتم العثور على السجل المطلوب.",
+    "NOT_PERMITTED": "ليست لديك صلاحية لتنفيذ هذا الإجراء.",
+    "REQUEST_ONLY": "قدم طلباً لإجراء هذا التغيير.",
+    "OWNER_CONFIRMATION_REQUIRED": "احصل على تأكيد المالك قبل تخطي التوثيق.",
+    "REGISTRATION_EVIDENCE_MISSING": "استكمل أدلة التوثيق المطلوبة.",
+    "DISCREPANCIES_UNRESOLVED": "عالج جميع اختلافات المستند قبل المتابعة.",
+    "OWNER_REAPPROVAL_REQUIRED": "احصل على موافقة المالك على المحتوى المعدل.",
+    "MARK_EQUIVALENT_NOT_ALLOWED": "لا يمكن اعتبار هذه القيم متكافئة.",
+    "ACTIVE_MEMBERSHIP_EXISTS": "لدى هذا الشخص عضوية موظف نشطة بالفعل.",
+    "INVITATION_EXPIRED": "انتهت صلاحية هذه الدعوة، اطلب دعوة جديدة.",
+    "INVITATION_EMAIL_MISMATCH": "استخدم البريد المدعو أو احصل على تأكيد مدير العقارات.",
+    "NOT_DRAFTED_FOR_ACTOR": "يمكن للشخص المحدد في هذه المسودة فقط تأكيدها.",
+    "BASE_VERSION_CHANGED": "تغير السجل الأصلي، أعد مسودة جديدة.",
+    "PERSON_REQUIRED": "يجب أن يؤكد شخص هذا الإجراء.",
+    "COST_APPROVAL_REQUIRED": "احصل على اعتماد التكلفة المطلوب قبل الجدولة.",
+    "RATING_EXISTS": "سبق تقييم هذا البلاغ.",
+    "NOT_AUTHORISED": "لست مخولاً بتنفيذ هذا الإجراء.",
+    "AFTER_PHOTO_REQUIRED": "أرفق صورة بعد الإنجاز قبل المتابعة.",
+    "COST_ALLOCATION_REQUIRED": "وزع التكلفة قبل إغلاق البلاغ.",
+    "CONFIRMATION_REQUIRED": "انتظر التأكيد أو انتهاء مهلة التأكيد.",
+    "SCAN_NOT_CLEAN": "يجب أن يجتاز المستند الفحص الأمني أولاً.",
+    "NOT_A_PERSON_COMMAND": "يمكن لشخص فقط تغيير مراجعة المستند.",
+    "NOT_A_PIPELINE_COMMAND": "يمكن لخدمة المعالجة فقط تسجيل هذا التحديث.",
+    "UNSUPPORTED_TYPE": "اختر نوع ملف مدعوماً.",
+    "UPLOAD_TOO_LARGE": "اختر ملفاً ضمن الحد المسموح لحجم الرفع.",
+    "CONTENT_TYPE_MISMATCH": "لا يتطابق محتوى الملف مع نوعه المعلن.",
+    "TOO_MANY_PAGES": "استخدم مستنداً لا يتجاوز عشرين صفحة."
+  }
+}

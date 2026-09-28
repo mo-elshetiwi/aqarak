@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "id": "0b0683bb-f8d5-4195-9ed7-ef244f78cfdd",
+      "version": 1,
+      "fullName": {
+        "en": "Synthetic Owner J2",
+        "ar": "مالك تجريبي"
+      },
+      "preferredLanguage": "ar",
+      "selfManaged": false,
+      "linked": false,
+      "properties": [
+        {
+          "id": "88009c5f-0178-4e3c-aeee-158c06afd4eb",
+          "name": {
+            "en": "Synthetic Residence J2",
+            "ar": "مبنى تجريبي"
+          }
+        }
+      ],
+      "ownerGate": {
+        "value": false,
+        "source": "mandate",
+        "recorded": true
+      },
+      "managementAgreement": null,
+      "tawtheeqAuthorisation": null,
+      "onboarding": "incomplete"
+    }
+  ],
+  "nextCursor": null
+}

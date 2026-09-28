@@ -1,0 +1,18 @@
+{
+  "apiUrl": "https://oe41owjybg.execute-api.us-east-1.amazonaws.com/dev/",
+  "appSecretArn": "arn:aws:secretsmanager:us-east-1:000000000000:secret:AppSecretFAB5164C-0tqX8eKMLmg2-y0xRaV",
+  "auditAnchorsBucketName": "dev-storagestack-auditanchorsbucket77db56d7-xpvnkayaynjw",
+  "clusterArn": "arn:aws:rds:us-east-1:000000000000:cluster:dev-datastack-clustereb0386a7-5oucapskxxpt",
+  "databaseName": "aqarak",
+  "documentsBucketName": "dev-storagestack-documentsbucket9ec9deb9-mddfkybcyvgx",
+  "emailConfigurationSetName": "ConfigurationSet3DD38186-A26c1va44ofj",
+  "issuedBucketName": "dev-storagestack-issuedbucket1aebdd22-yvpdr3rnllyg",
+  "mobileClientId": "4im2jt7r367r64tuc1hcu2u67j",
+  "pipelineSecretArn": "arn:aws:secretsmanager:us-east-1:000000000000:secret:PipelineSecretFF3B7163-nyMKzmOB4W49-OFdMyK",
+  "providerKeysSecretArn": "arn:aws:secretsmanager:us-east-1:000000000000:secret:ProviderKeys2563E0B5-R8EVb5E24dgT-4X9OXz",
+  "region": "us-east-1",
+  "schedulerSecretArn": "arn:aws:secretsmanager:us-east-1:000000000000:secret:SchedulerSecret5AAFCB2D-k4qUZFspCZJd-SK8gBE",
+  "stage": "dev",
+  "userPoolId": "us-east-1_yhMihEH3U",
+  "webClientId": "77sga0227iqs5fn41nr3hi32mt"
+}

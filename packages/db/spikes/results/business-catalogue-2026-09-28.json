@@ -1,0 +1,383 @@
+{
+  "ledger": [
+    {
+      "name": "0001_foundation.sql",
+      "sha256": "bd200424caca596fe5e1df1676add4e299d891d8258bee59dc8d256669d32072",
+      "appliedAt": "2026-09-28T02:38:22.786036+00:00"
+    },
+    {
+      "name": "0002_core_and_documents.sql",
+      "sha256": "efae2dd58a4cd24440136e8ef5384f5d4d5f0f6f176f9fd6fdb2b3d3bbff2b5e",
+      "appliedAt": "2026-09-28T02:38:34.318145+00:00"
+    },
+    {
+      "name": "0003_linear_canonical_text.sql",
+      "sha256": "b87747def4c8dd4fb84e840051e067c81730ab22b00dce583038e868e17b9e88",
+      "appliedAt": "2026-09-28T02:55:28.770722+00:00"
+    },
+    {
+      "name": "0004_align_audit_event_content.sql",
+      "sha256": "971cf1ab5c95ed3f9a371339fdc176f05b7c8d4da9078cd8b136a9bbb017f802",
+      "appliedAt": "2026-09-28T03:04:51.934125+00:00"
+    },
+    {
+      "name": "0005_parties_and_estate.sql",
+      "sha256": "79bb76f0a697a714cbdd2850942cebfb1bc63aa9ec5e98590a27ba224e4fff3f",
+      "appliedAt": "2026-09-28T03:17:51.034277+00:00"
+    },
+    {
+      "name": "0006_contracts.sql",
+      "sha256": "fe801155fb86358c6b13fccf63240b104cc8fb862291d8f6f234f0919395c81b",
+      "appliedAt": "2026-09-28T03:23:01.261076+00:00"
+    },
+    {
+      "name": "0007_operations.sql",
+      "sha256": "d201bd24cc791336a8aa41bf20f1eb30b76b141a86aaedeb9231d70a8874912c",
+      "appliedAt": "2026-09-28T03:28:08.221201+00:00"
+    },
+    {
+      "name": "0008_money.sql",
+      "sha256": "edbcc6d51eba65e1081d7e73947560f7ace7e1ebcf28143dd4eeadfb98bb568e",
+      "appliedAt": "2026-09-28T03:35:26.489152+00:00"
+    },
+    {
+      "name": "0009_work_maintenance_and_models.sql",
+      "sha256": "9129e45e449708263fc43344d462642779d2059f97b66c754dc335e76dccc5d8",
+      "appliedAt": "2026-09-28T03:41:26.295906+00:00"
+    }
+  ],
+  "tables": [
+    {
+      "rls": true,
+      "name": "ai.drafted_action",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "ai.extraction",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "ai.model_call",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "estate.mandate_property",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "estate.owner_mandate",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "estate.ownership",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "estate.property",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "estate.unit",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "lease.approval",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "lease.clause",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "lease.contract",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "lease.contract_template",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "lease.contract_unit",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "lease.contract_version",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "lease.contract_version_clause",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "lease.discrepancy",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "lease.handover",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "lease.occupant",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "lease.tawtheeq_record",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "maint.dispatch",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "maint.quote",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "maint.ticket",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.allocation",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.charge",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.cheque",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.credit_note",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.deposit",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.instalment",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.invoice",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.invoice_line",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.owner_payout",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.owner_statement",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.payment",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.payment_reversal",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.receipt",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "money.refund",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "ops.idempotency_key",
+      "forcedRls": true,
+      "snapshots": false,
+      "versioned": false
+    },
+    {
+      "rls": true,
+      "name": "ops.number_series",
+      "forcedRls": true,
+      "snapshots": false,
+      "versioned": false
+    },
+    {
+      "rls": true,
+      "name": "ops.outbox",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "ops.processed_event",
+      "forcedRls": true,
+      "snapshots": false,
+      "versioned": false
+    },
+    {
+      "rls": true,
+      "name": "party.owner",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "party.tenant",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "party.vendor",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "work.note",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "work.notification",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "work.reminder",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    },
+    {
+      "rls": true,
+      "name": "work.task",
+      "forcedRls": true,
+      "snapshots": true,
+      "versioned": true
+    }
+  ],
+  "unindexedForeignKeys": [],
+  "observedAt": "2026-09-28T03:45:43.663508+00:00",
+  "passed": true
+}

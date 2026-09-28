@@ -1,0 +1,11 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Aqarak",
+    "NSCameraUsageDescription": "Aqarak uses the camera when you photograph a document or a fault.",
+    "NSMicrophoneUsageDescription": "Aqarak uses the microphone when you record a voice note or a fault with audio.",
+    "NSPhotoLibraryUsageDescription": "Aqarak accesses photos when you attach a document or a fault image."
+  },
+  "android": {
+    "app_name": "Aqarak"
+  }
+}

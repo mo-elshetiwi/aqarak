@@ -1,0 +1,20 @@
+{
+  "extends": ["expo/tsconfig.base", "@aqarak/config/tsconfig/base.json"],
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "jsx": "react-jsx",
+    "lib": ["es2024"],
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "*.config.ts",
+    "nativewind-env.d.ts",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
+}

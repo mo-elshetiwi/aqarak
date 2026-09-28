@@ -1,0 +1,27 @@
+{
+  "extends": "@aqarak/config/tsconfig/base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "lib": ["dom", "dom.iterable", "es2024"],
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "*.config.ts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "e2e/**/*.ts"
+  ]
+}

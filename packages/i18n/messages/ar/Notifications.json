@@ -1,0 +1,17 @@
+{
+  "title": "الإشعارات",
+  "email": {
+    "contract_approval_requested": {
+      "subject": "عقد بانتظار الموافقة",
+      "body": "{companyName}: العقد {contractNo} بانتظار موافقتك. يرجى تسجيل الدخول لمراجعة العقد.\n\n{link}"
+    },
+    "contract_cancelled": {
+      "subject": "تم إلغاء العقد",
+      "body": "{companyName}: تم إلغاء العقد {contractNo}. يرجى تسجيل الدخول للاطلاع على العقد.\n\n{link}"
+    },
+    "contract_concluded": {
+      "subject": "تم إبرام العقد",
+      "body": "{companyName}: تم إبرام العقد {contractNo}. يرجى تسجيل الدخول للاطلاع على العقد.\n\n{link}"
+    }
+  }
+}

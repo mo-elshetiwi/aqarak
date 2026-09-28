@@ -1,0 +1,116 @@
+{
+  "entities": {
+    "unit": "الوحدة",
+    "contract": "العقد",
+    "tawtheeq_record": "سجل توثيق",
+    "instalment": "القسط",
+    "cheque": "الشيك",
+    "invoice": "الفاتورة",
+    "receipt": "الإيصال",
+    "ticket": "طلب الصيانة",
+    "document_version": "نسخة المستند",
+    "drafted_action": "الإجراء المقترح",
+    "approval": "الموافقة",
+    "membership": "العضوية",
+    "invitation": "الدعوة"
+  },
+  "unit": {
+    "vacant": "شاغرة",
+    "listed": "معروضة",
+    "reserved": "محجوزة",
+    "occupied": "مؤجرة",
+    "notice_given": "تم الإخطار بالإخلاء",
+    "under_maintenance": "تحت الصيانة",
+    "blocked": "موقوفة"
+  },
+  "contract": {
+    "draft": "مسودة",
+    "awaiting_owner_approval": "بانتظار موافقة المالك",
+    "awaiting_tenant_acceptance": "بانتظار قبول المستأجر",
+    "concluded": "مبرم",
+    "ended": "منتهي",
+    "cancelled": "ملغى"
+  },
+  "tawtheeq_record": {
+    "awaiting_registration": "بانتظار التوثيق",
+    "submitted_on_portal": "مقدم في البوابة",
+    "under_review": "قيد المطابقة",
+    "discrepancies_open": "اختلافات قيد المعالجة",
+    "awaiting_owner_reapproval": "بانتظار إعادة موافقة المالك",
+    "registered": "موثق",
+    "skipped": "بدون توثيق",
+    "closed": "مغلق في البوابة"
+  },
+  "instalment": {
+    "open": "غير مسدد",
+    "partly_paid": "مسدد جزئياً",
+    "paid": "مسدد",
+    "waived": "معفى",
+    "cancelled": "ملغى"
+  },
+  "cheque": {
+    "pending": "بانتظار الاستلام",
+    "received": "مستلم",
+    "deposited": "مودع",
+    "cleared": "محصل",
+    "partly_paid": "مدفوع جزئياً",
+    "bounced": "مرتجع",
+    "replaced": "مستبدل",
+    "returned_to_drawer": "معاد للساحب"
+  },
+  "invoice": {
+    "draft": "مسودة",
+    "issued": "صادرة",
+    "partly_paid": "مسددة جزئياً",
+    "paid": "مسددة",
+    "credited": "ملغاة بإشعار دائن"
+  },
+  "receipt": {
+    "issued": "صادر",
+    "voided": "ملغى"
+  },
+  "ticket": {
+    "reported": "تم الإبلاغ",
+    "triaged": "تم الفرز",
+    "awaiting_quote": "بانتظار عرض السعر",
+    "awaiting_cost_approval": "بانتظار اعتماد التكلفة",
+    "scheduled": "مجدول",
+    "in_progress": "قيد التنفيذ",
+    "on_hold": "معلق",
+    "work_completed": "تم الإنجاز",
+    "closed": "مغلق",
+    "cancelled": "ملغى"
+  },
+  "document_version": {
+    "pending_review": "بانتظار المراجعة",
+    "accepted": "معتمد",
+    "rejected": "مرفوض",
+    "superseded": "مستبدل"
+  },
+  "drafted_action": {
+    "drafting": "قيد الإعداد",
+    "ready": "بانتظار التأكيد",
+    "committed": "منفذ",
+    "rejected": "مرفوض",
+    "expired": "منتهي الصلاحية",
+    "failed": "فشل التنفيذ"
+  },
+  "approval": {
+    "requested": "مطلوبة",
+    "approved": "موافق عليها",
+    "changes_requested": "مطلوب تعديل",
+    "voided": "ملغاة"
+  },
+  "membership": {
+    "invited": "مدعو",
+    "active": "نشط",
+    "suspended": "موقوف",
+    "removed": "منتهي"
+  },
+  "invitation": {
+    "pending": "معلقة",
+    "accepted": "مقبولة",
+    "expired": "منتهية",
+    "revoked": "ملغاة"
+  }
+}

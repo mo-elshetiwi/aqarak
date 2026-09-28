@@ -1,0 +1,11 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "عقارك",
+    "NSCameraUsageDescription": "يستخدم عقارك الكاميرا عندما تصوّر مستندًا أو عطلًا.",
+    "NSMicrophoneUsageDescription": "يستخدم عقارك الميكروفون عندما تسجّل ملاحظة صوتية أو عطلًا مع الصوت.",
+    "NSPhotoLibraryUsageDescription": "يصل عقارك إلى الصور عندما ترفق صورة مستند أو عطل."
+  },
+  "android": {
+    "app_name": "عقارك"
+  }
+}

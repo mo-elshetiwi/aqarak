@@ -1,0 +1,94 @@
+{
+  "runId": "held-out-2026-09-28",
+  "verifiedAt": "2026-09-28T05:31:05.728811+00:00",
+  "gitSha": "b2755c5d19342c3e5d7feb312a99675206ae2b8b",
+  "baseGitSha": "afcb7ae4e85469ba0a8fab6323112baad5ceec15",
+  "registrySha256": "074aa98e6ed3f5014f42ce66104cd7c7b88bfd7a5aaf77bc588583ab2a575200",
+  "scorerVersion": "1.2.0",
+  "statistics": {
+    "confidence": 0.95,
+    "resamples": 2000,
+    "seed": 20260928,
+    "fieldAccuracy": "document-cluster bootstrap",
+    "proportions": "committed Wilson intervals",
+    "wer": "clip-cluster bootstrap",
+    "differences": "paired bootstrap over shared inputs only"
+  },
+  "classes": {
+    "mc1_document_extraction": {
+      "candidate": "gpt-6-sol",
+      "items": 90,
+      "split": "held_out",
+      "splitSha256": "7b56033c93ae80e36da97d5e827661f195326ee6b496e5981fc669388696bf99",
+      "datasetManifestSha256": "5b8552c909425efb1542507a0881a798794a98412231241c680488c314ce9e96",
+      "splitFileSha256": "0f7dc1c6e27692d1129c99093a54984ebfd80510456f27fcf86c8d5d6cd7030d",
+      "capUsd": 3,
+      "concurrency": 4
+    },
+    "mc3_speech_to_text": {
+      "candidate": "gpt-transcribe",
+      "items": 400,
+      "split": "held_out",
+      "splitSha256": "66f3c64427d5165553413db9cca39d319bd92c6033e76c66c89e56c31a4d850f",
+      "datasetManifestSha256": "7941a30b61d567d90ea84eb4624ba00a5e74d7183a391a9c79518278b832fbaf",
+      "splitFileSha256": "7941a30b61d567d90ea84eb4624ba00a5e74d7183a391a9c79518278b832fbaf",
+      "sources": [
+        {
+          "name": "mixat",
+          "manifest_sha256": "55fe0d05b4876a6f5e68ca0d8866f335b1a39d20e6073033f45fd57f74f69de6"
+        },
+        {
+          "name": "fleurs",
+          "manifest_sha256": "785b84172e9bac67c191c8c9fdc702a229ad458a34c8a10c3776c66648b05ec1"
+        }
+      ],
+      "capUsd": 1,
+      "concurrency": 4,
+      "referenceFields": {
+        "mixat": "transcript",
+        "fleurs": "transcription"
+      },
+      "fleursSampleRateHz": 16000
+    }
+  },
+  "protectedFilesSha256": {
+    "services/api/src/models/adapters/amazon-transcribe-streaming.ts": "18c3ba114a3312d2aeb7b0c7846465765bc9c9179518f9d6859bde13898e5de6",
+    "services/api/src/models/adapters/http-transport.ts": "7b6cd02075c1f3ab32d307371193a0cefedb97608e69f45233d86b3c7dc252e4",
+    "services/api/src/models/adapters/openai-responses.ts": "65979e6b51b7d6620f0d3c08ce116bef4b6a3c20343acf36c91458758b382016",
+    "services/api/src/models/adapters/openai-transcription.ts": "dfa80549700cb5a465bbd193580ca61c1d1bdc8971408cde8e014ea4b6ef38d1",
+    "services/api/src/models/budget.ts": "2d6a6a80c12ad31404b4293190f548f7c2b6539fd6d724082ceaf38cf7604cda",
+    "services/api/src/models/contracts.ts": "ccb6cfd21c65f185a6c47a718ea95b078f52090d84828a769e3e7ab573e9366f",
+    "services/api/src/models/cost.ts": "36fd4c2a56e64afde01f8c323432036fcbc429222cd1b25bad6f4ae62906dd6f",
+    "services/api/src/models/document-extraction.ts": "b36e647bfb927d6f08b00040d9d8a8eaf09d2ebc171a0f21f726303feacfbfcd",
+    "services/api/src/models/errors.ts": "b01e31471547b6228015ebb1f3834e9065c9e8ec2bacc2e2d5e1dff605b0628f",
+    "services/api/src/models/gateway.ts": "2aeae1c037a7ffaba77a6ee14c9ebc99e5373fd398abc8c57a0eee671aa96996",
+    "services/api/src/models/hashing.ts": "6152ec61e0842972603c68f90011a78a6569ce0610c382ecf6a48db17c110b4c",
+    "services/api/src/models/index.ts": "2f8e2c608f28c663f1c9e7eee60a654cf366bcee643ee1e1adf655bb7571f73d",
+    "services/api/src/models/json-schema.ts": "e21f9d4a874d57aa54fc21b02e927508d2a7fe3732bbe04c07e12271b4c16a66",
+    "services/api/src/models/model-registry.json": "d5caacb48ce2b6472ef1f1e1750632faff65b2db2423a7e7cd713d0425a2bfa9",
+    "services/api/src/models/registry.ts": "5b79ed75bc637d9065ddec34bbe0ea313fce6c662a873009bf55cdce3827828b",
+    "services/api/src/models/test-fixtures.ts": "67b97f6e57adfdda9dcd8619f1e8d4a9b452c79354db19883ada3fafa30f28f1",
+    "services/api/src/models/wav.ts": "a789b350af12a7565f165221bbdb29361d55d8e1e6888b81b4b55cf5d95cb495",
+    "evaluation/src/scoring/document-scoring.ts": "841ff0fb178aea831738067f305581b0bafbf9a29bb9402a707d5d2bb1c03319",
+    "evaluation/src/scoring/edit-distance.ts": "f821d93daecfca30ad8f08ff42f723d56498ccbabb89d569f8c9f947eba536cf",
+    "evaluation/src/scoring/field-values.ts": "0fe6ee4e5ac3101fe88a87702a361c8ca2e596c5a2ae849cfeee9b7d91e8765e",
+    "evaluation/src/scoring/index.ts": "e5d29741206be5344a2bbf87e576319885a2004dcb64ace0e5a1379deda28997",
+    "evaluation/src/scoring/render.ts": "d7f8490c8bd7d903f2e60b77bcc887cacefc55b7053c21a42c349f00b3fd17d8",
+    "evaluation/src/scoring/screening-rules.ts": "890c05b691a23d7589fabe9ae86f80ed208d61f97a393154e6eaec2fdc718121",
+    "evaluation/src/scoring/speech-scoring.ts": "06d114f21daa0a6d8b89bcdea733b6e7cfd1cb3eb7b3eaba4f47c0a1ce294470",
+    "evaluation/src/scoring/statistics.ts": "15db21bcde45dd9e8ff74f5969d361abe8b881060c6a7cb1c3b474c4ffad7dc1",
+    "evaluation/src/scoring/text-normaliser.ts": "aa29acbbce34718ef02be26872623e5280498efe88b3cb74317a96484d0634e8",
+    "evaluation/src/scoring/triage-scoring.ts": "60a087c7fc20b3c7b13da1f8ada6d550a75938a9b52ddf0335936fb4a18d2542",
+    "evaluation/src/scoring/validation.ts": "9423630cd1bd6c4630ae2392e168051b23f19d26c36b4c434816c57728739906",
+    "docs/adr/0005-model-selection-method.md": "7bcd414b3de9f3c6ecf844894e7564d6582fe1baa94f123e079579bec3735ef1"
+  },
+  "checks": {
+    "committedSplitBytesMatch": true,
+    "orderedSplitHashesMatch": true,
+    "screeningHeldOutDisjoint": true,
+    "allDocumentImageHashesMatch": true,
+    "allSpeechSourceFilesMatch": true
+  },
+  "speechRawRoot": "$AQARAK_DATA_DIR/runs/held-out-2026-09-28/",
+  "budgetNote": "I stop further calls if the existing budget guard trips; already running calls may exceed the cap."
+}

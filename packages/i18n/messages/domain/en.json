@@ -1,0 +1,711 @@
+{
+  "role": {
+    "manager": "Manager",
+    "owner": "Owner",
+    "tenant": "Tenant",
+    "technician": "Technician",
+    "company_administrator": "Company administrator",
+    "accountant": "Accountant"
+  },
+  "staffRole": {
+    "manager": "Manager",
+    "technician": "Technician",
+    "company_administrator": "Company administrator",
+    "accountant": "Accountant"
+  },
+  "companyKind": {
+    "management_company": "Management company",
+    "self_managed_owner": "Self managed owner"
+  },
+  "membershipStatus": {
+    "invited": "Invited",
+    "active": "Active",
+    "suspended": "Suspended",
+    "removed": "Removed"
+  },
+  "invitationKind": {
+    "staff": "Staff",
+    "owner": "Owner",
+    "tenant": "Tenant"
+  },
+  "invitationStatus": {
+    "pending": "Pending",
+    "accepted": "Accepted",
+    "expired": "Expired",
+    "revoked": "Revoked"
+  },
+  "tenantKind": {
+    "individual": "Individual",
+    "company": "Company",
+    "government": "Government",
+    "diplomatic": "Diplomatic"
+  },
+  "ownerMandateStatus": {
+    "active": "Active",
+    "expired": "Expired",
+    "ended": "Ended"
+  },
+  "propertyKind": {
+    "building": "Building",
+    "villa": "Villa",
+    "plot": "Plot"
+  },
+  "unitUse": {
+    "residential": "Residential",
+    "commercial": "Commercial"
+  },
+  "unitKind": {
+    "apartment": "Apartment",
+    "villa": "Villa",
+    "townhouse": "Townhouse",
+    "office": "Office",
+    "shop": "Shop",
+    "warehouse": "Warehouse",
+    "other": "Other"
+  },
+  "unitStatus": {
+    "vacant": "Vacant",
+    "listed": "Listed",
+    "reserved": "Reserved",
+    "occupied": "Occupied",
+    "notice_given": "Notice given",
+    "under_maintenance": "Under maintenance",
+    "blocked": "Blocked"
+  },
+  "occupantRelationship": {
+    "spouse": "Spouse",
+    "child": "Child",
+    "parent": "Parent",
+    "relative": "Relative",
+    "domestic_worker": "Domestic worker",
+    "other": "Other"
+  },
+  "contractStatus": {
+    "draft": "Draft",
+    "awaiting_owner_approval": "Awaiting owner approval",
+    "awaiting_tenant_acceptance": "Awaiting tenant acceptance",
+    "concluded": "Concluded",
+    "ended": "Ended",
+    "cancelled": "Cancelled"
+  },
+  "contractOrigin": {
+    "app": "App",
+    "retroactive": "Retroactive"
+  },
+  "contractCancelKind": {
+    "withdrawn_by_manager": "Withdrawn by manager",
+    "returned_by_owner": "Returned by owner",
+    "returned_by_tenant": "Returned by tenant",
+    "cancelled_draft": "Cancelled draft"
+  },
+  "contractEndReason": {
+    "expired": "Expired",
+    "renewed": "Renewed",
+    "terminated_by_notice": "Terminated by notice",
+    "terminated_by_agreement": "Terminated by agreement",
+    "terminated_by_court_order": "Terminated by court order",
+    "cancelled_on_portal": "Cancelled on portal"
+  },
+  "contractVersionKind": {
+    "standard": "Standard",
+    "tawtheeq_adoption": "Tawtheeq adoption"
+  },
+  "termPhase": {
+    "upcoming": "Upcoming",
+    "current": "Current",
+    "renewal_window": "Renewal window",
+    "notice_deadline_passed": "Notice deadline passed",
+    "holding_over": "Holding over"
+  },
+  "approvalSlot": {
+    "manager": "Manager",
+    "owner": "Owner",
+    "tenant": "Tenant"
+  },
+  "approvalKind": {
+    "contract_approval": "Contract approval",
+    "owner_reapproval": "Owner reapproval",
+    "skip_confirmation": "Skip confirmation",
+    "cost_approval": "Cost approval",
+    "retroactive_confirmation": "Retroactive confirmation"
+  },
+  "approvalStatus": {
+    "requested": "Requested",
+    "approved": "Approved",
+    "returned": "Returned",
+    "voided": "Voided"
+  },
+  "tawtheeqPath": {
+    "normal": "Normal",
+    "skip": "Skip",
+    "retroactive": "Retroactive"
+  },
+  "tawtheeqWorkflowState": {
+    "awaiting_registration": "Awaiting registration",
+    "submitted_on_portal": "Submitted on portal",
+    "under_review": "Under review",
+    "discrepancies_open": "Discrepancies open",
+    "awaiting_owner_reapproval": "Awaiting owner reapproval",
+    "registered": "Registered",
+    "skipped": "Skipped",
+    "closed": "Closed"
+  },
+  "tawtheeqPortalStatus": {
+    "not_started": "Not started",
+    "pending": "Pending",
+    "registered": "Registered",
+    "renewed": "Renewed",
+    "skipped": "Skipped",
+    "cancelled": "Cancelled"
+  },
+  "discrepancyClass": {
+    "identity": "Identity",
+    "material": "Material",
+    "minor": "Minor"
+  },
+  "discrepancyResolution": {
+    "adopt": "Adopt",
+    "cancel_and_reregister": "Cancel and reregister",
+    "mark_equivalent": "Mark equivalent"
+  },
+  "discrepancyStatus": {
+    "open": "Open",
+    "resolved": "Resolved"
+  },
+  "handoverKind": {
+    "move_in": "Move in",
+    "move_out": "Move out"
+  },
+  "instalmentStatus": {
+    "open": "Open",
+    "partly_paid": "Partly paid",
+    "paid": "Paid",
+    "waived": "Waived",
+    "cancelled": "Cancelled"
+  },
+  "chequeStatus": {
+    "pending": "Pending",
+    "received": "Received",
+    "deposited": "Deposited",
+    "cleared": "Cleared",
+    "partly_paid": "Partly paid",
+    "bounced": "Bounced",
+    "replaced": "Replaced",
+    "returned_to_drawer": "Returned to drawer"
+  },
+  "paymentMethod": {
+    "cash": "Cash",
+    "transfer": "Transfer",
+    "cheque": "Cheque",
+    "card_elsewhere": "Card elsewhere"
+  },
+  "paymentSource": {
+    "app": "App",
+    "external": "External"
+  },
+  "paymentStatus": {
+    "recorded": "Recorded",
+    "reversed": "Reversed"
+  },
+  "allocationStatus": {
+    "active": "Active",
+    "voided": "Voided"
+  },
+  "paymentReversalReason": {
+    "bounced": "Bounced",
+    "recorded_in_error": "Recorded in error"
+  },
+  "chargeKind": {
+    "maintenance": "Maintenance",
+    "utility": "Utility",
+    "penalty": "Penalty",
+    "fee": "Fee",
+    "other": "Other"
+  },
+  "chargePayer": {
+    "owner": "Owner",
+    "tenant": "Tenant",
+    "company": "Company"
+  },
+  "chargeStatus": {
+    "open": "Open",
+    "invoiced": "Invoiced",
+    "settled": "Settled",
+    "waived": "Waived",
+    "cancelled": "Cancelled"
+  },
+  "depositStatus": {
+    "expected": "Expected",
+    "held": "Held",
+    "refund_due": "Refund due",
+    "refunded": "Refunded",
+    "applied": "Applied",
+    "carried_over": "Carried over"
+  },
+  "invoiceStatus": {
+    "draft": "Draft",
+    "issued": "Issued",
+    "partly_paid": "Partly paid",
+    "paid": "Paid",
+    "credited": "Credited"
+  },
+  "invoiceRecipientType": {
+    "tenant": "Tenant",
+    "owner": "Owner"
+  },
+  "numberSeries": {
+    "INV": "Invoice",
+    "CN": "Credit note",
+    "RCPT": "Receipt",
+    "STMT": "Owner statement"
+  },
+  "receiptStatus": {
+    "issued": "Issued",
+    "voided": "Voided"
+  },
+  "ownerStatementStatus": {
+    "draft": "Draft",
+    "in_review": "In review",
+    "issued": "Issued",
+    "superseded": "Superseded"
+  },
+  "ticketStatus": {
+    "reported": "Reported",
+    "triaged": "Triaged",
+    "awaiting_quote": "Awaiting quote",
+    "awaiting_cost_approval": "Awaiting cost approval",
+    "scheduled": "Scheduled",
+    "in_progress": "In progress",
+    "on_hold": "On hold",
+    "work_completed": "Work completed",
+    "closed": "Closed",
+    "cancelled": "Cancelled"
+  },
+  "ticketCategory": {
+    "ac": "Air conditioning",
+    "plumbing": "Plumbing",
+    "electrical": "Electrical",
+    "appliances": "Appliances",
+    "pest_control": "Pest control",
+    "cleaning": "Cleaning",
+    "carpentry": "Carpentry",
+    "painting": "Painting",
+    "lift": "Lift",
+    "fire_safety": "Fire safety",
+    "other": "Other"
+  },
+  "ticketPriority": {
+    "emergency": "Emergency",
+    "urgent": "Urgent",
+    "routine": "Routine"
+  },
+  "costPayer": {
+    "owner": "Owner",
+    "tenant": "Tenant",
+    "company": "Company",
+    "split": "Split"
+  },
+  "quoteStatus": {
+    "requested": "Requested",
+    "received": "Received",
+    "approved": "Approved",
+    "rejected": "Rejected"
+  },
+  "dispatchStatus": {
+    "assigned": "Assigned",
+    "accepted": "Accepted",
+    "declined": "Declined",
+    "done": "Done",
+    "cancelled": "Cancelled"
+  },
+  "documentType": {
+    "emirates_id": "Emirates ID",
+    "passport": "Passport",
+    "title_deed": "Title deed",
+    "site_plan": "Site plan",
+    "management_agreement": "Management agreement",
+    "tawtheeq_authorisation": "Tawtheeq authorisation",
+    "trade_licence": "Trade licence",
+    "signatory_id": "Signatory id",
+    "civil_defence_certificate": "Civil defence certificate",
+    "hassantuk_certificate": "Hassantuk certificate",
+    "floor_plan": "Floor plan",
+    "maintenance_contract": "Maintenance contract",
+    "fire_safety_contract": "Fire safety contract",
+    "income_evidence": "Income evidence",
+    "occupancy_certificate": "Occupancy certificate",
+    "tawtheeq": "Tawtheeq",
+    "contract": "Contract",
+    "receipt": "Receipt",
+    "invoice": "Invoice",
+    "quote": "Quote",
+    "transfer_slip": "Transfer slip",
+    "cheque_image": "Cheque image",
+    "portal_summary": "Portal summary",
+    "photo": "Photo",
+    "voice_note": "Voice note",
+    "video": "Video",
+    "other": "Other"
+  },
+  "documentSensitivity": {
+    "identity": "Identity",
+    "financial": "Financial",
+    "general": "General"
+  },
+  "documentProcessingStatus": {
+    "awaiting_upload": "Awaiting upload",
+    "uploaded": "Uploaded",
+    "scan_clean": "Scan clean",
+    "scan_rejected": "Scan rejected",
+    "extracting": "Extracting",
+    "extracted": "Extracted",
+    "extraction_failed": "Extraction failed"
+  },
+  "documentReviewStatus": {
+    "pending_review": "Pending review",
+    "accepted": "Accepted",
+    "rejected": "Rejected",
+    "superseded": "Superseded"
+  },
+  "documentValidity": {
+    "valid": "Valid",
+    "expiring_soon": "Expiring soon",
+    "expired": "Expired"
+  },
+  "noteVisibility": {
+    "staff": "Staff",
+    "parties": "Parties"
+  },
+  "taskStatus": {
+    "open": "Open",
+    "done": "Done",
+    "cancelled": "Cancelled"
+  },
+  "reminderStatus": {
+    "scheduled": "Scheduled",
+    "fired": "Fired",
+    "dismissed": "Dismissed"
+  },
+  "notificationChannel": {
+    "in_app": "In app",
+    "email": "Email",
+    "push": "Push"
+  },
+  "notificationStatus": {
+    "queued": "Queued",
+    "sent": "Sent",
+    "failed": "Failed"
+  },
+  "draftedActionStatus": {
+    "drafting": "Drafting",
+    "ready": "Ready",
+    "committed": "Committed",
+    "rejected": "Rejected",
+    "expired": "Expired",
+    "failed": "Failed"
+  },
+  "initiator": {
+    "person": "Person",
+    "co_worker": "Co worker",
+    "pipeline": "Pipeline",
+    "scheduler": "Scheduler"
+  },
+  "channel": {
+    "web_form": "Web form",
+    "mobile_form": "Mobile form",
+    "chat": "Chat",
+    "voice": "Voice",
+    "system": "System",
+    "import": "Import"
+  },
+  "fieldProvenance": {
+    "ai_confirmed": "Extracted and confirmed",
+    "ai_edited": "Extracted and edited",
+    "human_entered": "Entered manually"
+  },
+  "coreErrorCode": {
+    "INVALID_TRANSITION": "This action is unavailable in the current state.",
+    "VERSION_CONFLICT": "The record changed; refresh it before continuing.",
+    "REASON_REQUIRED": "Enter a reason to continue.",
+    "INVALID_INPUT": "Check the entered information and try again."
+  },
+  "paymentsErrorCode": {
+    "EARLY_DEPOSIT": "Deposit the cheque on or after its date.",
+    "REVERSAL_REQUIRED": "Reverse the cleared payment before recording the bounce.",
+    "PAYMENT_REVERSED": "This payment has been reversed.",
+    "ALLOCATION_EXCEEDS_PAYMENT": "The allocation exceeds the available payment credit.",
+    "ALLOCATION_EXCEEDS_BALANCE": "The allocation exceeds the outstanding balance.",
+    "PAYMENT_ALREADY_REVERSED": "This payment has already been reversed.",
+    "PAYMENT_HAS_REFUNDS": "This payment has refunds that prevent reversal.",
+    "REFUND_EXCEEDS_CREDIT": "The refund exceeds the available credit.",
+    "RECEIPT_ALREADY_ISSUED": "A receipt already exists for this payment.",
+    "DUPLICATE_EXTERNAL_RECEIPT": "This external receipt has already been recorded.",
+    "DEDUCTIONS_EXCEED_DEPOSIT": "The deductions exceed the held deposit.",
+    "STATEMENT_NOT_BALANCED": "Reconcile the statement before issuing it.",
+    "FORBIDDEN": "You cannot record money for this company."
+  },
+  "contractErrorCode": {
+    "INVALID_TRANSITION": "This action is unavailable in the current state.",
+    "VERSION_CONFLICT": "The record changed; refresh it before continuing.",
+    "REASON_REQUIRED": "Enter a reason to continue.",
+    "INVALID_INPUT": "Check the entered information and try again.",
+    "UNIT_BLOCKED": "Unblock the unit before creating a contract.",
+    "TENANT_REQUIRED": "Add a tenant before continuing.",
+    "TENANT_DOCUMENTS_REQUIRED": "Accept the required tenant documents first.",
+    "OWNER_ACCOUNT_REQUIRED": "An active owner account is required.",
+    "OVERLAPPING_CONTRACT": "Another contract reserves this unit during the selected period.",
+    "STALE_SUBJECT_HASH": "The content changed; review the latest version.",
+    "NOT_NAMED_PARTY": "Only the named party can perform this action.",
+    "NOT_OWN_SESSION": "Use your own signed-in account for this action.",
+    "APPROVER_NOT_DISTINCT": "Each required approval must come from a different person.",
+    "APPROVALS_REQUIRED": "Obtain the required approvals before continuing.",
+    "SUCCESSOR_EXISTS": "A revision already exists for this contract.",
+    "RETROACTIVE_EVIDENCE_MISSING": "Complete the evidence and confirmations for retroactive registration.",
+    "IDENTITY_MISMATCH": "The document identity does not match the linked records.",
+    "END_EVIDENCE_MISSING": "Attach ending evidence or a move-out handover.",
+    "SCHEDULE_TOTAL_MISMATCH": "Correct the instalment total and VAT amounts."
+  },
+  "idempotencyErrorCode": {
+    "IDEMPOTENCY_KEY_REUSED": "Use a new request key for this changed action."
+  },
+  "coWorkerToolFamily": {
+    "search": "Search",
+    "read": "Read",
+    "explain": "Explain",
+    "draft_message": "Draft message",
+    "propose_note": "Propose note",
+    "propose_task": "Propose task",
+    "propose_reminder": "Propose reminder",
+    "records_from_documents": "Records from documents",
+    "contracts_and_schedules": "Contracts and schedules",
+    "tawtheeq_comparison": "Tawtheeq comparison",
+    "triage": "Triage",
+    "dispatch": "Dispatch",
+    "payments_from_uploads": "Payments from uploads",
+    "renewals": "Renewals",
+    "portfolio_questions": "Portfolio questions",
+    "statement_questions": "Statement questions",
+    "ticket_reports": "Ticket reports",
+    "own_documents": "Own documents",
+    "own_contract": "Own contract",
+    "own_schedule": "Own schedule",
+    "own_tickets": "Own tickets",
+    "fault_reports": "Fault reports",
+    "payment_evidence": "Payment evidence",
+    "assigned_jobs": "Assigned jobs",
+    "job_status": "Job status",
+    "parts": "Parts",
+    "quote_drafts": "Quote drafts",
+    "settings": "Settings",
+    "members": "Members",
+    "invitations": "Invitations",
+    "templates": "Templates",
+    "audit_search": "Audit search",
+    "payments_from_receipts": "Payments from receipts",
+    "payments_from_slips": "Payments from slips",
+    "payments_from_cheque_images": "Payments from cheque images",
+    "invoices": "Invoices",
+    "receipts": "Receipts",
+    "arrears_messages": "Arrears messages",
+    "statements": "Statements"
+  },
+  "permissionsErrorCode": {
+    "NOT_FOUND": "The requested record was not found.",
+    "NOT_PERMITTED": "You do not have permission for this action.",
+    "REQUEST_ONLY": "Submit a request for this change."
+  },
+  "permissionLevel": {
+    "A": "Administration",
+    "S": "Own scope",
+    "R": "Read only",
+    "P": "Request only",
+    "G": "Assigned approval"
+  },
+  "permissionOperation": {
+    "read": "Read",
+    "write": "Write",
+    "request": "Request",
+    "approve": "Approve"
+  },
+  "capability": {
+    "company_settings": "Company settings",
+    "staff_memberships": "Staff memberships",
+    "party_links": "Party links",
+    "owners": "Owners",
+    "owner_bank_details": "Owner bank details",
+    "properties_units": "Properties units",
+    "tenants_occupants": "Tenants occupants",
+    "identity_documents": "Identity documents",
+    "contracts": "Contracts",
+    "approval_steps": "Approval steps",
+    "tawtheeq": "Tawtheeq",
+    "payments": "Payments",
+    "invoices_receipts": "Invoices receipts",
+    "owner_statements": "Owner statements",
+    "ticket_report": "Ticket report",
+    "ticket_management": "Ticket management",
+    "job_updates": "Job updates",
+    "notes": "Notes",
+    "tasks_reminders": "Tasks reminders",
+    "audit_read": "Audit read",
+    "export": "Export",
+    "co_worker": "Co worker"
+  },
+  "permissionApprovalStep": {
+    "submit": "Submit",
+    "cost_within_owner_threshold": "Cost within owner threshold",
+    "gated_approval": "Gated approval",
+    "reapproval": "Reapproval",
+    "skip_confirmation": "Skip confirmation",
+    "cost_above_owner_threshold": "Cost above owner threshold",
+    "acceptance": "Acceptance",
+    "completion_confirmation": "Completion confirmation"
+  },
+  "unitsErrorCode": {
+    "INVALID_TRANSITION": "This action is unavailable in the current state.",
+    "VERSION_CONFLICT": "The record changed; refresh it before continuing.",
+    "REASON_REQUIRED": "Enter a reason to continue.",
+    "INVALID_INPUT": "Check the entered information and try again.",
+    "UNIT_BLOCKED": "Unblock the unit before creating a contract."
+  },
+  "tawtheeqErrorCode": {
+    "INVALID_TRANSITION": "This action is unavailable in the current state.",
+    "VERSION_CONFLICT": "The record changed; refresh it before continuing.",
+    "REASON_REQUIRED": "Enter a reason to continue.",
+    "INVALID_INPUT": "Check the entered information and try again.",
+    "OWNER_CONFIRMATION_REQUIRED": "Obtain the owner's confirmation before skipping registration.",
+    "REGISTRATION_EVIDENCE_MISSING": "Complete the required registration evidence.",
+    "DISCREPANCIES_UNRESOLVED": "Resolve all document differences before continuing.",
+    "OWNER_REAPPROVAL_REQUIRED": "Obtain the owner's approval of the revised content.",
+    "MARK_EQUIVALENT_NOT_ALLOWED": "These values cannot be treated as equivalent.",
+    "IDENTITY_MISMATCH": "The document identity does not match the linked records.",
+    "NOT_NAMED_PARTY": "Only the named party can perform this action.",
+    "NOT_OWN_SESSION": "Use your own signed-in account for this action.",
+    "STALE_SUBJECT_HASH": "The content changed; review the latest version.",
+    "APPROVER_NOT_DISTINCT": "Each required approval must come from a different person."
+  },
+  "lifecyclesErrorCode": {
+    "ACTIVE_MEMBERSHIP_EXISTS": "This person already has an active staff membership.",
+    "INVITATION_EXPIRED": "This invitation expired; request a new one.",
+    "INVITATION_EMAIL_MISMATCH": "Use the invited email or obtain manager confirmation.",
+    "NOT_DRAFTED_FOR_ACTOR": "Only the person named in this draft can confirm it.",
+    "BASE_VERSION_CHANGED": "The source record changed; prepare a new draft.",
+    "PERSON_REQUIRED": "A person must confirm this action."
+  },
+  "lifecycleRefusalCode": {
+    "INVALID_TRANSITION": "This action is unavailable in the current state.",
+    "VERSION_CONFLICT": "The record changed; refresh it before continuing.",
+    "REASON_REQUIRED": "Enter a reason to continue.",
+    "INVALID_INPUT": "Check the entered information and try again.",
+    "ACTIVE_MEMBERSHIP_EXISTS": "This person already has an active staff membership.",
+    "INVITATION_EXPIRED": "This invitation expired; request a new one.",
+    "INVITATION_EMAIL_MISMATCH": "Use the invited email or obtain manager confirmation.",
+    "NOT_DRAFTED_FOR_ACTOR": "Only the person named in this draft can confirm it.",
+    "BASE_VERSION_CHANGED": "The source record changed; prepare a new draft.",
+    "PERSON_REQUIRED": "A person must confirm this action."
+  },
+  "maintenanceErrorCode": {
+    "INVALID_TRANSITION": "This action is unavailable in the current state.",
+    "VERSION_CONFLICT": "The record changed; refresh it before continuing.",
+    "REASON_REQUIRED": "Enter a reason to continue.",
+    "INVALID_INPUT": "Check the entered information and try again.",
+    "COST_APPROVAL_REQUIRED": "Obtain the required cost approval before scheduling.",
+    "RATING_EXISTS": "This ticket has already been rated.",
+    "NOT_AUTHORISED": "You are not authorised to perform this action.",
+    "NOT_OWN_SESSION": "Use your own signed-in account for this action.",
+    "AFTER_PHOTO_REQUIRED": "Attach a completion photo before continuing.",
+    "COST_ALLOCATION_REQUIRED": "Allocate the cost before closing the ticket.",
+    "CONFIRMATION_REQUIRED": "Wait for confirmation or the confirmation deadline."
+  },
+  "safetyCriticalFlag": {
+    "gas_smell": "Gas smell",
+    "electrical_sparking": "Electrical sparking",
+    "water_into_electrics": "Water into electrics",
+    "lift_entrapment": "Lift entrapment",
+    "other_safety_hazard": "Other safety hazard"
+  },
+  "uploadContentType": {
+    "application/pdf": "PDF document",
+    "image/jpeg": "JPEG image",
+    "image/png": "PNG image",
+    "audio/mp4": "MP4 audio",
+    "audio/mpeg": "MPEG audio",
+    "audio/wav": "WAV audio",
+    "video/mp4": "MP4 video"
+  },
+  "documentsErrorCode": {
+    "INVALID_TRANSITION": "This action is unavailable in the current state.",
+    "VERSION_CONFLICT": "The record changed; refresh it before continuing.",
+    "REASON_REQUIRED": "Enter a reason to continue.",
+    "INVALID_INPUT": "Check the entered information and try again.",
+    "SCAN_NOT_CLEAN": "The document must pass its security scan first.",
+    "NOT_A_PERSON_COMMAND": "Only a person can change the document review.",
+    "NOT_A_PIPELINE_COMMAND": "Only the processing service can record this update.",
+    "UNSUPPORTED_TYPE": "Choose a supported file type.",
+    "UPLOAD_TOO_LARGE": "Choose a file within the upload size limit.",
+    "CONTENT_TYPE_MISMATCH": "The file content does not match its declared type.",
+    "TOO_MANY_PAGES": "Use a document with no more than twenty pages."
+  },
+  "errors": {
+    "INVALID_TRANSITION": "This action is unavailable in the current state.",
+    "VERSION_CONFLICT": "The record changed; refresh it before continuing.",
+    "REASON_REQUIRED": "Enter a reason to continue.",
+    "INVALID_INPUT": "Check the entered information and try again.",
+    "EARLY_DEPOSIT": "Deposit the cheque on or after its date.",
+    "REVERSAL_REQUIRED": "Reverse the cleared payment before recording the bounce.",
+    "PAYMENT_REVERSED": "This payment has been reversed.",
+    "ALLOCATION_EXCEEDS_PAYMENT": "The allocation exceeds the available payment credit.",
+    "ALLOCATION_EXCEEDS_BALANCE": "The allocation exceeds the outstanding balance.",
+    "PAYMENT_ALREADY_REVERSED": "This payment has already been reversed.",
+    "PAYMENT_HAS_REFUNDS": "This payment has refunds that prevent reversal.",
+    "REFUND_EXCEEDS_CREDIT": "The refund exceeds the available credit.",
+    "RECEIPT_ALREADY_ISSUED": "A receipt already exists for this payment.",
+    "DUPLICATE_EXTERNAL_RECEIPT": "This external receipt has already been recorded.",
+    "DEDUCTIONS_EXCEED_DEPOSIT": "The deductions exceed the held deposit.",
+    "STATEMENT_NOT_BALANCED": "Reconcile the statement before issuing it.",
+    "FORBIDDEN": "You cannot record money for this company.",
+    "UNIT_BLOCKED": "Unblock the unit before creating a contract.",
+    "TENANT_REQUIRED": "Add a tenant before continuing.",
+    "TENANT_DOCUMENTS_REQUIRED": "Accept the required tenant documents first.",
+    "OWNER_ACCOUNT_REQUIRED": "An active owner account is required.",
+    "OVERLAPPING_CONTRACT": "Another contract reserves this unit during the selected period.",
+    "STALE_SUBJECT_HASH": "The content changed; review the latest version.",
+    "NOT_NAMED_PARTY": "Only the named party can perform this action.",
+    "NOT_OWN_SESSION": "Use your own signed-in account for this action.",
+    "APPROVER_NOT_DISTINCT": "Each required approval must come from a different person.",
+    "APPROVALS_REQUIRED": "Obtain the required approvals before continuing.",
+    "SUCCESSOR_EXISTS": "A revision already exists for this contract.",
+    "RETROACTIVE_EVIDENCE_MISSING": "Complete the evidence and confirmations for retroactive registration.",
+    "IDENTITY_MISMATCH": "The document identity does not match the linked records.",
+    "END_EVIDENCE_MISSING": "Attach ending evidence or a move-out handover.",
+    "SCHEDULE_TOTAL_MISMATCH": "Correct the instalment total and VAT amounts.",
+    "IDEMPOTENCY_KEY_REUSED": "Use a new request key for this changed action.",
+    "NOT_FOUND": "The requested record was not found.",
+    "NOT_PERMITTED": "You do not have permission for this action.",
+    "REQUEST_ONLY": "Submit a request for this change.",
+    "OWNER_CONFIRMATION_REQUIRED": "Obtain the owner's confirmation before skipping registration.",
+    "REGISTRATION_EVIDENCE_MISSING": "Complete the required registration evidence.",
+    "DISCREPANCIES_UNRESOLVED": "Resolve all document differences before continuing.",
+    "OWNER_REAPPROVAL_REQUIRED": "Obtain the owner's approval of the revised content.",
+    "MARK_EQUIVALENT_NOT_ALLOWED": "These values cannot be treated as equivalent.",
+    "ACTIVE_MEMBERSHIP_EXISTS": "This person already has an active staff membership.",
+    "INVITATION_EXPIRED": "This invitation expired; request a new one.",
+    "INVITATION_EMAIL_MISMATCH": "Use the invited email or obtain manager confirmation.",
+    "NOT_DRAFTED_FOR_ACTOR": "Only the person named in this draft can confirm it.",
+    "BASE_VERSION_CHANGED": "The source record changed; prepare a new draft.",
+    "PERSON_REQUIRED": "A person must confirm this action.",
+    "COST_APPROVAL_REQUIRED": "Obtain the required cost approval before scheduling.",
+    "RATING_EXISTS": "This ticket has already been rated.",
+    "NOT_AUTHORISED": "You are not authorised to perform this action.",
+    "AFTER_PHOTO_REQUIRED": "Attach a completion photo before continuing.",
+    "COST_ALLOCATION_REQUIRED": "Allocate the cost before closing the ticket.",
+    "CONFIRMATION_REQUIRED": "Wait for confirmation or the confirmation deadline.",
+    "SCAN_NOT_CLEAN": "The document must pass its security scan first.",
+    "NOT_A_PERSON_COMMAND": "Only a person can change the document review.",
+    "NOT_A_PIPELINE_COMMAND": "Only the processing service can record this update.",
+    "UNSUPPORTED_TYPE": "Choose a supported file type.",
+    "UPLOAD_TOO_LARGE": "Choose a file within the upload size limit.",
+    "CONTENT_TYPE_MISMATCH": "The file content does not match its declared type.",
+    "TOO_MANY_PAGES": "Use a document with no more than twenty pages."
+  }
+}

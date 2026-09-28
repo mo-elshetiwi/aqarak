@@ -1,0 +1,39 @@
+{
+  "title": "Approval timeline",
+  "description": "Synthetic contract versions and approval slots.",
+  "timelineLabel": "Contract approval steps",
+  "role": {
+    "manager": "Manager",
+    "owner": "Owner",
+    "tenant": "Tenant"
+  },
+  "roleInSentence": {
+    "manager": "manager",
+    "owner": "owner",
+    "tenant": "tenant"
+  },
+  "waiting": "Waiting",
+  "waitingFor": "Waiting for <person>{name}</person> ({role})",
+  "waitingForYou": "Waiting for you",
+  "age": "{count, plural, one {# day} other {# days}}",
+  "actsAfter": "Acts after you approve",
+  "actsLater": "Acts after the preceding approval",
+  "submitted": "submitted",
+  "you": "you",
+  "ownerGateOn": "Owner approval is on for this property",
+  "ownerGateOff": "Owner approval is off for this property",
+  "version": "# v{number} · {hash}",
+  "locked": "Submitted versions cannot be edited. Cancel and create a revised contract to change terms.",
+  "examples": {
+    "owner": "Owner gate on: awaiting owner approval",
+    "tenant": "Owner gate off: awaiting tenant acceptance",
+    "concluded": "Concluded",
+    "changes": "Changes requested by the owner"
+  },
+  "people": {
+    "manager": "Mariam Hassan",
+    "owner": "Khalid Al Suwaidi",
+    "tenant": "Omar Salem"
+  },
+  "synthetic": "Synthetic examples"
+}

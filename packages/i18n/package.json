@@ -1,0 +1,23 @@
+{
+  "name": "@aqarak/i18n",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "eslint": "9.39.5",
+    "typescript": "catalog:",
+    "@aqarak/config": "workspace:*",
+    "vitest": "catalog:",
+    "eslint-config-prettier": "10.1.8"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@aqarak/domain": "workspace:*"
+  }
+}

@@ -1,0 +1,9 @@
+I use all 90 frozen held-out synthetic documents, 30 per kind; these controlled layouts do not establish real-document or operational capture performance.
+I preserve scorer 1.2.0, with 2,000 bootstrap resamples, seed 20260928 and 95% intervals. I resample whole documents for pooled field accuracy and retain Wilson intervals for the committed proportion metrics.
+I report the committed unsupported-fill interval over unavailable fields; several such fields can share a document, so its independence assumption limits interpretation of the 1% ceiling.
+I evaluate one screening survivor. Its paired difference to itself is identically zero and supplies no evidence of superiority or non-inferiority to another candidate.
+I compare screening and held-out estimates descriptively in my class decision record; their disjoint items do not support a paired difference between splits.
+I preserve the frozen prompts, model schemas and registry settings. The API snapshot is unpinned, so these results apply to the recorded date and model echoes.
+I count every failed or missing item in the full denominator and retain every fabrication. A high pooled accuracy cannot override a fabricated money value or date.
+I record a product selection decision without changing the runtime registry or claiming deployment, completed control gates, or a validated fallback.
+I interpret the generated survives status and screening-gates wording only as the committed rejection-rule check; it does not establish every ADR gate or product readiness.

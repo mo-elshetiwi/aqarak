@@ -1,0 +1,17 @@
+{
+  "title": "Notifications",
+  "email": {
+    "contract_approval_requested": {
+      "subject": "Contract approval waiting",
+      "body": "{companyName}: contract {contractNo} is waiting for your approval. Sign in to review the contract.\n\n{link}"
+    },
+    "contract_cancelled": {
+      "subject": "Contract cancelled",
+      "body": "{companyName}: contract {contractNo} has been cancelled. Sign in to view the contract.\n\n{link}"
+    },
+    "contract_concluded": {
+      "subject": "Contract concluded",
+      "body": "{companyName}: contract {contractNo} has been concluded. Sign in to view the contract.\n\n{link}"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@aqarak/evaluation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "screen": "tsx src/cli/screen.ts",
+    "score": "tsx src/cli/score.ts"
+  },
+  "dependencies": {
+    "@aqarak/api": "workspace:*",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "eslint": "9.39.5",
+    "typescript": "catalog:",
+    "@aqarak/config": "workspace:*",
+    "vitest": "catalog:",
+    "@types/node": "24.19.0",
+    "eslint-config-prettier": "10.1.8",
+    "tsx": "4.23.15"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@aqarak/db",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsc --noEmit",
+    "migrate:dev": "node --experimental-strip-types scripts/migrate-dev.ts",
+    "sp2:dev": "node --experimental-strip-types scripts/sp2-gate.ts",
+    "dom:dev": "node --experimental-strip-types scripts/dom-dev.ts",
+    "catalogue:dev": "node --experimental-strip-types scripts/catalogue-check.ts"
+  },
+  "devDependencies": {
+    "eslint": "9.39.5",
+    "typescript": "catalog:",
+    "@aqarak/config": "workspace:*",
+    "vitest": "catalog:",
+    "@types/node": "24.19.0",
+    "eslint-config-prettier": "10.1.8"
+  },
+  "dependencies": {
+    "@aws-sdk/client-rds-data": "3.1141.0",
+    "@aws-sdk/client-s3": "3.1141.0",
+    "@aws-sdk/s3-request-presigner": "3.1141.0"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./data-api": "./src/data-api.ts",
+    "./migrate": "./src/migrate.ts",
+    "./roles": "./src/roles.ts",
+    "./spike": "./src/spike/sp2.ts"
+  }
+}

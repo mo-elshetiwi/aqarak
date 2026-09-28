@@ -1,0 +1,51 @@
+packages:
+  - apps/*
+  - services/*
+  - packages/*
+  - infra/*
+  - evaluation
+catalogMode: strict
+catalog:
+  react: 19.2.3
+  react-dom: 19.2.3
+  react-native: 0.86.3
+  typescript: 6.0.3
+  zod: 4.6.5
+  vitest: 5.0.2
+  shadcn: 4.21.0
+  "@rn-primitives/slot": 1.5.2
+  expo-secure-store: ~57.0.4
+  expo-localization: ~57.0.2
+  expo-dev-client: ~57.0.19
+  expo-camera: ~57.0.5
+  expo-audio: ~57.0.5
+  expo-document-picker: ~57.0.2
+  expo-file-system: ~57.0.7
+  "@react-native-community/netinfo": 12.0.1
+  react-native-svg: 15.15.4
+  use-intl: 4.14.7
+  "@formatjs/intl-getcanonicallocales": 3.2.12
+  "@formatjs/intl-locale": 5.3.12
+  "@formatjs/intl-pluralrules": 6.3.15
+  lucide-react-native: 1.48.0
+  "@expo-google-fonts/ibm-plex-sans": 0.4.1
+  "@expo-google-fonts/ibm-plex-sans-arabic": 0.4.2
+  "@expo-google-fonts/ibm-plex-mono": 0.4.1
+  "@tanstack/react-query": 5.104.0
+  expo-system-ui: ~57.0.4
+  "@aws-sdk/client-secrets-manager": 3.1141.0
+overrides:
+  # The preset does not import the legacy renderer; mobile tests use test-renderer.
+  "jest-expo>react-test-renderer": "-"
+  react: 19.2.3
+  react-dom: 19.2.3
+  react-native: 0.86.3
+  react-native-worklets: 0.10.1
+  react-reconciler: 0.33.0
+  "@react-native/metro-config": 0.86.3
+allowBuilds:
+  "@parcel/watcher": true
+  "@swc/core": true
+  esbuild: true
+  sharp: true
+  unrs-resolver: true

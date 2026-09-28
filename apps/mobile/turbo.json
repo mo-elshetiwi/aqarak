@@ -1,0 +1,14 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "env": ["EXPO_PUBLIC_AUTH_ADAPTER", "EXPO_PUBLIC_API_BASE_URL"]
+    },
+    "test": {
+      "env": ["EXPO_PUBLIC_AUTH_ADAPTER", "EXPO_PUBLIC_API_BASE_URL"]
+    },
+    "typecheck": {
+      "env": ["EXPO_PUBLIC_AUTH_ADAPTER", "EXPO_PUBLIC_API_BASE_URL"]
+    }
+  }
+}

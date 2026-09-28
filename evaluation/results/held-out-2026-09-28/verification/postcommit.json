@@ -1,0 +1,28 @@
+{
+  "verifiedAt": "2026-09-28T05:45:37.915806+00:00",
+  "resultsCommit": "e6252cdca47721076ac0fc165c42e23137c3290e",
+  "originMainAtSecurityCheck": "a825ccf2bb6e0bd33a992368cfffbb7c91500fc7",
+  "acceptance": {
+    "AC-1": "I verified both run-header split hashes against their committed frozen manifests.",
+    "AC-2": "I reran both scoring commands at the results commit and observed an empty git status --porcelain=v1.",
+    "AC-3": "I lead both reports and decisions with held-out estimates and intervals; screening figures appear as labelled comparison evidence."
+  },
+  "checks": {
+    "typecheckLintTestExitCode": 0,
+    "testsPassed": 215,
+    "optInLiveTestsSkipped": 2,
+    "cliBundleBuildExitCode": 0,
+    "coreScoreFilesByteIdentical": 12,
+    "totalScoreArtifactsHashVerified": 14,
+    "gitStatusAfterCommittedRerun": "",
+    "gitleaksHistoryExitCode": 0,
+    "textOnlyPrefixScanExitCode": 1,
+    "literalPrefixScanExitCode": 0,
+    "inheritedBinaryMatches": [
+      "evaluation/datasets/synthetic-docs-v1/images/tawtheeq_contract-016.jpg",
+      "evaluation/datasets/synthetic-docs-v1/images/title_deed-007.jpg"
+    ],
+    "binaryMatchesAlsoPresentOnOriginMain": true
+  },
+  "exception": "I cannot obtain empty output from the exact literal prefix scan without altering two frozen JPEGs. I retain the images, record their inherited binary matches, and report the text-only and history scans separately."
+}

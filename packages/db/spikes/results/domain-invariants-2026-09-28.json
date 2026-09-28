@@ -1,0 +1,141 @@
+{
+  "observedAt": "2026-09-28T03:44:18.184Z",
+  "database": "aqarak",
+  "checks": [
+    {
+      "name": "overlapping blocking unit dates",
+      "expected": "23P01",
+      "actual": "23P01",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "cheque deposit before its date",
+      "expected": "23514",
+      "actual": "23514",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "owner statement reconciliation",
+      "expected": "23514",
+      "actual": "23514",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "invoice VAT rounded half up",
+      "expected": "23514",
+      "actual": "23514",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "submitted contract version update",
+      "expected": "AQ010",
+      "actual": "AQ010",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "submitted clause insertion",
+      "expected": "AQ010",
+      "actual": "AQ010",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "C1 payment over-allocation",
+      "expected": "AQ020",
+      "actual": "AQ020",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "C2 target over-allocation",
+      "expected": "AQ020",
+      "actual": "AQ020",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "refund participates in C1",
+      "expected": "AQ020",
+      "actual": "AQ020",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "payment reduction preserves C1",
+      "expected": "AQ020",
+      "actual": "AQ020",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "instalment reduction preserves C2",
+      "expected": "AQ020",
+      "actual": "AQ020",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "revision requires cancelled predecessor",
+      "expected": "23514",
+      "actual": "23514",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "runtime grants remain narrow",
+      "expected": "success",
+      "actual": "success",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "normalization and large number formatting",
+      "expected": "success",
+      "actual": "success",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "cross-company foreign key rejection",
+      "expected": "23503",
+      "actual": "23503",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "material discrepancy cannot be equivalent",
+      "expected": "23514",
+      "actual": "23514",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "extraction field bounds and provenance",
+      "expected": "success",
+      "actual": "success",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "valid half-fils VAT rounds up",
+      "expected": "success",
+      "actual": "success",
+      "passed": true,
+      "rolledBack": true
+    },
+    {
+      "name": "five number rollbacks leave no gap",
+      "expected": "1,1,1,1,1,1,2",
+      "actual": "1,1,1,1,1,1,2",
+      "passed": true,
+      "rolledBack": true,
+      "values": ["1", "1", "1", "1", "1", "1", "2"]
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,31 @@
+{
+  "scorerVersion": "1.2.0",
+  "seed": 20260928,
+  "resamples": 2000,
+  "confidence": 0.95,
+  "method": "I apply the committed clusterBootstrapRatio to the text-free clip scores in frozen order.",
+  "groups": [
+    {
+      "source": "MIXAT",
+      "items": 200,
+      "referenceWords": 4453,
+      "wordEdits": 1266,
+      "wer": {
+        "estimate": 0.28430271726925666,
+        "lower": 0.24508817913056713,
+        "upper": 0.32929184226959024
+      }
+    },
+    {
+      "source": "FLEURS",
+      "items": 200,
+      "referenceWords": 4083,
+      "wordEdits": 211,
+      "wer": {
+        "estimate": 0.051677687974528534,
+        "lower": 0.0370448288581691,
+        "upper": 0.0707841424521616
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@aqarak/config",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "eslint": "9.39.5",
+    "typescript": "catalog:",
+    "vitest": "catalog:",
+    "@types/node": "24.19.0",
+    "eslint-config-prettier": "10.1.8"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./eslint/base.mjs": "./eslint/base.mjs",
+    "./eslint/next.mjs": "./eslint/next.mjs",
+    "./eslint/expo.mjs": "./eslint/expo.mjs",
+    "./tsconfig/base.json": "./tsconfig/base.json"
+  },
+  "dependencies": {
+    "@eslint/js": "9.39.5",
+    "typescript-eslint": "8.70.1",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-config-next": "16.3.6",
+    "eslint-config-expo": "57.0.2",
+    "globals": "17.12.0"
+  }
+}

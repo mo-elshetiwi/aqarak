@@ -1,0 +1,48 @@
+{
+  "name": "@aqarak/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:local": "esbuild scripts/serve-local.ts --bundle --platform=node --format=esm '--external:@aws-sdk/*' '--external:@hono/*' --external:hono --external:zod --external:aws-jwt-verify --outfile=dist/serve-local.mjs && exec node dist/serve-local.mjs",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "smoke:j3": "esbuild src/modules/tenants/smoke.ts --bundle --platform=node --format=esm --packages=external --outfile=dist/smoke-j3.mjs && node dist/smoke-j3.mjs",
+    "notifications:relay": "esbuild src/modules/notifications/relay-script.ts --bundle --platform=node --format=esm '--external:@aws-sdk/*' --log-level=error --outfile=dist/notifications-relay.mjs && node dist/notifications-relay.mjs",
+    "contracts:seed-demo": "esbuild src/modules/contracts/scripts/seed-demo-script.ts --bundle --platform=node --format=esm '--external:@aws-sdk/*' --log-level=error --outfile=dist/contracts-seed-demo.mjs && node dist/contracts-seed-demo.mjs",
+    "contracts:smoke": "esbuild src/modules/contracts/scripts/smoke-script.ts --bundle --platform=node --format=esm '--external:@aws-sdk/*' --log-level=error --outfile=dist/contracts-smoke.mjs && node dist/contracts-smoke.mjs",
+    "test:integration:contracts": "AQARAK_WORKFLOW_INTEGRATION=1 vitest run --config vitest.integration.config.ts src/modules/contracts/tests/database.test.ts --maxWorkers=1 --no-file-parallelism",
+    "invitations:relay": "esbuild src/modules/identity/invitation-relay-script.ts --bundle --platform=node --format=esm '--external:@aws-sdk/*' --external:aws-jwt-verify --outfile=dist/invitation-relay.mjs && node dist/invitation-relay.mjs"
+  },
+  "devDependencies": {
+    "@aqarak/config": "workspace:*",
+    "@types/node": "24.19.0",
+    "eslint": "9.39.5",
+    "eslint-config-prettier": "10.1.8",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "dependencies": {
+    "@aqarak/db": "workspace:*",
+    "@aqarak/domain": "workspace:*",
+    "@aqarak/i18n": "workspace:*",
+    "@aws-sdk/client-cognito-identity-provider": "3.1141.0",
+    "@aws-sdk/client-rds-data": "3.1141.0",
+    "@aws-sdk/client-s3": "3.1141.0",
+    "@aws-sdk/client-secrets-manager": "catalog:",
+    "@aws-sdk/client-sesv2": "3.1141.0",
+    "@aws-sdk/client-transcribe-streaming": "3.1141.0",
+    "@aws-sdk/s3-request-presigner": "3.1141.0",
+    "@hono/node-server": "2.1.1",
+    "@hono/zod-openapi": "1.6.3",
+    "@noble/hashes": "2.4.0",
+    "aws-jwt-verify": "5.2.1",
+    "hono": "4.13.9",
+    "zod": "catalog:"
+  },
+  "exports": {
+    "./models": "./src/models/index.ts"
+  }
+}

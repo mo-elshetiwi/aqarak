@@ -1,0 +1,15 @@
+{
+  "extends": "@aqarak/config/tsconfig/base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    // I preserve strict typing while accommodating optional properties in CDK construct interfaces.
+    "exactOptionalPropertyTypes": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "*.config.ts",
+    "bin/**/*.ts",
+    "scripts/**/*.ts"
+  ]
+}

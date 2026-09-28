@@ -1,0 +1,14 @@
+$ tsx src/cli/score.ts -- --run-id held-out-2026-09-28 --class mc1_document_extraction --candidates gpt-6-sol --limitations results/held-out-2026-09-28/mc1_document_extraction/limitations.txt
+evaluation/results/held-out-2026-09-28/mc1_document_extraction/summary.csv
+evaluation/results/held-out-2026-09-28/mc1_document_extraction/per-field.csv
+evaluation/results/held-out-2026-09-28/mc1_document_extraction/per-kind.csv
+evaluation/results/held-out-2026-09-28/mc1_document_extraction/fabrications.csv
+evaluation/results/held-out-2026-09-28/mc1_document_extraction/document-outcomes.csv
+evaluation/results/held-out-2026-09-28/mc1_document_extraction/scores.json
+evaluation/results/held-out-2026-09-28/mc1_document_extraction/report.md
+$ tsx src/cli/score.ts -- --run-id held-out-2026-09-28 --class mc3_speech_to_text --candidates gpt-transcribe --limitations results/held-out-2026-09-28/mc3_speech_to_text/limitations.txt
+evaluation/results/held-out-2026-09-28/mc3_speech_to_text/summary.csv
+evaluation/results/held-out-2026-09-28/mc3_speech_to_text/per-language.csv
+evaluation/results/held-out-2026-09-28/mc3_speech_to_text/clip-scores.csv
+evaluation/results/held-out-2026-09-28/mc3_speech_to_text/scores.json
+evaluation/results/held-out-2026-09-28/mc3_speech_to_text/report.md

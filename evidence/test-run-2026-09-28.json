@@ -1,0 +1,146 @@
+{
+  "command": "TURBO_FORCE=true pnpm turbo run test --concurrency=1",
+  "gitCommit": "9fd0bdf21b9433df09bd4e1dd42833ad173d358f",
+  "codeIdenticalTo": "468f8d8",
+  "date": "2026-09-28",
+  "node": "v24.20.0",
+  "pnpm": "11.11.0",
+  "exitCode": 1,
+  "initialCommand": {
+    "command": "pnpm turbo run test --concurrency=1",
+    "exitCode": 0,
+    "note": "All 11 tasks replayed cached logs; the fresh run below supersedes this result."
+  },
+  "workspaces": [
+    {
+      "name": "@aqarak/api",
+      "testFiles": 41,
+      "passed": 374,
+      "skipped": 0,
+      "failed": 0,
+      "status": "completed"
+    },
+    {
+      "name": "@aqarak/cdk",
+      "testFiles": null,
+      "passed": null,
+      "skipped": null,
+      "failed": null,
+      "status": "no completed summary before failure"
+    },
+    {
+      "name": "@aqarak/config",
+      "testFiles": 1,
+      "passed": 3,
+      "skipped": 0,
+      "failed": 0,
+      "status": "completed"
+    },
+    {
+      "name": "@aqarak/db",
+      "testFiles": 12,
+      "passed": 98,
+      "skipped": 0,
+      "failed": 0,
+      "status": "completed"
+    },
+    {
+      "name": "@aqarak/domain",
+      "testFiles": null,
+      "passed": null,
+      "skipped": null,
+      "failed": null,
+      "status": "no completed summary before failure"
+    },
+    {
+      "name": "@aqarak/evaluation",
+      "testFiles": null,
+      "passed": null,
+      "skipped": null,
+      "failed": null,
+      "status": "no completed summary before failure"
+    },
+    {
+      "name": "@aqarak/i18n",
+      "testFiles": 2,
+      "passed": 182,
+      "skipped": 0,
+      "failed": 0,
+      "status": "completed"
+    },
+    {
+      "name": "@aqarak/mobile",
+      "testFiles": null,
+      "passed": null,
+      "skipped": null,
+      "failed": null,
+      "status": "no completed summary before failure"
+    },
+    {
+      "name": "@aqarak/ui-tokens",
+      "testFiles": null,
+      "passed": null,
+      "skipped": null,
+      "failed": null,
+      "status": "no completed summary before failure"
+    },
+    {
+      "name": "@aqarak/web",
+      "testFiles": 61,
+      "passed": 761,
+      "skipped": 0,
+      "failed": 8,
+      "status": "completed"
+    },
+    {
+      "name": "@aqarak/workers",
+      "testFiles": 1,
+      "passed": 5,
+      "skipped": 0,
+      "failed": 0,
+      "status": "completed"
+    }
+  ],
+  "totals": {
+    "passed": null,
+    "skipped": null,
+    "failed": 8,
+    "complete": false,
+    "note": "No repository-wide passing total is bound because the fresh run failed; counts above are only completed workspace summaries."
+  },
+  "failures": {
+    "workspace": "@aqarak/web",
+    "tests": [
+      "|components| src/app/[locale]/companies/[companyId]/contracts/_components/changes-since.test.tsx > Revision comparison > en shows old and new annual rent after an owner return and manager revision",
+      "|components| src/app/[locale]/companies/[companyId]/contracts/_components/decision-panel.test.tsx > Owner decision confirmations > en requires a reason and focuses the same inline error in the summary",
+      "|components| src/app/[locale]/companies/[companyId]/contracts/_components/decision-panel.test.tsx > Owner decision confirmations > ar requires a reason and focuses the same inline error in the summary",
+      "|components| src/app/[locale]/companies/[companyId]/contracts/_components/decision-panel.test.tsx > Owner decision confirmations > en names the tenant and explains immutability before approval",
+      "|components| src/app/[locale]/companies/[companyId]/contracts/_components/decision-panel.test.tsx > en requires the manager to confirm withdraw with a reason",
+      "|components| src/app/[locale]/companies/[companyId]/contracts/_components/decision-panel.test.tsx > ar requires the manager to confirm cancel_draft with a reason",
+      "|components| src/app/[locale]/companies/[companyId]/contracts/_components/delivery-log.test.tsx > Notification delivery log > en explains a failed email and confirms the in-app notice",
+      "|components| src/app/[locale]/companies/[companyId]/tenants/_components/onboarding-controls.test.tsx > keeps every input on refusal and starts a fresh command per submit"
+    ],
+    "summary": "Seven tests timed out after 5000 ms; one tenant-onboarding test could not find the Add tenant button while Adding tenant remained displayed."
+  },
+  "browserTestsDefined": {
+    "tests": 73,
+    "files": 13,
+    "note": "listed, not run",
+    "command": "pnpm --filter @aqarak/web exec playwright test --list 2>&1 | tail -3"
+  },
+  "hostedCi": {
+    "runId": 36402563436,
+    "status": "completed",
+    "conclusion": "failure",
+    "headSha": "468f8d816d7ae73e3ba4143a9722756f8cd29e47",
+    "createdAt": "2026-09-28T09:17:39Z",
+    "observedAt": "2026-09-28T09:46:07Z",
+    "command": "gh run view 36402563436 --json status,conclusion,headSha,createdAt"
+  },
+  "codeComparison": {
+    "command": "git diff --stat 468f8d8 HEAD -- . ':(exclude)report'",
+    "exitCode": 0,
+    "output": ""
+  },
+  "installation": "Dependencies were already installed; no install command was run."
+}

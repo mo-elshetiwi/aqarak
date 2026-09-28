@@ -1,0 +1,15 @@
+{
+  "emptyOwners": "No owners yet",
+  "noMatches": "No owners match these filters",
+  "loadError": "We could not load this list. Check your connection and try again.",
+  "errorSummary": "Check the following fields",
+  "notFound": "We could not find this record.",
+  "notPermitted": "This section is not part of your role in this company.",
+  "offline": "You are offline. Changes will not be saved until you reconnect.",
+  "demo": "This is a demo company with synthetic data.",
+  "empty": "Empty lists",
+  "errors": "Form errors",
+  "access": "Record access",
+  "banners": "Connection and demo notices",
+  "skeletons": "Loading layouts"
+}

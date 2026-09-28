@@ -1,0 +1,23 @@
+{
+  "home": "Go to Home",
+  "retry": "Retry",
+  "clearFilters": "Clear filters",
+  "close": "Close",
+  "cancel": "Cancel",
+  "save": "Save",
+  "addOwner": "Add owner",
+  "loading": "Loading",
+  "required": "Required",
+  "owner": "Owner",
+  "email": "Email",
+  "search": "Search",
+  "unit": "Unit",
+  "nameHint": "Enter the owner’s full name.",
+  "nameError": "Enter an owner name.",
+  "emailError": "Enter a valid email address.",
+  "notes": "Notes",
+  "notesHint": "Add details for your team.",
+  "company": "Aqarak Demo Properties",
+  "ownerName": "Khalid Al Suwaidi",
+  "ownerInitials": "KS"
+}

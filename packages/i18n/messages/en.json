@@ -1,0 +1,263 @@
+{
+  "Mobile": {
+    "productName": "Aqarak",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "username": "Username",
+    "password": "Password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "switchLanguage": "العربية",
+    "demo": "Demo",
+    "demoAccounts": "Synthetic demo accounts. Use any non-empty password with: {usernames}",
+    "credentialsHint": "Use the username and password for your person account.",
+    "passwordHint": "Paste and password managers work here.",
+    "account": "Person account",
+    "company": "Company",
+    "capacity": "Capacity",
+    "language": "Language",
+    "signOut": "Sign out",
+    "retry": "Retry",
+    "back": "Back",
+    "noMobileRole": "This context has no mobile role",
+    "webRoles": "The web app serves company administrator and accountant capacities.",
+    "restoreFailed": "Your session could not be restored. Check your connection and retry, or sign out.",
+    "switchCompany": "Switch company",
+    "currentCompany": "Current company",
+    "requiredUsername": "Enter your username",
+    "requiredPassword": "Enter your password",
+    "sessionEnded": "Your session ended. Sign in again.",
+    "roles": {
+      "manager": "Manager",
+      "owner": "Owner",
+      "tenant": "Tenant",
+      "technician": "Technician",
+      "company_administrator": "Company administrator",
+      "accountant": "Accountant"
+    },
+    "tabs": {
+      "home": "Home",
+      "inbox": "Inbox",
+      "records": "Records",
+      "maintenance": "Maintenance",
+      "co-worker": "Co-worker",
+      "portfolio": "Portfolio",
+      "statements": "Statements",
+      "payments": "Payments",
+      "jobs": "Jobs"
+    },
+    "content": {
+      "home": "Your attention list appears here.",
+      "inbox": "Your inbox items appear here.",
+      "records": "Your company records appear here.",
+      "maintenance": "Your maintenance work appears here.",
+      "co-worker": "The co-worker reads and drafts; it never approves or commits.",
+      "portfolio": "Your property portfolio appears here.",
+      "statements": "Your statements appear here.",
+      "payments": "Your payments appear here.",
+      "jobs": "Your assigned jobs appear here."
+    },
+    "errors": {
+      "invalid_credentials": "The username or password is incorrect.",
+      "too_many_attempts": "Too many attempts. Try again later.",
+      "session_ended": "Your session ended. Sign in again.",
+      "network_unavailable": "Unable to connect. Check your connection and try again.",
+      "service_unavailable": "The service is temporarily unavailable. Try again later.",
+      "unexpected_response": "Something went wrong. Try again."
+    },
+    "Connectivity": {
+      "offline": "You are offline.",
+      "cached": "You are offline. Showing data from {time}.",
+      "required": "You are offline. This needs a connection."
+    },
+    "Capture": {
+      "errors": {
+        "permission_denied": "Permission is required to capture this media. Open settings to allow access.",
+        "cancelled": "Capture was cancelled.",
+        "capture_failed": "Capture could not be saved. Try again.",
+        "unsupported_type": "Choose a PDF, JPEG, PNG or HEIC document.",
+        "image_size": "Images and PDFs must be 20 MB or smaller.",
+        "audio_size": "Voice notes must be 25 MB or smaller.",
+        "video_size": "Videos must be 100 MB or smaller.",
+        "audio_duration": "Voice notes must be 5 minutes or shorter.",
+        "video_duration": "Videos must be 60 seconds or shorter."
+      },
+      "photo": "Photo",
+      "video": "Video",
+      "takePhoto": "Take photo",
+      "recordVideo": "Record video",
+      "stopVideo": "Stop recording",
+      "continue": "Continue",
+      "openSettings": "Open settings",
+      "cameraRationale": "Aqarak uses the camera to take your photo. Nothing is captured until you tap Take photo.",
+      "videoRationale": "Aqarak uses the camera and microphone to record your video with audio. Nothing is recorded until you tap Record video.",
+      "voiceNote": "Voice note",
+      "recordVoiceNote": "Record",
+      "stopVoiceNote": "Stop recording",
+      "microphoneRationale": "Aqarak uses the microphone to record your voice note. Nothing is recorded until you tap Record.",
+      "level": "Recording level",
+      "playRecording": "Play recording",
+      "useRecording": "Use recording",
+      "discard": "Discard",
+      "close": "Close",
+      "discardTitle": "Discard voice note?",
+      "discardNotice": "Leaving discards your unsaved voice note.",
+      "keepRecording": "Keep voice note",
+      "title": "Capture",
+      "file": "File",
+      "acceptsPhoto": "JPEG photo, up to 20 MB.",
+      "acceptsVideo": "Video with audio, up to 60 seconds and 100 MB.",
+      "acceptsVoice": "Voice note, up to 5 minutes and 25 MB.",
+      "acceptsDocument": "PDF, JPEG, PNG or HEIC, up to 20 MB.",
+      "goodDocument": "A flat, well-lit photo of the whole page",
+      "refusedDocument": "A blurred or cropped page is refused"
+    },
+    "Status": {
+      "draftedAction": {
+        "drafting": "Drafting",
+        "ready": "Ready",
+        "committed": "Committed",
+        "rejected": "Rejected",
+        "expired": "Expired",
+        "failed": "Failed"
+      },
+      "approval": {
+        "requested": "Requested",
+        "approved": "Approved",
+        "changes_requested": "Changes requested",
+        "voided": "Voided"
+      },
+      "contract": {
+        "draft": "Draft",
+        "awaiting_owner_approval": "Awaiting owner approval",
+        "awaiting_tenant_acceptance": "Awaiting tenant acceptance",
+        "concluded": "Concluded",
+        "ended": "Ended",
+        "cancelled": "Cancelled"
+      }
+    },
+    "States": {
+      "empty": "There are no records here yet.",
+      "loading": "Loading records.",
+      "error": "Records could not be loaded.",
+      "retry": "Retry",
+      "notFound": "We could not find this record.",
+      "home": "Home",
+      "expired": "The record changed after this was drafted. Draft again.",
+      "draftAgain": "Draft again",
+      "waiting": "Waiting for {name} ({role}) · {age}",
+      "locked": "Submitted versions cannot be edited. Cancel and create a revised contract to change terms.",
+      "roles": {
+        "manager": "Manager",
+        "owner": "Owner",
+        "tenant": "Tenant"
+      }
+    },
+    "Format": {
+      "money": "AED {amount}",
+      "age": "{count, plural, =0 {Today} one {1 day} other {# days}}"
+    },
+    "DraftedAction": {
+      "discard": "Discard",
+      "edit": "Edit in form",
+      "confirm": "Confirm",
+      "openReview": "Open review",
+      "draftAgain": "Draft again",
+      "new": "New",
+      "actionFailed": "The action could not be completed. Try again.",
+      "origin": {
+        "voice": "From your voice order, {time}",
+        "chat": "From your chat, {time}",
+        "photo": "From your photo, {time}",
+        "document": "From your document, {time}"
+      }
+    },
+    "Approval": {
+      "title": "Approval review",
+      "waiting": "Waiting for {name} ({role}) · {age}",
+      "approve": "Approve",
+      "accept": "Accept",
+      "requestChanges": "Request changes",
+      "confirmApproval": "Confirm approval",
+      "back": "Back",
+      "check": "Check your decision",
+      "nextTenant": "{name} acts next as tenant.",
+      "nextComplete": "No further approval is required.",
+      "reason": "Reason for changes",
+      "reasonError": "Enter a reason between 1 and 500 characters.",
+      "failed": "The decision could not be saved. Try again.",
+      "notWaiting": "This version is no longer waiting for your decision.",
+      "version": "Version {version, number}",
+      "instalments": "{count, plural, one {1 instalment} other {# instalments}}",
+      "changes": "{count, plural, one {1 change since the version you last saw} other {# changes since the version you last saw}}",
+      "roles": {
+        "manager": "Manager",
+        "owner": "Owner",
+        "tenant": "Tenant"
+      },
+      "step": {
+        "done": "Done",
+        "current": "Current",
+        "waiting": "Waiting"
+      },
+      "decisions": {
+        "submitted": "Submitted",
+        "approved": "Approved",
+        "accepted": "Accepted",
+        "changes_requested": "Changes requested"
+      },
+      "effect": {
+        "owner": "Approving sends this version to the tenant.",
+        "tenant": "Accepting concludes the contract."
+      },
+      "fields": {
+        "unit": "Unit",
+        "property": "Property",
+        "tenant": "Tenant",
+        "owner": "Owner",
+        "term": "Term dates",
+        "rent": "Annual rent"
+      }
+    },
+    "Gallery": {
+      "title": "Development gallery",
+      "synthetic": "Synthetic example data",
+      "openCapture": "Open capture sheet",
+      "captured": "Captured items",
+      "size": "{bytes, number} bytes",
+      "duration": "{seconds, number} seconds",
+      "remove": "Remove item {number, number}",
+      "states": "Screen states",
+      "statuses": "Status tags",
+      "formatting": "Formatting",
+      "drafts": "Drafted actions",
+      "approvals": "Approval reviews",
+      "ownerReview": "Open owner review",
+      "tenantReview": "Open tenant review",
+      "gateOff": "Owner gate off",
+      "demonstrated": "Synthetic action demonstrated. No record was changed.",
+      "layla": "Layla Haddad",
+      "khalid": "Khalid Al Suwaidi",
+      "omar": "Omar Farouk",
+      "property": "Al Waha Residence",
+      "draftTitle": "Create ticket · Unit 104",
+      "changeLabel": "Maintenance ticket",
+      "changeAfter": "Inspect the kitchen tap.",
+      "expiry": "This draft expires when the record changes.",
+      "consequence": "Confirming creates a maintenance ticket for Unit 104.",
+      "failure": "The record changed before confirmation."
+    }
+  },
+  "Metadata": {
+    "title": "Aqarak",
+    "description": "Property management for Abu Dhabi companies, with every change reviewed and recorded."
+  },
+  "Home": {
+    "title": "Aqarak",
+    "description": "Property management for Abu Dhabi companies, with every change reviewed and recorded."
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "target": "العربية"
+  }
+}

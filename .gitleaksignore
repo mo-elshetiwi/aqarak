@@ -1,0 +1,5 @@
+# Synthetic test value replaced by an ephemeral key in a later commit.
+e8fb99433c05167ac8ca24e7337b41e221aadc07:services/api/src/modules/contracts/tests/scripts.test.ts:generic-api-key:34
+
+# I verified this historical value is a synthetic idempotency key, not a credential.
+a3354d566513d520ca4bc289a1ebb380295ac4d2:services/api/src/modules/identity/transactions.test.ts:generic-api-key:39

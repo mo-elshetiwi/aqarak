@@ -1,0 +1,750 @@
+{
+  "registryVersion": 1,
+  "updatedOn": "2026-09-28",
+  "classes": {
+    "mc1_document_extraction": {
+      "purpose": "Extract printed document fields with supporting evidence.",
+      "status": "pre_registered",
+      "decisionRecord": null,
+      "primary": "gpt-6-sol",
+      "fallback": null,
+      "degraded": "manual_form",
+      "candidates": {
+        "gpt-6-luna": {
+          "provider": "openai_responses",
+          "modelId": "gpt-6-luna",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "reasoningEffort": "low",
+            "maxOutputTokens": 4096,
+            "imageDetail": "high"
+          },
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 0.1,
+            "outputUsdPerMillion": 0.5,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "gpt-6-sol": {
+          "provider": "openai_responses",
+          "modelId": "gpt-6-sol",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "reasoningEffort": "low",
+            "maxOutputTokens": 4096,
+            "imageDetail": "high"
+          },
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 2,
+            "outputUsdPerMillion": 10,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "qwen3-vl-8b": {
+          "provider": "ollama",
+          "modelId": "qwen3-vl:8b",
+          "runtime": "local",
+          "licence": "Apache-2.0",
+          "version": {
+            "snapshot": null,
+            "digest": "sha256:901cae73216286ea8c5aba8b46d307ff7188f737285ec500c795a12f05225d28",
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "temperature": 0,
+            "seed": 20260928,
+            "numCtx": 8192,
+            "numPredict": 4096,
+            "think": true
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "gemma4-12b": {
+          "provider": "ollama",
+          "modelId": "gemma4:12b",
+          "runtime": "local",
+          "licence": "Apache-2.0",
+          "version": {
+            "snapshot": null,
+            "digest": "sha256:4eb23ef187e2c5462566d6a1d3bbbc2f1346d0b4327cbb66d58fffbcc9b2b05c",
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "temperature": 0,
+            "seed": 20260928,
+            "numCtx": 8192,
+            "numPredict": 3072,
+            "think": false
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "qwen2-5vl-7b": {
+          "provider": "ollama",
+          "modelId": "qwen2.5vl:7b",
+          "runtime": "local",
+          "licence": "Apache-2.0",
+          "version": {
+            "snapshot": null,
+            "digest": "sha256:5ced39dfa4bac325dc183dd1e4febaa1c46b3ea28bce48896c8e69c1e79611cc",
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "temperature": 0,
+            "seed": 20260928,
+            "numCtx": 8192,
+            "numPredict": 3072,
+            "think": false
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        }
+      }
+    },
+    "mc2_contract_understanding": {
+      "purpose": "Interpret contract terms for review.",
+      "status": "pre_registered",
+      "decisionRecord": null,
+      "primary": "gpt-6-sol",
+      "fallback": "gpt-6-luna",
+      "degraded": "manual_entry",
+      "candidates": {
+        "gpt-6-luna": {
+          "provider": "openai_responses",
+          "modelId": "gpt-6-luna",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "reasoningEffort": "medium",
+            "maxOutputTokens": 4096,
+            "imageDetail": "high"
+          },
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 0.1,
+            "outputUsdPerMillion": 0.5,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "gpt-6-sol": {
+          "provider": "openai_responses",
+          "modelId": "gpt-6-sol",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "reasoningEffort": "medium",
+            "maxOutputTokens": 4096,
+            "imageDetail": "high"
+          },
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 2,
+            "outputUsdPerMillion": 10,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "qwen3-vl-8b": {
+          "provider": "ollama",
+          "modelId": "qwen3-vl:8b",
+          "runtime": "local",
+          "licence": "Apache-2.0",
+          "version": {
+            "snapshot": null,
+            "digest": "sha256:901cae73216286ea8c5aba8b46d307ff7188f737285ec500c795a12f05225d28",
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "temperature": 0,
+            "seed": 20260928,
+            "numCtx": 8192,
+            "numPredict": 4096,
+            "think": true
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "gemma4-12b": {
+          "provider": "ollama",
+          "modelId": "gemma4:12b",
+          "runtime": "local",
+          "licence": "Apache-2.0",
+          "version": {
+            "snapshot": null,
+            "digest": "sha256:4eb23ef187e2c5462566d6a1d3bbbc2f1346d0b4327cbb66d58fffbcc9b2b05c",
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "temperature": 0,
+            "seed": 20260928,
+            "numCtx": 8192,
+            "numPredict": 3072,
+            "think": false
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        }
+      }
+    },
+    "mc3_speech_to_text": {
+      "purpose": "Transcribe speech into text for review.",
+      "status": "pre_registered",
+      "decisionRecord": null,
+      "primary": "gpt-transcribe",
+      "fallback": null,
+      "degraded": "typing",
+      "candidates": {
+        "gpt-transcribe": {
+          "provider": "openai_transcription",
+          "modelId": "gpt-transcribe",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "responseFormat": "json"
+          },
+          "price": {
+            "unit": "audio_minute",
+            "usdPerMinute": 0.0045,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "amazon-transcribe": {
+          "provider": "amazon_transcribe_streaming",
+          "modelId": "amazon-transcribe-streaming",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "region": "us-east-1",
+            "identifyLanguage": true,
+            "languageOptions": ["ar-AE", "en-US"],
+            "preferredLanguage": "ar-AE",
+            "mediaEncoding": "pcm",
+            "sampleRateHertz": 16000,
+            "realtimeFactor": 1
+          },
+          "price": {
+            "unit": "audio_second",
+            "usdPerSecond": 0.0001667,
+            "source": "AWS Price List API, Amazon Transcribe, us-east-1, version 20260911124646",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "faster-whisper-large-v3-turbo": {
+          "provider": "faster_whisper",
+          "modelId": "large-v3-turbo",
+          "runtime": "local",
+          "licence": "MIT",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+            "weightsSha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da"
+          },
+          "parameters": {
+            "weightsDirName": "large-v3-turbo",
+            "computeType": "int8",
+            "beamSize": 5,
+            "temperature": 0,
+            "conditionOnPreviousText": false,
+            "language": null
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "faster-whisper-large-v3": {
+          "provider": "faster_whisper",
+          "modelId": "large-v3",
+          "runtime": "local",
+          "licence": "MIT",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+            "weightsSha256": "69f74147e3334731bc3a76048724833325d2ec74642fb52620eda87352e3d4f1"
+          },
+          "parameters": {
+            "weightsDirName": "large-v3",
+            "computeType": "int8",
+            "beamSize": 5,
+            "temperature": 0,
+            "conditionOnPreviousText": false,
+            "language": null
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        }
+      }
+    },
+    "mc4_photo_triage": {
+      "purpose": "Classify property photos for review.",
+      "status": "pre_registered",
+      "decisionRecord": null,
+      "primary": "gpt-6-luna",
+      "fallback": "gpt-6-sol",
+      "degraded": "untriaged",
+      "candidates": {
+        "gpt-6-luna": {
+          "provider": "openai_responses",
+          "modelId": "gpt-6-luna",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "reasoningEffort": "low",
+            "maxOutputTokens": 4096,
+            "imageDetail": "high"
+          },
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 0.1,
+            "outputUsdPerMillion": 0.5,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "gpt-6-sol": {
+          "provider": "openai_responses",
+          "modelId": "gpt-6-sol",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "reasoningEffort": "low",
+            "maxOutputTokens": 4096,
+            "imageDetail": "high"
+          },
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 2,
+            "outputUsdPerMillion": 10,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "qwen3-vl-8b": {
+          "provider": "ollama",
+          "modelId": "qwen3-vl:8b",
+          "runtime": "local",
+          "licence": "Apache-2.0",
+          "version": {
+            "snapshot": null,
+            "digest": "sha256:901cae73216286ea8c5aba8b46d307ff7188f737285ec500c795a12f05225d28",
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "temperature": 0,
+            "seed": 20260928,
+            "numCtx": 8192,
+            "numPredict": 4096,
+            "think": true
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "gemma4-12b": {
+          "provider": "ollama",
+          "modelId": "gemma4:12b",
+          "runtime": "local",
+          "licence": "Apache-2.0",
+          "version": {
+            "snapshot": null,
+            "digest": "sha256:4eb23ef187e2c5462566d6a1d3bbbc2f1346d0b4327cbb66d58fffbcc9b2b05c",
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "temperature": 0,
+            "seed": 20260928,
+            "numCtx": 8192,
+            "numPredict": 3072,
+            "think": false
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        }
+      }
+    },
+    "mc5_drafting": {
+      "purpose": "Prepare drafted actions for human approval.",
+      "status": "pre_registered",
+      "decisionRecord": null,
+      "primary": "gpt-6-sol",
+      "fallback": null,
+      "degraded": "template_only",
+      "candidates": {
+        "gpt-6-luna": {
+          "provider": "openai_responses",
+          "modelId": "gpt-6-luna",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "reasoningEffort": "low",
+            "maxOutputTokens": 4096
+          },
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 0.1,
+            "outputUsdPerMillion": 0.5,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "gpt-6-sol": {
+          "provider": "openai_responses",
+          "modelId": "gpt-6-sol",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "reasoningEffort": "low",
+            "maxOutputTokens": 4096
+          },
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 2,
+            "outputUsdPerMillion": 10,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "qwen3-8b": {
+          "provider": "ollama",
+          "modelId": "qwen3:8b",
+          "runtime": "local",
+          "licence": "Apache-2.0",
+          "version": {
+            "snapshot": null,
+            "digest": "sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "temperature": 0,
+            "seed": 20260928,
+            "numCtx": 8192,
+            "numPredict": 3072,
+            "think": false
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "gemma4-12b": {
+          "provider": "ollama",
+          "modelId": "gemma4:12b",
+          "runtime": "local",
+          "licence": "Apache-2.0",
+          "version": {
+            "snapshot": null,
+            "digest": "sha256:4eb23ef187e2c5462566d6a1d3bbbc2f1346d0b4327cbb66d58fffbcc9b2b05c",
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "temperature": 0,
+            "seed": 20260928,
+            "numCtx": 8192,
+            "numPredict": 3072,
+            "think": false
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        }
+      }
+    },
+    "mc6_embeddings": {
+      "purpose": "Represent text for semantic retrieval.",
+      "status": "pre_registered",
+      "decisionRecord": null,
+      "primary": "text-embedding-3-small",
+      "fallback": null,
+      "degraded": "lexical_only",
+      "candidates": {
+        "text-embedding-3-small": {
+          "provider": "openai_embeddings",
+          "modelId": "text-embedding-3-small",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {},
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 0.02,
+            "outputUsdPerMillion": 0,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "text-embedding-3-large": {
+          "provider": "openai_embeddings",
+          "modelId": "text-embedding-3-large",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {},
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 0.13,
+            "outputUsdPerMillion": 0,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "bge-m3": {
+          "provider": "sentence_transformers",
+          "modelId": "BAAI/bge-m3",
+          "runtime": "local",
+          "licence": "MIT",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {},
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "multilingual-e5-large-instruct": {
+          "provider": "sentence_transformers",
+          "modelId": "intfloat/multilingual-e5-large-instruct",
+          "runtime": "local",
+          "licence": "MIT",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {},
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        }
+      }
+    },
+    "mc7_orchestration": {
+      "purpose": "Select the next permitted workflow step.",
+      "status": "pre_registered",
+      "decisionRecord": null,
+      "primary": "gpt-6-luna",
+      "fallback": "gpt-6-sol",
+      "degraded": "forms_only",
+      "candidates": {
+        "gpt-6-luna": {
+          "provider": "openai_responses",
+          "modelId": "gpt-6-luna",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "reasoningEffort": "low",
+            "maxOutputTokens": 4096
+          },
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 0.1,
+            "outputUsdPerMillion": 0.5,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "gpt-6-sol": {
+          "provider": "openai_responses",
+          "modelId": "gpt-6-sol",
+          "runtime": "api",
+          "licence": "proprietary",
+          "version": {
+            "snapshot": null,
+            "digest": null,
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "reasoningEffort": "low",
+            "maxOutputTokens": 4096
+          },
+          "price": {
+            "unit": "token",
+            "inputUsdPerMillion": 2,
+            "outputUsdPerMillion": 10,
+            "source": "OpenAI model pages",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "qwen3-8b": {
+          "provider": "ollama",
+          "modelId": "qwen3:8b",
+          "runtime": "local",
+          "licence": "Apache-2.0",
+          "version": {
+            "snapshot": null,
+            "digest": "sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "temperature": 0,
+            "seed": 20260928,
+            "numCtx": 8192,
+            "numPredict": 3072,
+            "think": false
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        },
+        "gemma4-12b": {
+          "provider": "ollama",
+          "modelId": "gemma4:12b",
+          "runtime": "local",
+          "licence": "Apache-2.0",
+          "version": {
+            "snapshot": null,
+            "digest": "sha256:4eb23ef187e2c5462566d6a1d3bbbc2f1346d0b4327cbb66d58fffbcc9b2b05c",
+            "revision": null,
+            "weightsSha256": null
+          },
+          "parameters": {
+            "temperature": 0,
+            "seed": 20260928,
+            "numCtx": 8192,
+            "numPredict": 3072,
+            "think": false
+          },
+          "price": {
+            "unit": "none",
+            "source": "local weights, no marginal charge",
+            "priceDate": "2026-09-28"
+          }
+        }
+      }
+    }
+  }
+}

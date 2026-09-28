@@ -1,0 +1,978 @@
+{
+  "date": "2026-09-28",
+  "synthetic": true,
+  "gitCommit": "4ce116d4dd2b965bd35d46190a9bb3f638671baa",
+  "measurement": {
+    "databaseRegion": "us-east-1",
+    "profile": "aqarak-dev",
+    "localClient": "macOS CLI; geographic network location unverified",
+    "inRegionClient": "Lambda in us-east-1",
+    "startedAt": "2026-09-28T03:50:35.112Z",
+    "completedAt": "2026-09-28T03:52:12.583597+00:00"
+  },
+  "engineVersion": "PostgreSQL 17.9 on aarch64-unknown-linux-gnu, compiled by aarch64-unknown-linux-gnu-gcc (GCC) 10.5.0, 64-bit",
+  "passed": false,
+  "decision": "Accepted with fallback F1",
+  "requiredChecks": [
+    "ISO-05",
+    "AUD-01",
+    "AUD-CHAIN",
+    "PAR-01",
+    "LRG-01",
+    "LAT-IN-REGION"
+  ],
+  "companyIds": [
+    "431d25a7-67f4-48c4-95d0-25aee6f7e15d",
+    "f05ef964-01da-475b-ad30-27905d11932d"
+  ],
+  "checks": [
+    {
+      "id": "ISO-05",
+      "passed": true,
+      "details": {
+        "withoutContext": 0,
+        "outsideTransaction": 0,
+        "otherCompany": 0,
+        "sameTransaction": 1
+      },
+      "timings": {
+        "startedAt": "2026-09-28T03:50:35.112Z",
+        "elapsedMs": 7342.68625
+      }
+    },
+    {
+      "id": "AUD-01",
+      "passed": true,
+      "details": {
+        "companyId": "f9585baf-0813-4da4-922e-0442b3a378ab",
+        "rawCommitMessage": "ERROR: Entity version requires exactly one covering audit event in the same transaction; SQLState: AQ002",
+        "rolledBack": true
+      },
+      "timings": {
+        "startedAt": "2026-09-28T03:50:42.455Z",
+        "elapsedMs": 4042.613625000001
+      }
+    },
+    {
+      "id": "PAR-01",
+      "passed": false,
+      "details": {
+        "error": "ERROR: new row for relation \"document\" violates check constraint \"document_doc_type_check\"; SQLState: 23514"
+      },
+      "timings": {
+        "startedAt": "2026-09-28T03:50:46.497Z",
+        "elapsedMs": 1189.6162079999995
+      }
+    },
+    {
+      "id": "LRG-01",
+      "passed": false,
+      "details": {
+        "error": "ERROR: new row for relation \"document\" violates check constraint \"document_doc_type_check\"; SQLState: 23514"
+      },
+      "timings": {
+        "startedAt": "2026-09-28T03:50:47.687Z",
+        "elapsedMs": 1044.7866250000006
+      }
+    },
+    {
+      "id": "LAT-01",
+      "passed": false,
+      "details": {
+        "error": "ERROR: new row for relation \"document\" violates check constraint \"document_doc_type_check\"; SQLState: 23514"
+      },
+      "timings": {
+        "startedAt": "2026-09-28T03:50:48.732Z",
+        "elapsedMs": 2112.9963750000006
+      }
+    },
+    {
+      "id": "AUD-CHAIN",
+      "passed": true,
+      "details": {
+        "content": {
+          "rowHash": "0ba068deed33b80852212dcff4dfe9c1a21d2be6068ce4d9b6a056e391ae5995",
+          "keys": [
+            "actor_account_id",
+            "actor_role",
+            "after_hash",
+            "before_hash",
+            "changed_fields",
+            "channel",
+            "company_id",
+            "drafted_action_id",
+            "event_id",
+            "event_type",
+            "field_provenance",
+            "idempotency_key",
+            "initiator",
+            "model_call_ids",
+            "occurred_at",
+            "on_behalf_of",
+            "policy_decision",
+            "prompt_version",
+            "reason",
+            "registry_entry",
+            "retention_class",
+            "seq",
+            "subject_id",
+            "subject_type",
+            "tool_version",
+            "trace_id",
+            "tx_id",
+            "version_after",
+            "version_before",
+            "visibility"
+          ],
+          "verified": true
+        },
+        "chain": {
+          "companyIds": [
+            "431d25a7-67f4-48c4-95d0-25aee6f7e15d",
+            "f05ef964-01da-475b-ad30-27905d11932d"
+          ],
+          "canonicalCases": 6,
+          "verified": true
+        }
+      },
+      "timings": {
+        "startedAt": "2026-09-28T03:50:50.845Z",
+        "elapsedMs": 5653.660041999998
+      }
+    },
+    {
+      "id": "LAT-IN-REGION",
+      "passed": false,
+      "details": {
+        "status": "not_run",
+        "reason": "I stopped after a failed database spike check.",
+        "writeP95LimitMs": 800
+      }
+    }
+  ],
+  "deployment": {
+    "stackName": "Dev-DatabaseOpsStack",
+    "status": "CREATE_COMPLETE",
+    "outputs": [
+      {
+        "OutputKey": "MigrateFunctionName",
+        "OutputValue": "Dev-DatabaseOpsStack-MigrateDatabaseFunctionB038EB-U3rgqL6OlT6w"
+      }
+    ]
+  },
+  "deploymentUpdate": {
+    "stackName": "Dev-DatabaseOpsStack",
+    "status": "UPDATE_COMPLETE",
+    "outputs": [
+      {
+        "OutputKey": "MigrateFunctionName",
+        "OutputValue": "Dev-DatabaseOpsStack-MigrateDatabaseFunctionB038EB-U3rgqL6OlT6w"
+      }
+    ]
+  },
+  "initialBootstrapFailure": {
+    "lambdaResponse": {
+      "errorType": "Error",
+      "errorMessage": "Database worker failed",
+      "trace": [
+        "Error: Database worker failed",
+        "    at BufferedInvokeProcessor.handler (/var/task/index.js:2786:11)",
+        "    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+        "    at async BufferedInvokeProcessor.processInvoke (file:///var/runtime/index.mjs:1099:22)",
+        "    at async _Runtime.processSingleConcurrent (file:///var/runtime/index.mjs:1185:7)",
+        "    at async _Runtime.start (file:///var/runtime/index.mjs:1172:7)",
+        "    at async ignition (file:///var/runtime/index.mjs:1645:5)"
+      ]
+    },
+    "diagnosis": {
+      "initialImplementationCommit": "04f9918",
+      "failedStatement": "alter role aqarak_app nosuperuser nobypassrls nocreatedb nocreaterole inherit",
+      "error": "ERROR: permission denied to alter role; SQLState: 42501",
+      "failedStatementExitCode": 254,
+      "failedDiagnosticTransactionRolledBack": true,
+      "supportedStatement": "alter role aqarak_app nocreatedb nocreaterole inherit",
+      "supportedStatementExitCode": 0,
+      "supportedDiagnosticTransactionRolledBack": true,
+      "resolution": "I verify existing rolsuper and rolbypassrls flags and reject unsafe or unknown values before setting login credentials. I retain explicit safe flags when creating a role."
+    }
+  },
+  "concurrentMigrationsImported": {
+    "0005_parties_and_estate.sql": "79bb76f0a697a714cbdd2850942cebfb1bc63aa9ec5e98590a27ba224e4fff3f",
+    "0006_contracts.sql": "fe801155fb86358c6b13fccf63240b104cc8fb862291d8f6f234f0919395c81b",
+    "0007_operations.sql": "d201bd24cc791336a8aa41bf20f1eb30b76b141a86aaedeb9231d70a8874912c",
+    "0008_money.sql": "edbcc6d51eba65e1081d7e73947560f7ace7e1ebcf28143dd4eeadfb98bb568e",
+    "0009_work_maintenance_and_models.sql": "9129e45e449708263fc43344d462642779d2059f97b66c754dc335e76dccc5d8"
+  },
+  "initialHarnessFailure": {
+    "synthetic": true,
+    "companyIds": [
+      "3f09997b-038c-458c-86f5-75d83790dc05",
+      "755064b3-718a-40ab-a4cc-4f95aaa997c1"
+    ],
+    "passed": false,
+    "checks": [
+      {
+        "id": "ISO-05",
+        "passed": false,
+        "details": {
+          "error": "The result can't be converted to JSON because it has a duplicate column."
+        },
+        "timings": {
+          "startedAt": "2026-09-28T03:49:17.846Z",
+          "elapsedMs": 2585.9170000000004
+        }
+      },
+      {
+        "id": "AUD-01",
+        "passed": false,
+        "details": {
+          "error": "The result can't be converted to JSON because it has a duplicate column."
+        },
+        "timings": {
+          "startedAt": "2026-09-28T03:49:20.432Z",
+          "elapsedMs": 731.8330000000001
+        }
+      },
+      {
+        "id": "PAR-01",
+        "passed": false,
+        "details": {
+          "error": "The result can't be converted to JSON because it has a duplicate column."
+        },
+        "timings": {
+          "startedAt": "2026-09-28T03:49:21.164Z",
+          "elapsedMs": 726.5847499999995
+        }
+      },
+      {
+        "id": "LRG-01",
+        "passed": false,
+        "details": {
+          "error": "The result can't be converted to JSON because it has a duplicate column."
+        },
+        "timings": {
+          "startedAt": "2026-09-28T03:49:21.891Z",
+          "elapsedMs": 727.8230409999996
+        }
+      },
+      {
+        "id": "LAT-01",
+        "passed": false,
+        "details": {
+          "error": "The result can't be converted to JSON because it has a duplicate column."
+        },
+        "timings": {
+          "startedAt": "2026-09-28T03:49:22.618Z",
+          "elapsedMs": 733.8184169999995
+        }
+      },
+      {
+        "id": "AUD-CHAIN",
+        "passed": false,
+        "details": {
+          "error": "The result can't be converted to JSON because it has a duplicate column."
+        },
+        "timings": {
+          "startedAt": "2026-09-28T03:49:23.352Z",
+          "elapsedMs": 1255.5947500000002
+        }
+      }
+    ]
+  },
+  "applicationOutputsUnchanged": true,
+  "migrations": {
+    "firstInvocation": {
+      "action": "migrate",
+      "roles": ["aqarak_app", "aqarak_pipeline", "aqarak_scheduler"],
+      "migrations": {
+        "applied": [],
+        "skipped": [
+          "0001_foundation.sql",
+          "0002_core_and_documents.sql",
+          "0003_linear_canonical_text.sql",
+          "0004_align_audit_event_content.sql",
+          "0005_parties_and_estate.sql",
+          "0006_contracts.sql",
+          "0007_operations.sql",
+          "0008_money.sql",
+          "0009_work_maintenance_and_models.sql"
+        ]
+      }
+    },
+    "secondInvocation": {
+      "action": "migrate",
+      "roles": ["aqarak_app", "aqarak_pipeline", "aqarak_scheduler"],
+      "migrations": {
+        "applied": [],
+        "skipped": [
+          "0001_foundation.sql",
+          "0002_core_and_documents.sql",
+          "0003_linear_canonical_text.sql",
+          "0004_align_audit_event_content.sql",
+          "0005_parties_and_estate.sql",
+          "0006_contracts.sql",
+          "0007_operations.sql",
+          "0008_money.sql",
+          "0009_work_maintenance_and_models.sql"
+        ]
+      }
+    },
+    "ledger": {
+      "sql": "select name, sha256 from ops.schema_migration order by name",
+      "startedAt": "2026-09-28T03:48:11.374664+00:00",
+      "rows": [
+        {
+          "name": "0001_foundation.sql",
+          "sha256": "bd200424caca596fe5e1df1676add4e299d891d8258bee59dc8d256669d32072"
+        },
+        {
+          "name": "0002_core_and_documents.sql",
+          "sha256": "efae2dd58a4cd24440136e8ef5384f5d4d5f0f6f176f9fd6fdb2b3d3bbff2b5e"
+        },
+        {
+          "name": "0003_linear_canonical_text.sql",
+          "sha256": "b87747def4c8dd4fb84e840051e067c81730ab22b00dce583038e868e17b9e88"
+        },
+        {
+          "name": "0004_align_audit_event_content.sql",
+          "sha256": "971cf1ab5c95ed3f9a371339fdc176f05b7c8d4da9078cd8b136a9bbb017f802"
+        },
+        {
+          "name": "0005_parties_and_estate.sql",
+          "sha256": "79bb76f0a697a714cbdd2850942cebfb1bc63aa9ec5e98590a27ba224e4fff3f"
+        },
+        {
+          "name": "0006_contracts.sql",
+          "sha256": "fe801155fb86358c6b13fccf63240b104cc8fb862291d8f6f234f0919395c81b"
+        },
+        {
+          "name": "0007_operations.sql",
+          "sha256": "d201bd24cc791336a8aa41bf20f1eb30b76b141a86aaedeb9231d70a8874912c"
+        },
+        {
+          "name": "0008_money.sql",
+          "sha256": "edbcc6d51eba65e1081d7e73947560f7ace7e1ebcf28143dd4eeadfb98bb568e"
+        },
+        {
+          "name": "0009_work_maintenance_and_models.sql",
+          "sha256": "9129e45e449708263fc43344d462642779d2059f97b66c754dc335e76dccc5d8"
+        }
+      ]
+    },
+    "appliedFilesMatchLedger": true
+  },
+  "runtimeRoleProof": {
+    "sql": "select current_user, (select count(*) from core.company) as visible_companies",
+    "startedAt": "2026-09-28T03:48:07.553436+00:00",
+    "rows": [
+      {
+        "current_user": "aqarak_app",
+        "visible_companies": 0
+      }
+    ]
+  },
+  "runtimeRolesProof": {
+    "sql": "select rolname, rolsuper, rolbypassrls, rolcanlogin from pg_roles where rolname like 'aqarak_%' order by 1",
+    "startedAt": "2026-09-28T03:48:08.922525+00:00",
+    "rows": [
+      {
+        "rolname": "aqarak_app",
+        "rolsuper": false,
+        "rolbypassrls": false,
+        "rolcanlogin": true
+      },
+      {
+        "rolname": "aqarak_pipeline",
+        "rolsuper": false,
+        "rolbypassrls": false,
+        "rolcanlogin": true
+      },
+      {
+        "rolname": "aqarak_scheduler",
+        "rolsuper": false,
+        "rolbypassrls": false,
+        "rolcanlogin": true
+      }
+    ]
+  },
+  "objectOwnershipProof": {
+    "sql": "select count(*) filter (where owner <> 'postgres') as non_master_owned_objects, count(*) as inspected_objects from (select pg_get_userbyid(c.relowner) as owner from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname in ('core','party','estate','lease','money','maint','doc','work','ai','audit','ops') union all select pg_get_userbyid(p.proowner) from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname in ('core','party','estate','lease','money','maint','doc','work','ai','audit','ops')) objects",
+    "startedAt": "2026-09-28T03:48:12.689293+00:00",
+    "rows": [
+      {
+        "non_master_owned_objects": 0,
+        "inspected_objects": 330
+      }
+    ]
+  },
+  "validationCommands": [
+    {
+      "command": "pnpm install --frozen-lockfile",
+      "exitCode": 0,
+      "elapsedSeconds": 1.93,
+      "lastFiveLines": [
+        "Scope: all 11 workspace projects",
+        "Already up to date",
+        "Done in 1.2s using pnpm v11.11.0"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk lint",
+      "exitCode": 1,
+      "elapsedSeconds": 278.29,
+      "lastFiveLines": [
+        "✖ 8 problems (8 errors, 0 warnings)",
+        "",
+        "infra/cdk:",
+        "[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @aqarak/cdk@ lint: `eslint . --max-warnings 0`",
+        "Exit status 1"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk lint",
+      "exitCode": 0,
+      "elapsedSeconds": 50.98,
+      "lastFiveLines": ["$ eslint . --max-warnings 0"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk typecheck",
+      "exitCode": 0,
+      "elapsedSeconds": 11.41,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk test -- --maxWorkers=2",
+      "exitCode": 0,
+      "elapsedSeconds": 224.19,
+      "lastFiveLines": [
+        " Test Files  3 passed (3)",
+        "      Tests  36 passed (36)",
+        "   Start at  07:19:15",
+        "   Duration  220.78s (tests 99%, import 1%)",
+        ""
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db lint",
+      "exitCode": 1,
+      "elapsedSeconds": 110.28,
+      "lastFiveLines": [
+        "✖ 1 problem (1 error, 0 warnings)",
+        "",
+        "packages/db:",
+        "[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @aqarak/db@ lint: `eslint . --max-warnings 0`",
+        "Exit status 1"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db lint",
+      "exitCode": 0,
+      "elapsedSeconds": 52.63,
+      "lastFiveLines": ["$ eslint . --max-warnings 0"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db typecheck",
+      "exitCode": 0,
+      "elapsedSeconds": 16.35,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db test -- --maxWorkers=2",
+      "exitCode": 0,
+      "elapsedSeconds": 6.31,
+      "lastFiveLines": [
+        " Test Files  9 passed (9)",
+        "      Tests  52 passed (52)",
+        "   Start at  07:27:06",
+        "   Duration  810ms (transform 50%, import 36%, tests 9%, worker 5%)",
+        ""
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/workers lint",
+      "exitCode": 0,
+      "elapsedSeconds": 26.7,
+      "lastFiveLines": ["$ eslint . --max-warnings 0"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/workers typecheck",
+      "exitCode": 0,
+      "elapsedSeconds": 7.08,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/workers test -- --maxWorkers=2",
+      "exitCode": 0,
+      "elapsedSeconds": 6.03,
+      "lastFiveLines": [
+        " Test Files  1 passed (1)",
+        "      Tests  5 passed (5)",
+        "   Start at  07:27:46",
+        "   Duration  1.09s (import 61%, transform 33%, tests 3%, worker 2%)",
+        ""
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db build",
+      "exitCode": 0,
+      "elapsedSeconds": 7.21,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/workers build",
+      "exitCode": 0,
+      "elapsedSeconds": 7.69,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk synth",
+      "exitCode": 0,
+      "elapsedSeconds": 21.51,
+      "lastFiveLines": [
+        "",
+        "⚡ Done in 155ms",
+        "",
+        "Successfully synthesized to infra/cdk/cdk.out",
+        "Supply a stack id () to display its template."
+      ]
+    },
+    {
+      "command": "pnpm exec prettier --check infra/cdk packages/db services/workers docs/adr",
+      "exitCode": 0,
+      "elapsedSeconds": 13.51,
+      "lastFiveLines": [
+        "Checking formatting...",
+        "All matched files use Prettier code style!"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db lint",
+      "exitCode": 0,
+      "elapsedSeconds": 11.13,
+      "lastFiveLines": ["$ eslint . --max-warnings 0"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db typecheck",
+      "exitCode": 0,
+      "elapsedSeconds": 4.75,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db test -- --maxWorkers=2",
+      "exitCode": 0,
+      "elapsedSeconds": 5.23,
+      "lastFiveLines": [
+        "",
+        "  Transform  |@aqarak/db| transforming modules took 3.35s · 59% of tracked time, re-done on every run",
+        "             persist transforms across runs with fsModuleCache: true",
+        "             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns",
+        ""
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db build",
+      "exitCode": 0,
+      "elapsedSeconds": 7.53,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/workers test -- --maxWorkers=2",
+      "exitCode": 0,
+      "elapsedSeconds": 3.32,
+      "lastFiveLines": [
+        " Test Files  1 passed (1)",
+        "      Tests  5 passed (5)",
+        "   Start at  07:41:42",
+        "   Duration  955ms (transform 55%, import 41%, tests 3%, worker 1%)",
+        ""
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/workers build",
+      "exitCode": 0,
+      "elapsedSeconds": 3.09,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk synth",
+      "exitCode": 0,
+      "elapsedSeconds": 10.22,
+      "lastFiveLines": [
+        "",
+        "⚡ Done in 71ms",
+        "",
+        "Successfully synthesized to infra/cdk/cdk.out",
+        "Supply a stack id () to display its template."
+      ]
+    },
+    {
+      "command": "pnpm exec prettier --check infra/cdk packages/db services/workers docs/adr",
+      "exitCode": 0,
+      "elapsedSeconds": 1.23,
+      "lastFiveLines": [
+        "Checking formatting...",
+        "All matched files use Prettier code style!"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db lint",
+      "exitCode": 0,
+      "lastFiveLines": ["$ eslint . --max-warnings 0"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db typecheck",
+      "exitCode": 0,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db test -- --maxWorkers=2",
+      "exitCode": 0,
+      "lastFiveLines": [
+        " Test Files  9 passed (9)",
+        "      Tests  57 passed (57)",
+        "   Start at  07:50:04",
+        "   Duration  456ms (transform 56%, import 26%, tests 15%, worker 3%)",
+        ""
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db build",
+      "exitCode": 0,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/workers test -- --maxWorkers=2",
+      "exitCode": 0,
+      "lastFiveLines": [
+        " Test Files  1 passed (1)",
+        "      Tests  5 passed (5)",
+        "   Start at  07:50:07",
+        "   Duration  315ms (transform 53%, import 38%, tests 8%, worker 1%)",
+        ""
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/workers build",
+      "exitCode": 0,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    }
+  ],
+  "liveCommands": [
+    {
+      "command": "pnpm --filter @aqarak/cdk exec cdk diff 'Dev/*' --profile aqarak-dev --no-change-set",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:29:40.150758+00:00",
+      "elapsedSeconds": 90.474,
+      "lastFiveLines": [
+        "There were no differences",
+        "",
+        "",
+        "✨  Number of stacks with differences: 2",
+        ""
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk exec cdk diff Dev/IdentityStack --profile aqarak-dev --no-change-set --strict",
+      "exitCode": 1,
+      "startedAt": "2026-09-28T03:32:08.441495+00:00",
+      "elapsedSeconds": 73.962,
+      "lastFiveLines": [
+        "Node.js v24.20.0",
+        "tsx bin/aqarak.ts: Subprocess exited with error 1",
+        "undefined",
+        "infra/cdk:",
+        "[ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL] Command failed with exit code 1: cdk diff Dev/IdentityStack --profile aqarak-dev --no-change-set --strict"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk deploy:dev",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:35:34.360159+00:00",
+      "elapsedSeconds": 157.854,
+      "lastFiveLines": [
+        "Stack ARN:",
+        "arn:aws:cloudformation:us-east-1:000000000000:stack/Dev-DatabaseOpsStack/e4156960-baed-11f1-b781-0e9cffe0e837",
+        "",
+        "✨  Total time: 149.71s",
+        ""
+      ]
+    },
+    {
+      "command": "aws cloudformation describe-stacks --stack-name Dev-DatabaseOpsStack --profile aqarak-dev --region us-east-1 --query 'Stacks[0].{stackName:StackName,status:StackStatus,outputs:Outputs}' --output json",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:38:41.620895+00:00",
+      "elapsedSeconds": 2.768,
+      "lastFiveLines": [
+        "            \"OutputKey\": \"MigrateFunctionName\",",
+        "            \"OutputValue\": \"Dev-DatabaseOpsStack-MigrateDatabaseFunctionB038EB-U3rgqL6OlT6w\"",
+        "        }",
+        "    ]",
+        "}"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk migrate:dev",
+      "exitCode": 1,
+      "startedAt": "2026-09-28T03:38:44.478402+00:00",
+      "elapsedSeconds": 5.59,
+      "lastFiveLines": [
+        "$ tsx scripts/migrate-dev.ts",
+        "Development migration invocation failed; inspect the database operations status and logs.",
+        "infra/cdk:",
+        "[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @aqarak/cdk@ migrate:dev: `tsx scripts/migrate-dev.ts`",
+        "Exit status 1"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk deploy:dev",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:42:13.972575+00:00",
+      "elapsedSeconds": 75.752,
+      "lastFiveLines": [
+        "Stack ARN:",
+        "arn:aws:cloudformation:us-east-1:000000000000:stack/Dev-DatabaseOpsStack/e4156960-baed-11f1-b781-0e9cffe0e837",
+        "",
+        "✨  Total time: 71.81s",
+        ""
+      ]
+    },
+    {
+      "command": "aws cloudformation describe-stacks --stack-name Dev-DatabaseOpsStack --profile aqarak-dev --region us-east-1 --query 'Stacks[0].{stackName:StackName,status:StackStatus,outputs:Outputs}' --output json",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:43:58.665639+00:00",
+      "elapsedSeconds": 6.293,
+      "lastFiveLines": [
+        "            \"OutputKey\": \"MigrateFunctionName\",",
+        "            \"OutputValue\": \"Dev-DatabaseOpsStack-MigrateDatabaseFunctionB038EB-U3rgqL6OlT6w\"",
+        "        }",
+        "    ]",
+        "}"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk migrate:dev",
+      "exitCode": 1,
+      "startedAt": "2026-09-28T03:44:05.143201+00:00",
+      "elapsedSeconds": 11.217,
+      "lastFiveLines": [
+        "$ tsx scripts/migrate-dev.ts",
+        "Development migration invocation failed; inspect the database operations status and logs.",
+        "infra/cdk:",
+        "[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @aqarak/cdk@ migrate:dev: `tsx scripts/migrate-dev.ts`",
+        "Exit status 1"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db test -- --maxWorkers=2",
+      "exitCode": 1,
+      "startedAt": "2026-09-28T03:46:48.666482+00:00",
+      "elapsedSeconds": 2.142,
+      "lastFiveLines": [
+        "   Duration  901ms (transform 62%, import 25%, tests 10%, worker 3%)",
+        "",
+        "packages/db:",
+        "[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @aqarak/db@ test: `vitest run -- --maxWorkers=2`",
+        "Exit status 1"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db test -- --maxWorkers=2",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:47:27.144240+00:00",
+      "elapsedSeconds": 1.451,
+      "lastFiveLines": [
+        " Test Files  9 passed (9)",
+        "      Tests  56 passed (56)",
+        "   Start at  07:47:27",
+        "   Duration  624ms (transform 45%, import 32%, tests 21%, worker 2%)",
+        ""
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db lint",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:47:28.644655+00:00",
+      "elapsedSeconds": 4.776,
+      "lastFiveLines": ["$ eslint . --max-warnings 0"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db typecheck",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:47:33.476382+00:00",
+      "elapsedSeconds": 1.67,
+      "lastFiveLines": ["$ tsc --noEmit"]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk deploy:dev",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:47:50.014015+00:00",
+      "elapsedSeconds": 64.929,
+      "lastFiveLines": [
+        "Stack ARN:",
+        "arn:aws:cloudformation:us-east-1:000000000000:stack/Dev-DatabaseOpsStack/e4156960-baed-11f1-b781-0e9cffe0e837",
+        "",
+        "✨  Total time: 62.62s",
+        ""
+      ]
+    },
+    {
+      "command": "aws rds-data execute-statement --profile aqarak-dev --region us-east-1 --resource-arn arn:aws:rds:us-east-1:000000000000:cluster:dev-datastack-clustereb0386a7-5oucapskxxpt --secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:AppSecretFAB5164C-0tqX8eKMLmg2-y0xRaV --database aqarak --sql 'select current_user, (select count(*) from core.company) as visible_companies' --format-records-as JSON --output json",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:48:07.553436+00:00",
+      "elapsedSeconds": 1.368,
+      "lastFiveLines": [
+        "{",
+        "    \"numberOfRecordsUpdated\": 0,",
+        "    \"formattedRecords\": \"[{\\\"current_user\\\":\\\"aqarak_app\\\",\\\"visible_companies\\\":0}]\"",
+        "}"
+      ]
+    },
+    {
+      "command": "aws rds-data execute-statement --profile aqarak-dev --region us-east-1 --resource-arn arn:aws:rds:us-east-1:000000000000:cluster:dev-datastack-clustereb0386a7-5oucapskxxpt --secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:MasterSecretA11BF785-gHaVpPiKdKvo-x3btXP --database aqarak --sql 'select rolname, rolsuper, rolbypassrls, rolcanlogin from pg_roles where rolname like '\"'\"'aqarak_%'\"'\"' order by 1' --format-records-as JSON --output json",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:48:08.922525+00:00",
+      "elapsedSeconds": 1.219,
+      "lastFiveLines": [
+        "{",
+        "    \"numberOfRecordsUpdated\": 0,",
+        "    \"formattedRecords\": \"[{\\\"rolname\\\":\\\"aqarak_app\\\",\\\"rolsuper\\\":false,\\\"rolbypassrls\\\":false,\\\"rolcanlogin\\\":true},{\\\"rolname\\\":\\\"aqarak_pipeline\\\",\\\"rolsuper\\\":false,\\\"rolbypassrls\\\":false,\\\"rolcanlogin\\\":true},{\\\"rolname\\\":\\\"aqarak_scheduler\\\",\\\"rolsuper\\\":false,\\\"rolbypassrls\\\":false,\\\"rolcanlogin\\\":true}]\"",
+        "}"
+      ]
+    },
+    {
+      "command": "aws rds-data execute-statement --profile aqarak-dev --region us-east-1 --resource-arn arn:aws:rds:us-east-1:000000000000:cluster:dev-datastack-clustereb0386a7-5oucapskxxpt --secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:MasterSecretA11BF785-gHaVpPiKdKvo-x3btXP --database aqarak --sql 'select version()' --format-records-as JSON --output json",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:48:10.142199+00:00",
+      "elapsedSeconds": 1.232,
+      "lastFiveLines": [
+        "{",
+        "    \"numberOfRecordsUpdated\": 0,",
+        "    \"formattedRecords\": \"[{\\\"version\\\":\\\"PostgreSQL 17.9 on aarch64-unknown-linux-gnu, compiled by aarch64-unknown-linux-gnu-gcc (GCC) 10.5.0, 64-bit\\\"}]\"",
+        "}"
+      ]
+    },
+    {
+      "command": "aws rds-data execute-statement --profile aqarak-dev --region us-east-1 --resource-arn arn:aws:rds:us-east-1:000000000000:cluster:dev-datastack-clustereb0386a7-5oucapskxxpt --secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:MasterSecretA11BF785-gHaVpPiKdKvo-x3btXP --database aqarak --sql 'select name, sha256 from ops.schema_migration order by name' --format-records-as JSON --output json",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:48:11.374664+00:00",
+      "elapsedSeconds": 1.314,
+      "lastFiveLines": [
+        "{",
+        "    \"numberOfRecordsUpdated\": 0,",
+        "    \"formattedRecords\": \"[{\\\"name\\\":\\\"0001_foundation.sql\\\",\\\"sha256\\\":\\\"bd200424caca596fe5e1df1676add4e299d891d8258bee59dc8d256669d32072\\\"},{\\\"name\\\":\\\"0002_core_and_documents.sql\\\",\\\"sha256\\\":\\\"efae2dd58a4cd24440136e8ef5384f5d4d5f0f6f176f9fd6fdb2b3d3bbff2b5e\\\"},{\\\"name\\\":\\\"0003_linear_canonical_text.sql\\\",\\\"sha256\\\":\\\"b87747def4c8dd4fb84e840051e067c81730ab22b00dce583038e868e17b9e88\\\"},{\\\"name\\\":\\\"0004_align_audit_event_content.sql\\\",\\\"sha256\\\":\\\"971cf1ab5c95ed3f9a371339fdc176f05b7c8d4da9078cd8b136a9bbb017f802\\\"},{\\\"name\\\":\\\"0005_parties_and_estate.sql\\\",\\\"sha256\\\":\\\"79bb76f0a697a714cbdd2850942cebfb1bc63aa9ec5e98590a27ba224e4fff3f\\\"},{\\\"name\\\":\\\"0006_contracts.sql\\\",\\\"sha256\\\":\\\"fe801155fb86358c6b13fccf63240b104cc8fb862291d8f6f234f0919395c81b\\\"},{\\\"name\\\":\\\"0007_operations.sql\\\",\\\"sha256\\\":\\\"d201bd24cc791336a8aa41bf20f1eb30b76b141a86aaedeb9231d70a8874912c\\\"},{\\\"name\\\":\\\"0008_money.sql\\\",\\\"sha256\\\":\\\"edbcc6d51eba65e1081d7e73947560f7ace7e1ebcf28143dd4eeadfb98bb568e\\\"},{\\\"name\\\":\\\"0009_work_maintenance_and_models.sql\\\",\\\"sha256\\\":\\\"9129e45e449708263fc43344d462642779d2059f97b66c754dc335e76dccc5d8\\\"}]\"",
+        "}"
+      ]
+    },
+    {
+      "command": "aws rds-data execute-statement --profile aqarak-dev --region us-east-1 --resource-arn arn:aws:rds:us-east-1:000000000000:cluster:dev-datastack-clustereb0386a7-5oucapskxxpt --secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:MasterSecretA11BF785-gHaVpPiKdKvo-x3btXP --database aqarak --sql 'select count(*) filter (where owner <> '\"'\"'postgres'\"'\"') as non_master_owned_objects, count(*) as inspected_objects from (select pg_get_userbyid(c.relowner) as owner from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname in ('\"'\"'core'\"'\"','\"'\"'party'\"'\"','\"'\"'estate'\"'\"','\"'\"'lease'\"'\"','\"'\"'money'\"'\"','\"'\"'maint'\"'\"','\"'\"'doc'\"'\"','\"'\"'work'\"'\"','\"'\"'ai'\"'\"','\"'\"'audit'\"'\"','\"'\"'ops'\"'\"') union all select pg_get_userbyid(p.proowner) from pg_proc p join pg_namespace n on n.oid=p.pronamespace where n.nspname in ('\"'\"'core'\"'\"','\"'\"'party'\"'\"','\"'\"'estate'\"'\"','\"'\"'lease'\"'\"','\"'\"'money'\"'\"','\"'\"'maint'\"'\"','\"'\"'doc'\"'\"','\"'\"'work'\"'\"','\"'\"'ai'\"'\"','\"'\"'audit'\"'\"','\"'\"'ops'\"'\"')) objects' --format-records-as JSON --output json",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:48:12.689293+00:00",
+      "elapsedSeconds": 1.3,
+      "lastFiveLines": [
+        "{",
+        "    \"numberOfRecordsUpdated\": 0,",
+        "    \"formattedRecords\": \"[{\\\"non_master_owned_objects\\\":0,\\\"inspected_objects\\\":330}]\"",
+        "}"
+      ]
+    },
+    {
+      "command": "aws cloudformation describe-stacks --stack-name Dev-DatabaseOpsStack --profile aqarak-dev --region us-east-1 --query 'Stacks[0].{stackName:StackName,status:StackStatus,outputs:Outputs}' --output json",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:49:07.255553+00:00",
+      "elapsedSeconds": 1.174,
+      "lastFiveLines": [
+        "            \"OutputKey\": \"MigrateFunctionName\",",
+        "            \"OutputValue\": \"Dev-DatabaseOpsStack-MigrateDatabaseFunctionB038EB-U3rgqL6OlT6w\"",
+        "        }",
+        "    ]",
+        "}"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk migrate:dev",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:49:08.468117+00:00",
+      "elapsedSeconds": 4.768,
+      "lastFiveLines": [
+        "      \"0008_money.sql\",",
+        "      \"0009_work_maintenance_and_models.sql\"",
+        "    ]",
+        "  }",
+        "}"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk migrate:dev",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:49:13.281084+00:00",
+      "elapsedSeconds": 4.052,
+      "lastFiveLines": [
+        "      \"0008_money.sql\",",
+        "      \"0009_work_maintenance_and_models.sql\"",
+        "    ]",
+        "  }",
+        "}"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db sp2:dev -- --cluster-arn arn:aws:rds:us-east-1:000000000000:cluster:dev-datastack-clustereb0386a7-5oucapskxxpt --app-secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:AppSecretFAB5164C-0tqX8eKMLmg2-y0xRaV --master-secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:MasterSecretA11BF785-gHaVpPiKdKvo-x3btXP --database aqarak --bucket dev-storagestack-documentsbucket9ec9deb9-mddfkybcyvgx --profile aqarak-dev --region us-east-1 --out infra/cdk/test-results/run-1/sp2-local.json",
+      "exitCode": 1,
+      "startedAt": "2026-09-28T03:49:17.379563+00:00",
+      "elapsedSeconds": 7.288,
+      "lastFiveLines": [
+        "  ]",
+        "}",
+        "packages/db:",
+        "[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @aqarak/db@ sp2:dev: `node --experimental-strip-types scripts/sp2-gate.ts -- --cluster-arn arn:aws:rds:us-east-1:000000000000:cluster:dev-datastack-clustereb0386a7-5oucapskxxpt --app-secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:AppSecretFAB5164C-0tqX8eKMLmg2-y0xRaV --master-secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:MasterSecretA11BF785-gHaVpPiKdKvo-x3btXP --database aqarak --bucket dev-storagestack-documentsbucket9ec9deb9-mddfkybcyvgx --profile aqarak-dev --region us-east-1 --out infra/cdk/test-results/run-1/sp2-local.json`",
+        "Exit status 1"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/db sp2:dev -- --cluster-arn arn:aws:rds:us-east-1:000000000000:cluster:dev-datastack-clustereb0386a7-5oucapskxxpt --app-secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:AppSecretFAB5164C-0tqX8eKMLmg2-y0xRaV --master-secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:MasterSecretA11BF785-gHaVpPiKdKvo-x3btXP --database aqarak --bucket dev-storagestack-documentsbucket9ec9deb9-mddfkybcyvgx --profile aqarak-dev --region us-east-1 --out infra/cdk/test-results/run-1/sp2-local.json",
+      "exitCode": 1,
+      "startedAt": "2026-09-28T03:50:34.072591+00:00",
+      "elapsedSeconds": 22.484,
+      "lastFiveLines": [
+        "  ]",
+        "}",
+        "packages/db:",
+        "[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @aqarak/db@ sp2:dev: `node --experimental-strip-types scripts/sp2-gate.ts -- --cluster-arn arn:aws:rds:us-east-1:000000000000:cluster:dev-datastack-clustereb0386a7-5oucapskxxpt --app-secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:AppSecretFAB5164C-0tqX8eKMLmg2-y0xRaV --master-secret-arn arn:aws:secretsmanager:us-east-1:000000000000:secret:MasterSecretA11BF785-gHaVpPiKdKvo-x3btXP --database aqarak --bucket dev-storagestack-documentsbucket9ec9deb9-mddfkybcyvgx --profile aqarak-dev --region us-east-1 --out infra/cdk/test-results/run-1/sp2-local.json`",
+        "Exit status 1"
+      ]
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk outputs:dev",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:49:29.292042+00:00",
+      "lastFiveLines": [
+        "$ tsx scripts/write-outputs.ts",
+        "Wrote validated development application outputs to outputs/dev.json"
+      ]
+    },
+    {
+      "command": "git diff --exit-code -- infra/cdk/outputs/dev.json",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:49:29.330460+00:00",
+      "lastFiveLines": []
+    },
+    {
+      "command": "pnpm --filter @aqarak/cdk deploy:dev",
+      "exitCode": 0,
+      "startedAt": "2026-09-28T03:50:34.117761+00:00",
+      "elapsedSeconds": 64.114,
+      "lastFiveLines": [
+        "Stack ARN:",
+        "arn:aws:cloudformation:us-east-1:000000000000:stack/Dev-DatabaseOpsStack/e4156960-baed-11f1-b781-0e9cffe0e837",
+        "",
+        "✨  Total time: 61.82s",
+        ""
+      ]
+    }
+  ],
+  "limitations": [
+    "I measured synthetic rows on one day.",
+    "I did not measure a cold resume from auto-pause.",
+    "I retain synthetic companies. The document-type constraint stopped the large-content probe before its S3 upload.",
+    "I did not deploy fallback F1."
+  ]
+}

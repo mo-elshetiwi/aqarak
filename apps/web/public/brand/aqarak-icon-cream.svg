@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Aqarak — Final Tight (Cream)">
+  <title>Aqarak — Final Tight (Cream)</title>
+  
+    <defs>
+      <radialGradient id="tw_y" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="108">
+        <stop offset="0%" stop-color="#845410"></stop>
+        <stop offset="40%" stop-color="#9A6214"></stop>
+        <stop offset="72%" stop-color="#C9912F"></stop>
+        <stop offset="100%" stop-color="#EDC369"></stop>
+      </radialGradient>
+      <linearGradient id="rg_y" gradientUnits="userSpaceOnUse" x1="128" y1="101" x2="128" y2="155">
+        <stop offset="0%" stop-color="#EDC369"></stop>
+        <stop offset="50%" stop-color="#C9912F"></stop>
+        <stop offset="100%" stop-color="#9A6214"></stop>
+      </linearGradient>
+      <radialGradient id="pg_y" cx="0.5" cy="0.5" r="0.55">
+        <stop offset="0%" stop-color="#C9912F" stop-opacity="0.07"></stop>
+        <stop offset="55%" stop-color="#C9912F" stop-opacity="0.02"></stop>
+        <stop offset="100%" stop-color="#C9912F" stop-opacity="0"></stop>
+      </radialGradient>
+    </defs>
+    <rect x="0" y="0" width="256" height="256" rx="52" fill="#F6F0E4"></rect>
+    <circle cx="128" cy="128" r="112" fill="url(#pg_y)"></circle>
+    
+      <g transform="rotate(0 128 128)"><g transform="translate(128 134)">
+        <path d="M -21 -48 L -21 -74 L -16 -74 L -16 -96 L -11 -96 L -11 -109 Q -11 -114 -6 -114 L 6 -114 Q 11 -114 11 -109 L 11 -96 L 16 -96 L 16 -74 L 21 -74 L 21 -48 Q 21 -46 19 -46 L 8 -46 L 8 -57 A 8 8 0 0 0 -8 -57 L -8 -46 L -19 -46 Q -21 -46 -21 -48 Z" fill="url(#tw_y)"></path>
+      </g></g>
+    
+      <g transform="rotate(60 128 128)"><g transform="translate(128 134)">
+        <path d="M -21 -48 L -21 -74 L -16 -74 L -16 -96 L -11 -96 L -11 -109 Q -11 -114 -6 -114 L 6 -114 Q 11 -114 11 -109 L 11 -96 L 16 -96 L 16 -74 L 21 -74 L 21 -48 Q 21 -46 19 -46 L 8 -46 L 8 -57 A 8 8 0 0 0 -8 -57 L -8 -46 L -19 -46 Q -21 -46 -21 -48 Z" fill="url(#tw_y)"></path>
+      </g></g>
+    
+      <g transform="rotate(120 128 128)"><g transform="translate(128 134)">
+        <path d="M -21 -48 L -21 -74 L -16 -74 L -16 -96 L -11 -96 L -11 -109 Q -11 -114 -6 -114 L 6 -114 Q 11 -114 11 -109 L 11 -96 L 16 -96 L 16 -74 L 21 -74 L 21 -48 Q 21 -46 19 -46 L 8 -46 L 8 -57 A 8 8 0 0 0 -8 -57 L -8 -46 L -19 -46 Q -21 -46 -21 -48 Z" fill="url(#tw_y)"></path>
+      </g></g>
+    
+      <g transform="rotate(180 128 128)"><g transform="translate(128 134)">
+        <path d="M -21 -48 L -21 -74 L -16 -74 L -16 -96 L -11 -96 L -11 -109 Q -11 -114 -6 -114 L 6 -114 Q 11 -114 11 -109 L 11 -96 L 16 -96 L 16 -74 L 21 -74 L 21 -48 Q 21 -46 19 -46 L 8 -46 L 8 -57 A 8 8 0 0 0 -8 -57 L -8 -46 L -19 -46 Q -21 -46 -21 -48 Z" fill="url(#tw_y)"></path>
+      </g></g>
+    
+      <g transform="rotate(240 128 128)"><g transform="translate(128 134)">
+        <path d="M -21 -48 L -21 -74 L -16 -74 L -16 -96 L -11 -96 L -11 -109 Q -11 -114 -6 -114 L 6 -114 Q 11 -114 11 -109 L 11 -96 L 16 -96 L 16 -74 L 21 -74 L 21 -48 Q 21 -46 19 -46 L 8 -46 L 8 -57 A 8 8 0 0 0 -8 -57 L -8 -46 L -19 -46 Q -21 -46 -21 -48 Z" fill="url(#tw_y)"></path>
+      </g></g>
+    
+      <g transform="rotate(300 128 128)"><g transform="translate(128 134)">
+        <path d="M -21 -48 L -21 -74 L -16 -74 L -16 -96 L -11 -96 L -11 -109 Q -11 -114 -6 -114 L 6 -114 Q 11 -114 11 -109 L 11 -96 L 16 -96 L 16 -74 L 21 -74 L 21 -48 Q 21 -46 19 -46 L 8 -46 L 8 -57 A 8 8 0 0 0 -8 -57 L -8 -46 L -19 -46 Q -21 -46 -21 -48 Z" fill="url(#tw_y)"></path>
+      </g></g>
+    
+    <path d="M155.00,128.00 L141.50,151.38 L114.50,151.38 L101.00,128.00 L114.50,104.62 L141.50,104.62 Z" fill="none" stroke="url(#rg_y)" stroke-width="2.6" stroke-linejoin="round"></path>
+  
+</svg>

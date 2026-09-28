@@ -1,0 +1,7 @@
+{
+  "now": "الآن",
+  "minutes": "{count, plural, zero {منذ أقل من دقيقة} one {منذ دقيقة} two {منذ دقيقتين} few {منذ # دقائق} many {منذ # دقيقة} other {منذ # دقيقة}}",
+  "hours": "{count, plural, zero {منذ أقل من ساعة} one {منذ ساعة} two {منذ ساعتين} few {منذ # ساعات} many {منذ # ساعة} other {منذ # ساعة}}",
+  "days": "{count, plural, zero {اليوم} one {منذ يوم} two {منذ يومين} few {منذ # أيام} many {منذ # يوماً} other {منذ # يوم}}",
+  "currency": "درهم"
+}

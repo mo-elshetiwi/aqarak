@@ -1,0 +1,178 @@
+{
+  "startedAt": "2026-09-28T03:40:08.253503+00:00",
+  "commands": [
+    {
+      "command": "pnpm --filter @aqarak/db lint",
+      "exitCode": 0,
+      "lastFiveLines": ["$ eslint . --max-warnings 0"],
+      "output": "$ eslint . --max-warnings 0\n",
+      "finishedAt": "2026-09-28T03:40:21.462594+00:00"
+    },
+    {
+      "command": "pnpm --filter @aqarak/db typecheck",
+      "exitCode": 0,
+      "lastFiveLines": ["$ tsc --noEmit"],
+      "output": "$ tsc --noEmit\n",
+      "finishedAt": "2026-09-28T03:40:23.556518+00:00"
+    },
+    {
+      "command": "pnpm --filter @aqarak/db test --maxWorkers=2",
+      "exitCode": 0,
+      "lastFiveLines": [
+        "   Start at  07:40:24",
+        "   Duration  718ms (import 41%, transform 30%, tests 25%, worker 4%)",
+        "",
+        "    Isolate  10 workers spawned \u00b7 ~80ms startup each (spawn + environment, per file)",
+        "             at least ~318ms faster with isolate: false \u2014 reuses workers across files instead of one per file"
+      ],
+      "output": "$ vitest run --maxWorkers=2\n\n RUN  v5.0.2 packages/db\n\n\n Test Files  10 passed (10)\n      Tests  62 passed (62)\n   Start at  07:40:24\n   Duration  718ms (import 41%, transform 30%, tests 25%, worker 4%)\n\n    Isolate  10 workers spawned \u00b7 ~80ms startup each (spawn + environment, per file)\n             at least ~318ms faster with isolate: false \u2014 reuses workers across files instead of one per file\n\n",
+      "finishedAt": "2026-09-28T03:40:25.219407+00:00"
+    },
+    {
+      "command": "pnpm --filter @aqarak/db build",
+      "exitCode": 0,
+      "lastFiveLines": ["$ tsc --noEmit"],
+      "output": "$ tsc --noEmit\n",
+      "finishedAt": "2026-09-28T03:40:26.989643+00:00"
+    },
+    {
+      "command": "pnpm exec prettier --check packages/db",
+      "exitCode": 1,
+      "lastFiveLines": [
+        "Checking formatting...",
+        "[warn] packages/db/spikes/results/business-schema-commands-2026-09-28.json",
+        "[warn] Code style issues found in the above file. Run Prettier with --write to fix."
+      ],
+      "output": "Checking formatting...\n[warn] packages/db/spikes/results/business-schema-commands-2026-09-28.json\n[warn] Code style issues found in the above file. Run Prettier with --write to fix.\n",
+      "finishedAt": "2026-09-28T03:40:28.127681+00:00"
+    },
+    {
+      "command": "pnpm --filter @aqarak/db migrate:dev",
+      "exitCode": 0,
+      "lastFiveLines": [
+        "    \"0006_contracts.sql\",",
+        "    \"0007_operations.sql\",",
+        "    \"0008_money.sql\"",
+        "  ]",
+        "}"
+      ],
+      "output": "$ node --experimental-strip-types scripts/migrate-dev.ts\n{\n  \"applied\": [\n    \"0009_work_maintenance_and_models.sql\"\n  ],\n  \"skipped\": [\n    \"0001_foundation.sql\",\n    \"0002_core_and_documents.sql\",\n    \"0003_linear_canonical_text.sql\",\n    \"0004_align_audit_event_content.sql\",\n    \"0005_parties_and_estate.sql\",\n    \"0006_contracts.sql\",\n    \"0007_operations.sql\",\n    \"0008_money.sql\"\n  ]\n}\n",
+      "finishedAt": "2026-09-28T03:41:42.139978+00:00"
+    },
+    {
+      "command": "pnpm --filter @aqarak/db migrate:dev",
+      "exitCode": 0,
+      "lastFiveLines": [
+        "    \"0007_operations.sql\",",
+        "    \"0008_money.sql\",",
+        "    \"0009_work_maintenance_and_models.sql\"",
+        "  ]",
+        "}"
+      ],
+      "output": "$ node --experimental-strip-types scripts/migrate-dev.ts\n{\n  \"applied\": [],\n  \"skipped\": [\n    \"0001_foundation.sql\",\n    \"0002_core_and_documents.sql\",\n    \"0003_linear_canonical_text.sql\",\n    \"0004_align_audit_event_content.sql\",\n    \"0005_parties_and_estate.sql\",\n    \"0006_contracts.sql\",\n    \"0007_operations.sql\",\n    \"0008_money.sql\",\n    \"0009_work_maintenance_and_models.sql\"\n  ]\n}\n",
+      "finishedAt": "2026-09-28T03:41:55.083676+00:00"
+    },
+    {
+      "command": "pnpm --filter @aqarak/db dom:dev",
+      "exitCode": 1,
+      "lastFiveLines": [
+        "  \"passed\": false",
+        "}",
+        "packages/db:",
+        "[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @aqarak/db@ dom:dev: `node --experimental-strip-types scripts/dom-dev.ts`",
+        "Exit status 1"
+      ],
+      "output": "$ node --experimental-strip-types scripts/dom-dev.ts\n{\n  \"observedAt\": \"2026-09-28T03:42:13.311Z\",\n  \"database\": \"aqarak\",\n  \"checks\": [\n    {\n      \"name\": \"overlapping blocking unit dates\",\n      \"expected\": \"23P01\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"cheque deposit before its date\",\n      \"expected\": \"23514\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"owner statement reconciliation\",\n      \"expected\": \"23514\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"invoice VAT rounded half up\",\n      \"expected\": \"23514\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"submitted contract version update\",\n      \"expected\": \"AQ010\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"submitted clause insertion\",\n      \"expected\": \"AQ010\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"C1 payment over-allocation\",\n      \"expected\": \"AQ020\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"C2 target over-allocation\",\n      \"expected\": \"AQ020\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"refund participates in C1\",\n      \"expected\": \"AQ020\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"payment reduction preserves C1\",\n      \"expected\": \"AQ020\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"instalment reduction preserves C2\",\n      \"expected\": \"AQ020\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"revision requires cancelled predecessor\",\n      \"expected\": \"23514\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"runtime grants remain narrow\",\n      \"expected\": \"success\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"normalization and large number formatting\",\n      \"expected\": \"success\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"cross-company foreign key rejection\",\n      \"expected\": \"23503\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"material discrepancy cannot be equivalent\",\n      \"expected\": \"23514\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"extraction field bounds and provenance\",\n      \"expected\": \"success\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"valid half-fils VAT rounds up\",\n      \"expected\": \"success\",\n      \"actual\": \"setup_failed:unknown\",\n      \"passed\": false,\n      \"rolledBack\": true\n    },\n    {\n      \"name\": \"five number rollbacks leave no gap\",\n      \"expected\": \"1,1,1,1,1,1,2\",\n      \"actual\": \"unknown\",\n      \"passed\": false,\n      \"rolledBack\": true,\n      \"values\": []\n    }\n  ],\n  \"passed\": false\n}\npackages/db:\n[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @aqarak/db@ dom:dev: `node --experimental-strip-types scripts/dom-dev.ts`\nExit status 1\n",
+      "finishedAt": "2026-09-28T03:42:13.576869+00:00"
+    },
+    {
+      "command": "pnpm --filter @aqarak/db dom:dev",
+      "exitCode": 0,
+      "lastFiveLines": ["      ]", "    }", "  ],", "  \"passed\": true", "}"],
+      "outputFile": "packages/db/spikes/results/domain-invariants-2026-09-28.json",
+      "finishedAt": "2026-09-28T03:44:18.184Z"
+    },
+    {
+      "command": "pnpm --filter @aqarak/db lint",
+      "exitCode": 0,
+      "lastFiveLines": ["$ eslint . --max-warnings 0"],
+      "output": "$ eslint . --max-warnings 0\n",
+      "finishedAt": "2026-09-28T03:46:33.183224+00:00"
+    },
+    {
+      "command": "pnpm --filter @aqarak/db typecheck",
+      "exitCode": 0,
+      "lastFiveLines": ["$ tsc --noEmit"],
+      "output": "$ tsc --noEmit\n",
+      "finishedAt": "2026-09-28T03:46:37.036549+00:00"
+    },
+    {
+      "command": "pnpm --filter @aqarak/db test --maxWorkers=2",
+      "exitCode": 0,
+      "lastFiveLines": [
+        "   Start at  07:46:38",
+        "   Duration  1.24s (import 34%, transform 34%, tests 29%, worker 4%)",
+        "",
+        "    Isolate  10 workers spawned \u00b7 ~121ms startup each (spawn + environment, per file)",
+        "             at least ~483ms faster with isolate: false \u2014 reuses workers across files instead of one per file"
+      ],
+      "output": "$ vitest run --maxWorkers=2\n\n RUN  v5.0.2 packages/db\n\n\n Test Files  10 passed (10)\n      Tests  63 passed (63)\n   Start at  07:46:38\n   Duration  1.24s (import 34%, transform 34%, tests 29%, worker 4%)\n\n    Isolate  10 workers spawned \u00b7 ~121ms startup each (spawn + environment, per file)\n             at least ~483ms faster with isolate: false \u2014 reuses workers across files instead of one per file\n\n",
+      "finishedAt": "2026-09-28T03:46:39.657544+00:00"
+    },
+    {
+      "command": "pnpm --filter @aqarak/db build",
+      "exitCode": 0,
+      "lastFiveLines": ["$ tsc --noEmit"],
+      "output": "$ tsc --noEmit\n",
+      "finishedAt": "2026-09-28T03:46:42.708996+00:00"
+    },
+    {
+      "command": "shasum -a 256 packages/db/migrations/0001_foundation.sql packages/db/migrations/0002_core_and_documents.sql packages/db/migrations/0003_linear_canonical_text.sql packages/db/migrations/0004_align_audit_event_content.sql",
+      "exitCode": 0,
+      "lastFiveLines": [
+        "bd200424caca596fe5e1df1676add4e299d891d8258bee59dc8d256669d32072  packages/db/migrations/0001_foundation.sql",
+        "efae2dd58a4cd24440136e8ef5384f5d4d5f0f6f176f9fd6fdb2b3d3bbff2b5e  packages/db/migrations/0002_core_and_documents.sql",
+        "b87747def4c8dd4fb84e840051e067c81730ab22b00dce583038e868e17b9e88  packages/db/migrations/0003_linear_canonical_text.sql",
+        "971cf1ab5c95ed3f9a371339fdc176f05b7c8d4da9078cd8b136a9bbb017f802  packages/db/migrations/0004_align_audit_event_content.sql"
+      ],
+      "output": "bd200424caca596fe5e1df1676add4e299d891d8258bee59dc8d256669d32072  packages/db/migrations/0001_foundation.sql\nefae2dd58a4cd24440136e8ef5384f5d4d5f0f6f176f9fd6fdb2b3d3bbff2b5e  packages/db/migrations/0002_core_and_documents.sql\nb87747def4c8dd4fb84e840051e067c81730ab22b00dce583038e868e17b9e88  packages/db/migrations/0003_linear_canonical_text.sql\n971cf1ab5c95ed3f9a371339fdc176f05b7c8d4da9078cd8b136a9bbb017f802  packages/db/migrations/0004_align_audit_event_content.sql\n",
+      "finishedAt": "2026-09-28T03:46:42.782823+00:00"
+    },
+    {
+      "command": "shasum -a 256 -c packages/db/.foundation-sha256",
+      "exitCode": 0,
+      "lastFiveLines": [
+        "packages/db/migrations/0001_foundation.sql: OK",
+        "packages/db/migrations/0002_core_and_documents.sql: OK",
+        "packages/db/migrations/0003_linear_canonical_text.sql: OK",
+        "packages/db/migrations/0004_align_audit_event_content.sql: OK"
+      ],
+      "output": "packages/db/migrations/0001_foundation.sql: OK\npackages/db/migrations/0002_core_and_documents.sql: OK\npackages/db/migrations/0003_linear_canonical_text.sql: OK\npackages/db/migrations/0004_align_audit_event_content.sql: OK\n",
+      "finishedAt": "2026-09-28T03:46:42.812535+00:00"
+    },
+    {
+      "command": "pnpm exec prettier --check packages/db",
+      "exitCode": 0,
+      "lastFiveLines": [
+        "Checking formatting...",
+        "All matched files use Prettier code style!"
+      ],
+      "output": "Checking formatting...\nAll matched files use Prettier code style!\n",
+      "finishedAt": "2026-09-28T03:47:25.398326+00:00"
+    },
+    {
+      "command": "shasum -a 256 -c packages/db/spikes/results/foundation-before-2026-09-28.sha256",
+      "exitCode": 0,
+      "lastFiveLines": [
+        "packages/db/migrations/0001_foundation.sql: OK",
+        "packages/db/migrations/0002_core_and_documents.sql: OK",
+        "packages/db/migrations/0003_linear_canonical_text.sql: OK",
+        "packages/db/migrations/0004_align_audit_event_content.sql: OK"
+      ],
+      "output": "packages/db/migrations/0001_foundation.sql: OK\npackages/db/migrations/0002_core_and_documents.sql: OK\npackages/db/migrations/0003_linear_canonical_text.sql: OK\npackages/db/migrations/0004_align_audit_event_content.sql: OK\n",
+      "finishedAt": "2026-09-28T03:47:25.440099+00:00"
+    }
+  ],
+  "passed": true,
+  "completedAt": "2026-09-28T03:47:25.440126+00:00"
+}

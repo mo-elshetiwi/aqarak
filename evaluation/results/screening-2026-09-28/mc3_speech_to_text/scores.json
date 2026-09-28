@@ -1,0 +1,3423 @@
+{
+  "scorerVersion": "1.2.0",
+  "runId": "screening-2026-09-28",
+  "classId": "mc3_speech_to_text",
+  "runFacts": [
+    {
+      "record": "run",
+      "runId": "screening-2026-09-28",
+      "classId": "mc3_speech_to_text",
+      "candidateId": "amazon-transcribe",
+      "split": "screening",
+      "gitSha": "1fd26ab338c403cc7e2fe9ee300ef050ed0690cf",
+      "datasetManifestSha256": "55fe0d05b4876a6f5e68ca0d8866f335b1a39d20e6073033f45fd57f74f69de6",
+      "splitSha256": "fc352a8a02891e50218d95e0a063ef93d4683beb35f91ccb44198c076a91a04e",
+      "registrySha256": "0243a954df4bc19dbf96c9817d06e4ca994df743bd3c55caa9ec8d983c0c98e2",
+      "scorerVersion": null,
+      "command": "pnpm --filter @aqarak/evaluation screen -- --class mc3_speech_to_text --split screening --candidates gpt-transcribe,amazon-transcribe --run-id screening-2026-09-28 --cap-usd 1 --concurrency 4",
+      "priceDate": "2026-09-28",
+      "startedAt": "2026-09-28T03:20:08.341Z"
+    },
+    {
+      "record": "run",
+      "runId": "screening-2026-09-28",
+      "classId": "mc3_speech_to_text",
+      "candidateId": "faster-whisper-large-v3-turbo",
+      "split": "screening",
+      "gitSha": "e4308769671500977b7643bf8f8a6357391b8bbc",
+      "datasetManifestSha256": "55fe0d05b4876a6f5e68ca0d8866f335b1a39d20e6073033f45fd57f74f69de6",
+      "splitSha256": "fc352a8a02891e50218d95e0a063ef93d4683beb35f91ccb44198c076a91a04e",
+      "registrySha256": "074aa98e6ed3f5014f42ce66104cd7c7b88bfd7a5aaf77bc588583ab2a575200",
+      "scorerVersion": null,
+      "command": "pnpm --filter @aqarak/evaluation screen -- --class mc3_speech_to_text --split screening --candidates faster-whisper-large-v3-turbo --run-id screening-2026-09-28 --cap-usd 1",
+      "priceDate": "2026-09-28",
+      "startedAt": "2026-09-28T03:47:18.496Z"
+    },
+    {
+      "record": "run",
+      "runId": "screening-2026-09-28",
+      "classId": "mc3_speech_to_text",
+      "candidateId": "gpt-transcribe",
+      "split": "screening",
+      "gitSha": "1fd26ab338c403cc7e2fe9ee300ef050ed0690cf",
+      "datasetManifestSha256": "55fe0d05b4876a6f5e68ca0d8866f335b1a39d20e6073033f45fd57f74f69de6",
+      "splitSha256": "fc352a8a02891e50218d95e0a063ef93d4683beb35f91ccb44198c076a91a04e",
+      "registrySha256": "0243a954df4bc19dbf96c9817d06e4ca994df743bd3c55caa9ec8d983c0c98e2",
+      "scorerVersion": null,
+      "command": "pnpm --filter @aqarak/evaluation screen -- --class mc3_speech_to_text --split screening --candidates gpt-transcribe,amazon-transcribe --run-id screening-2026-09-28 --cap-usd 1 --concurrency 4",
+      "priceDate": "2026-09-28",
+      "startedAt": "2026-09-28T03:20:08.331Z"
+    }
+  ],
+  "summary": [
+    {
+      "candidate": "amazon-transcribe",
+      "git_sha": "1fd26ab338c403cc7e2fe9ee300ef050ed0690cf",
+      "registry_sha256": "0243a954df4bc19dbf96c9817d06e4ca994df743bd3c55caa9ec8d983c0c98e2",
+      "items": 50,
+      "ok": 50,
+      "schema_invalid": 0,
+      "refused": 0,
+      "incomplete": 0,
+      "provider_error": 0,
+      "timeout": 0,
+      "budget_stopped": 0,
+      "not_run": 0,
+      "cost_usd": 0.106265,
+      "latency_p50_s": 15.129999999999999,
+      "latency_p95_s": 19.75885,
+      "wer": 0.26952526799387444,
+      "wer_low": 0.22924855579203407,
+      "wer_high": 0.31236384489319113,
+      "cer": 0.12813717848791895,
+      "cer_low": 0.09665159783837152,
+      "cer_high": 0.16406774574484695,
+      "wer_arabic": 0.23401360544217686,
+      "wer_code_switched": 0.31523642732049034,
+      "wer_english": null,
+      "difference_to_best": 0.09111791730474733,
+      "difference_low": 0.05714285714285716,
+      "difference_high": 0.12850717688536648,
+      "audio_seconds": 637.464,
+      "cost_usd_per_1000_audio_minutes": 10.001976582206995,
+      "real_time_factor_p50": 1.1697836194050415,
+      "screening_decision": "rejected",
+      "screening_reasons": "Primary error rate 0.26952526799387444 exceeds 0.23192955589586525, the best 0.1784073506891271 times one plus three margins of 0.1."
+    },
+    {
+      "candidate": "faster-whisper-large-v3-turbo",
+      "git_sha": "e4308769671500977b7643bf8f8a6357391b8bbc",
+      "registry_sha256": "074aa98e6ed3f5014f42ce66104cd7c7b88bfd7a5aaf77bc588583ab2a575200",
+      "items": 50,
+      "ok": 50,
+      "schema_invalid": 0,
+      "refused": 0,
+      "incomplete": 0,
+      "provider_error": 0,
+      "timeout": 0,
+      "budget_stopped": 0,
+      "not_run": 0,
+      "cost_usd": 0,
+      "latency_p50_s": 7.282,
+      "latency_p95_s": 11.75735,
+      "wer": 0.23736600306278713,
+      "wer_low": 0.20489091921441588,
+      "wer_high": 0.2671440851412198,
+      "cer": 0.0950896336710834,
+      "cer_low": 0.0786016720949493,
+      "cer_high": 0.11200724381832082,
+      "wer_arabic": 0.20680272108843537,
+      "wer_code_switched": 0.276707530647986,
+      "wer_english": null,
+      "difference_to_best": 0.05895865237366002,
+      "difference_low": 0.032655056213506256,
+      "difference_high": 0.08597379749204566,
+      "audio_seconds": 637.464,
+      "cost_usd_per_1000_audio_minutes": 0,
+      "real_time_factor_p50": 0.56248423649972,
+      "screening_decision": "rejected",
+      "screening_reasons": "Primary error rate 0.23736600306278713 exceeds 0.23192955589586525, the best 0.1784073506891271 times one plus three margins of 0.1."
+    },
+    {
+      "candidate": "gpt-transcribe",
+      "git_sha": "1fd26ab338c403cc7e2fe9ee300ef050ed0690cf",
+      "registry_sha256": "0243a954df4bc19dbf96c9817d06e4ca994df743bd3c55caa9ec8d983c0c98e2",
+      "items": 50,
+      "ok": 50,
+      "schema_invalid": 0,
+      "refused": 0,
+      "incomplete": 0,
+      "provider_error": 0,
+      "timeout": 0,
+      "budget_stopped": 0,
+      "not_run": 0,
+      "cost_usd": 0.049725,
+      "latency_p50_s": 1.6545,
+      "latency_p95_s": 2.7068499999999993,
+      "wer": 0.1784073506891271,
+      "wer_low": 0.14486440575868922,
+      "wer_high": 0.2102466214783506,
+      "cer": 0.06734216679657054,
+      "cer_low": 0.052750013014732686,
+      "cer_high": 0.08375022801177455,
+      "wer_arabic": 0.15510204081632653,
+      "wer_code_switched": 0.2084063047285464,
+      "wer_english": null,
+      "difference_to_best": 0,
+      "difference_low": 0,
+      "difference_high": 0,
+      "audio_seconds": 637.464,
+      "cost_usd_per_1000_audio_minutes": 4.680264297277963,
+      "real_time_factor_p50": 0.13436680702071407,
+      "screening_decision": "survives",
+      "screening_reasons": ""
+    }
+  ],
+  "details": {
+    "per-language.csv": {
+      "columns": [
+        "candidate",
+        "language",
+        "wer",
+        "wer_low",
+        "wer_high"
+      ],
+      "rows": [
+        {
+          "candidate": "amazon-transcribe",
+          "language": "Arabic",
+          "wer": 0.23401360544217686,
+          "wer_low": 0.18938201388036488,
+          "wer_high": 0.2782285995774762
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "language": "CS",
+          "wer": 0.31523642732049034,
+          "wer_low": 0.24381059164628072,
+          "wer_high": 0.3951385734878853
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "language": "Arabic",
+          "wer": 0.20680272108843537,
+          "wer_low": 0.16365990990990992,
+          "wer_high": 0.24966746248294674
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "language": "CS",
+          "wer": 0.276707530647986,
+          "wer_low": 0.23574482838321972,
+          "wer_high": 0.31270386290114954
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "language": "Arabic",
+          "wer": 0.15510204081632653,
+          "wer_low": 0.1156620621520469,
+          "wer_high": 0.19341577322936973
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "language": "CS",
+          "wer": 0.2084063047285464,
+          "wer_low": 0.15266701856964973,
+          "wer_high": 0.25806744868035186
+        }
+      ]
+    },
+    "clip-scores.csv": {
+      "columns": [
+        "candidate",
+        "clip_id",
+        "language",
+        "word_edits",
+        "reference_words",
+        "character_edits",
+        "reference_characters",
+        "status"
+      ],
+      "rows": [
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_10_104_1221088_1236094",
+          "language": "Arabic",
+          "word_edits": 6,
+          "reference_words": 31,
+          "character_edits": 8,
+          "reference_characters": 148,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_10_122_1415984_1428874",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 20,
+          "character_edits": 6,
+          "reference_characters": 101,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_10_154_1808003_1816575",
+          "language": "Arabic",
+          "word_edits": 5,
+          "reference_words": 18,
+          "character_edits": 6,
+          "reference_characters": 83,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_10_163_1898355_1910232",
+          "language": "CS",
+          "word_edits": 9,
+          "reference_words": 33,
+          "character_edits": 36,
+          "reference_characters": 134,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_10_16_194181_203692",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 18,
+          "character_edits": 22,
+          "reference_characters": 98,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_10_53_622117_636325",
+          "language": "Arabic",
+          "word_edits": 17,
+          "reference_words": 37,
+          "character_edits": 24,
+          "reference_characters": 172,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_11_130_1724688_1742616",
+          "language": "Arabic",
+          "word_edits": 12,
+          "reference_words": 38,
+          "character_edits": 14,
+          "reference_characters": 183,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_11_137_1828429_1840693",
+          "language": "Arabic",
+          "word_edits": 2,
+          "reference_words": 25,
+          "character_edits": 3,
+          "reference_characters": 122,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_11_142_1899491_1915500",
+          "language": "Arabic",
+          "word_edits": 3,
+          "reference_words": 26,
+          "character_edits": 6,
+          "reference_characters": 129,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_12_133_1968038_1981497",
+          "language": "CS",
+          "word_edits": 13,
+          "reference_words": 37,
+          "character_edits": 44,
+          "reference_characters": 174,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_12_144_2118864_2130976",
+          "language": "Arabic",
+          "word_edits": 6,
+          "reference_words": 26,
+          "character_edits": 7,
+          "reference_characters": 119,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_12_156_2289319_2299552",
+          "language": "Arabic",
+          "word_edits": 8,
+          "reference_words": 31,
+          "character_edits": 6,
+          "reference_characters": 134,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_12_175_2538781_2549687",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 30,
+          "character_edits": 1,
+          "reference_characters": 155,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_12_26_412072_425906",
+          "language": "Arabic",
+          "word_edits": 6,
+          "reference_words": 33,
+          "character_edits": 6,
+          "reference_characters": 167,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_12_4_57052_74337",
+          "language": "Arabic",
+          "word_edits": 12,
+          "reference_words": 35,
+          "character_edits": 17,
+          "reference_characters": 172,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_12_60_948046_962381",
+          "language": "CS",
+          "word_edits": 16,
+          "reference_words": 39,
+          "character_edits": 30,
+          "reference_characters": 186,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_12_71_1117978_1131766",
+          "language": "Arabic",
+          "word_edits": 11,
+          "reference_words": 36,
+          "character_edits": 29,
+          "reference_characters": 174,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_13_16_158276_169864",
+          "language": "CS",
+          "word_edits": 0,
+          "reference_words": 24,
+          "character_edits": 0,
+          "reference_characters": 113,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_13_23_232989_246024",
+          "language": "Arabic",
+          "word_edits": 2,
+          "reference_words": 19,
+          "character_edits": 4,
+          "reference_characters": 86,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_13_43_471009_482515",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 17,
+          "character_edits": 8,
+          "reference_characters": 86,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_13_59_634599_645303",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 20,
+          "character_edits": 1,
+          "reference_characters": 105,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_14_102_998057_1012161",
+          "language": "CS",
+          "word_edits": 9,
+          "reference_words": 30,
+          "character_edits": 36,
+          "reference_characters": 148,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_14_125_1258084_1268617",
+          "language": "CS",
+          "word_edits": 8,
+          "reference_words": 25,
+          "character_edits": 29,
+          "reference_characters": 145,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_14_146_1471173_1487538",
+          "language": "CS",
+          "word_edits": 17,
+          "reference_words": 44,
+          "character_edits": 46,
+          "reference_characters": 221,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_14_256_2607979_2618922",
+          "language": "CS",
+          "word_edits": 10,
+          "reference_words": 24,
+          "character_edits": 22,
+          "reference_characters": 131,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_14_288_2961026_2974653",
+          "language": "CS",
+          "word_edits": 20,
+          "reference_words": 27,
+          "character_edits": 60,
+          "reference_characters": 127,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_14_295_3042038_3049404",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 17,
+          "character_edits": 8,
+          "reference_characters": 88,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_1_36_382051_396745",
+          "language": "Arabic",
+          "word_edits": 10,
+          "reference_words": 22,
+          "character_edits": 27,
+          "reference_characters": 105,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_1_83_957093_970428",
+          "language": "Arabic",
+          "word_edits": 5,
+          "reference_words": 23,
+          "character_edits": 15,
+          "reference_characters": 124,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_2_2_13975_26683",
+          "language": "CS",
+          "word_edits": 15,
+          "reference_words": 15,
+          "character_edits": 81,
+          "reference_characters": 99,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_3_22_294706_308047",
+          "language": "CS",
+          "word_edits": 5,
+          "reference_words": 29,
+          "character_edits": 9,
+          "reference_characters": 125,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_3_58_779517_794845",
+          "language": "CS",
+          "word_edits": 10,
+          "reference_words": 36,
+          "character_edits": 16,
+          "reference_characters": 161,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_4_36_437536_452111",
+          "language": "Arabic",
+          "word_edits": 12,
+          "reference_words": 30,
+          "character_edits": 17,
+          "reference_characters": 155,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_4_66_803496_816829",
+          "language": "CS",
+          "word_edits": 7,
+          "reference_words": 26,
+          "character_edits": 15,
+          "reference_characters": 121,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_5_26_348645_362367",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 25,
+          "character_edits": 4,
+          "reference_characters": 122,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_5_32_429437_442088",
+          "language": "CS",
+          "word_edits": 7,
+          "reference_words": 23,
+          "character_edits": 33,
+          "reference_characters": 107,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_5_9_111992_124361",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 14,
+          "character_edits": 1,
+          "reference_characters": 73,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_6_33_419038_435129",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 34,
+          "character_edits": 4,
+          "reference_characters": 160,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_7_33_416055_426102",
+          "language": "CS",
+          "word_edits": 6,
+          "reference_words": 22,
+          "character_edits": 13,
+          "reference_characters": 107,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_7_34_426102_436807",
+          "language": "CS",
+          "word_edits": 4,
+          "reference_words": 21,
+          "character_edits": 9,
+          "reference_characters": 108,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_7_46_578651_591839",
+          "language": "Arabic",
+          "word_edits": 7,
+          "reference_words": 26,
+          "character_edits": 12,
+          "reference_characters": 129,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_7_86_1095084_1111746",
+          "language": "CS",
+          "word_edits": 5,
+          "reference_words": 30,
+          "character_edits": 6,
+          "reference_characters": 151,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_8_122_1424725_1434630",
+          "language": "Arabic",
+          "word_edits": 7,
+          "reference_words": 18,
+          "character_edits": 8,
+          "reference_characters": 94,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_8_140_1637974_1644433",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 20,
+          "character_edits": 7,
+          "reference_characters": 98,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_8_1_0_14509",
+          "language": "CS",
+          "word_edits": 4,
+          "reference_words": 23,
+          "character_edits": 11,
+          "reference_characters": 119,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_8_20_207045_214500",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 13,
+          "character_edits": 2,
+          "reference_characters": 59,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_8_22_224441_234395",
+          "language": "Arabic",
+          "word_edits": 3,
+          "reference_words": 14,
+          "character_edits": 4,
+          "reference_characters": 79,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_8_61_646416_661102",
+          "language": "CS",
+          "word_edits": 4,
+          "reference_words": 28,
+          "character_edits": 9,
+          "reference_characters": 156,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_8_99_1136201_1145787",
+          "language": "Arabic",
+          "word_edits": 6,
+          "reference_words": 19,
+          "character_edits": 7,
+          "reference_characters": 91,
+          "status": "ok"
+        },
+        {
+          "candidate": "amazon-transcribe",
+          "clip_id": "ThinkWithHessa_9_61_924031_942204",
+          "language": "CS",
+          "word_edits": 11,
+          "reference_words": 35,
+          "character_edits": 33,
+          "reference_characters": 171,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_10_104_1221088_1236094",
+          "language": "Arabic",
+          "word_edits": 7,
+          "reference_words": 31,
+          "character_edits": 13,
+          "reference_characters": 148,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_10_122_1415984_1428874",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 20,
+          "character_edits": 4,
+          "reference_characters": 101,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_10_154_1808003_1816575",
+          "language": "Arabic",
+          "word_edits": 0,
+          "reference_words": 18,
+          "character_edits": 0,
+          "reference_characters": 83,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_10_163_1898355_1910232",
+          "language": "CS",
+          "word_edits": 8,
+          "reference_words": 33,
+          "character_edits": 31,
+          "reference_characters": 134,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_10_16_194181_203692",
+          "language": "Arabic",
+          "word_edits": 5,
+          "reference_words": 18,
+          "character_edits": 6,
+          "reference_characters": 98,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_10_53_622117_636325",
+          "language": "Arabic",
+          "word_edits": 14,
+          "reference_words": 37,
+          "character_edits": 20,
+          "reference_characters": 172,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_11_130_1724688_1742616",
+          "language": "Arabic",
+          "word_edits": 12,
+          "reference_words": 38,
+          "character_edits": 15,
+          "reference_characters": 183,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_11_137_1828429_1840693",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 25,
+          "character_edits": 1,
+          "reference_characters": 122,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_11_142_1899491_1915500",
+          "language": "Arabic",
+          "word_edits": 3,
+          "reference_words": 26,
+          "character_edits": 10,
+          "reference_characters": 129,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_12_133_1968038_1981497",
+          "language": "CS",
+          "word_edits": 13,
+          "reference_words": 37,
+          "character_edits": 19,
+          "reference_characters": 174,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_12_144_2118864_2130976",
+          "language": "Arabic",
+          "word_edits": 8,
+          "reference_words": 26,
+          "character_edits": 10,
+          "reference_characters": 119,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_12_156_2289319_2299552",
+          "language": "Arabic",
+          "word_edits": 6,
+          "reference_words": 31,
+          "character_edits": 11,
+          "reference_characters": 134,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_12_175_2538781_2549687",
+          "language": "Arabic",
+          "word_edits": 3,
+          "reference_words": 30,
+          "character_edits": 2,
+          "reference_characters": 155,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_12_26_412072_425906",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 33,
+          "character_edits": 8,
+          "reference_characters": 167,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_12_4_57052_74337",
+          "language": "Arabic",
+          "word_edits": 10,
+          "reference_words": 35,
+          "character_edits": 20,
+          "reference_characters": 172,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_12_60_948046_962381",
+          "language": "CS",
+          "word_edits": 12,
+          "reference_words": 39,
+          "character_edits": 20,
+          "reference_characters": 186,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_12_71_1117978_1131766",
+          "language": "Arabic",
+          "word_edits": 9,
+          "reference_words": 36,
+          "character_edits": 25,
+          "reference_characters": 174,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_13_16_158276_169864",
+          "language": "CS",
+          "word_edits": 2,
+          "reference_words": 24,
+          "character_edits": 5,
+          "reference_characters": 113,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_13_23_232989_246024",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 19,
+          "character_edits": 7,
+          "reference_characters": 86,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_13_43_471009_482515",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 17,
+          "character_edits": 1,
+          "reference_characters": 86,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_13_59_634599_645303",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 20,
+          "character_edits": 1,
+          "reference_characters": 105,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_14_102_998057_1012161",
+          "language": "CS",
+          "word_edits": 9,
+          "reference_words": 30,
+          "character_edits": 34,
+          "reference_characters": 148,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_14_125_1258084_1268617",
+          "language": "CS",
+          "word_edits": 7,
+          "reference_words": 25,
+          "character_edits": 21,
+          "reference_characters": 145,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_14_146_1471173_1487538",
+          "language": "CS",
+          "word_edits": 18,
+          "reference_words": 44,
+          "character_edits": 40,
+          "reference_characters": 221,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_14_256_2607979_2618922",
+          "language": "CS",
+          "word_edits": 8,
+          "reference_words": 24,
+          "character_edits": 19,
+          "reference_characters": 131,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_14_288_2961026_2974653",
+          "language": "CS",
+          "word_edits": 9,
+          "reference_words": 27,
+          "character_edits": 17,
+          "reference_characters": 127,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_14_295_3042038_3049404",
+          "language": "Arabic",
+          "word_edits": 6,
+          "reference_words": 17,
+          "character_edits": 9,
+          "reference_characters": 88,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_1_36_382051_396745",
+          "language": "Arabic",
+          "word_edits": 3,
+          "reference_words": 22,
+          "character_edits": 3,
+          "reference_characters": 105,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_1_83_957093_970428",
+          "language": "Arabic",
+          "word_edits": 9,
+          "reference_words": 23,
+          "character_edits": 13,
+          "reference_characters": 124,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_2_2_13975_26683",
+          "language": "CS",
+          "word_edits": 1,
+          "reference_words": 15,
+          "character_edits": 1,
+          "reference_characters": 99,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_3_22_294706_308047",
+          "language": "CS",
+          "word_edits": 7,
+          "reference_words": 29,
+          "character_edits": 11,
+          "reference_characters": 125,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_3_58_779517_794845",
+          "language": "CS",
+          "word_edits": 12,
+          "reference_words": 36,
+          "character_edits": 31,
+          "reference_characters": 161,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_4_36_437536_452111",
+          "language": "Arabic",
+          "word_edits": 8,
+          "reference_words": 30,
+          "character_edits": 10,
+          "reference_characters": 155,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_4_66_803496_816829",
+          "language": "CS",
+          "word_edits": 8,
+          "reference_words": 26,
+          "character_edits": 16,
+          "reference_characters": 121,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_5_26_348645_362367",
+          "language": "Arabic",
+          "word_edits": 6,
+          "reference_words": 25,
+          "character_edits": 6,
+          "reference_characters": 122,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_5_32_429437_442088",
+          "language": "CS",
+          "word_edits": 1,
+          "reference_words": 23,
+          "character_edits": 8,
+          "reference_characters": 107,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_5_9_111992_124361",
+          "language": "Arabic",
+          "word_edits": 0,
+          "reference_words": 14,
+          "character_edits": 0,
+          "reference_characters": 73,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_6_33_419038_435129",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 34,
+          "character_edits": 1,
+          "reference_characters": 160,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_7_33_416055_426102",
+          "language": "CS",
+          "word_edits": 8,
+          "reference_words": 22,
+          "character_edits": 14,
+          "reference_characters": 107,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_7_34_426102_436807",
+          "language": "CS",
+          "word_edits": 6,
+          "reference_words": 21,
+          "character_edits": 19,
+          "reference_characters": 108,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_7_46_578651_591839",
+          "language": "Arabic",
+          "word_edits": 5,
+          "reference_words": 26,
+          "character_edits": 7,
+          "reference_characters": 129,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_7_86_1095084_1111746",
+          "language": "CS",
+          "word_edits": 6,
+          "reference_words": 30,
+          "character_edits": 14,
+          "reference_characters": 151,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_8_122_1424725_1434630",
+          "language": "Arabic",
+          "word_edits": 5,
+          "reference_words": 18,
+          "character_edits": 6,
+          "reference_characters": 94,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_8_140_1637974_1644433",
+          "language": "Arabic",
+          "word_edits": 3,
+          "reference_words": 20,
+          "character_edits": 5,
+          "reference_characters": 98,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_8_1_0_14509",
+          "language": "CS",
+          "word_edits": 7,
+          "reference_words": 23,
+          "character_edits": 25,
+          "reference_characters": 119,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_8_20_207045_214500",
+          "language": "Arabic",
+          "word_edits": 3,
+          "reference_words": 13,
+          "character_edits": 5,
+          "reference_characters": 59,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_8_22_224441_234395",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 14,
+          "character_edits": 2,
+          "reference_characters": 79,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_8_61_646416_661102",
+          "language": "CS",
+          "word_edits": 7,
+          "reference_words": 28,
+          "character_edits": 20,
+          "reference_characters": 156,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_8_99_1136201_1145787",
+          "language": "Arabic",
+          "word_edits": 10,
+          "reference_words": 19,
+          "character_edits": 10,
+          "reference_characters": 91,
+          "status": "ok"
+        },
+        {
+          "candidate": "faster-whisper-large-v3-turbo",
+          "clip_id": "ThinkWithHessa_9_61_924031_942204",
+          "language": "CS",
+          "word_edits": 9,
+          "reference_words": 35,
+          "character_edits": 14,
+          "reference_characters": 171,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_10_104_1221088_1236094",
+          "language": "Arabic",
+          "word_edits": 5,
+          "reference_words": 31,
+          "character_edits": 7,
+          "reference_characters": 148,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_10_122_1415984_1428874",
+          "language": "Arabic",
+          "word_edits": 7,
+          "reference_words": 20,
+          "character_edits": 8,
+          "reference_characters": 101,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_10_154_1808003_1816575",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 18,
+          "character_edits": 7,
+          "reference_characters": 83,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_10_163_1898355_1910232",
+          "language": "CS",
+          "word_edits": 0,
+          "reference_words": 33,
+          "character_edits": 0,
+          "reference_characters": 134,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_10_16_194181_203692",
+          "language": "Arabic",
+          "word_edits": 0,
+          "reference_words": 18,
+          "character_edits": 0,
+          "reference_characters": 98,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_10_53_622117_636325",
+          "language": "Arabic",
+          "word_edits": 13,
+          "reference_words": 37,
+          "character_edits": 15,
+          "reference_characters": 172,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_11_130_1724688_1742616",
+          "language": "Arabic",
+          "word_edits": 12,
+          "reference_words": 38,
+          "character_edits": 13,
+          "reference_characters": 183,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_11_137_1828429_1840693",
+          "language": "Arabic",
+          "word_edits": 0,
+          "reference_words": 25,
+          "character_edits": 0,
+          "reference_characters": 122,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_11_142_1899491_1915500",
+          "language": "Arabic",
+          "word_edits": 2,
+          "reference_words": 26,
+          "character_edits": 3,
+          "reference_characters": 129,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_12_133_1968038_1981497",
+          "language": "CS",
+          "word_edits": 5,
+          "reference_words": 37,
+          "character_edits": 5,
+          "reference_characters": 174,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_12_144_2118864_2130976",
+          "language": "Arabic",
+          "word_edits": 6,
+          "reference_words": 26,
+          "character_edits": 9,
+          "reference_characters": 119,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_12_156_2289319_2299552",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 31,
+          "character_edits": 4,
+          "reference_characters": 134,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_12_175_2538781_2549687",
+          "language": "Arabic",
+          "word_edits": 0,
+          "reference_words": 30,
+          "character_edits": 0,
+          "reference_characters": 155,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_12_26_412072_425906",
+          "language": "Arabic",
+          "word_edits": 4,
+          "reference_words": 33,
+          "character_edits": 4,
+          "reference_characters": 167,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_12_4_57052_74337",
+          "language": "Arabic",
+          "word_edits": 8,
+          "reference_words": 35,
+          "character_edits": 10,
+          "reference_characters": 172,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_12_60_948046_962381",
+          "language": "CS",
+          "word_edits": 10,
+          "reference_words": 39,
+          "character_edits": 18,
+          "reference_characters": 186,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_12_71_1117978_1131766",
+          "language": "Arabic",
+          "word_edits": 8,
+          "reference_words": 36,
+          "character_edits": 11,
+          "reference_characters": 174,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_13_16_158276_169864",
+          "language": "CS",
+          "word_edits": 0,
+          "reference_words": 24,
+          "character_edits": 0,
+          "reference_characters": 113,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_13_23_232989_246024",
+          "language": "Arabic",
+          "word_edits": 2,
+          "reference_words": 19,
+          "character_edits": 4,
+          "reference_characters": 86,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_13_43_471009_482515",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 17,
+          "character_edits": 1,
+          "reference_characters": 86,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_13_59_634599_645303",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 20,
+          "character_edits": 1,
+          "reference_characters": 105,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_14_102_998057_1012161",
+          "language": "CS",
+          "word_edits": 10,
+          "reference_words": 30,
+          "character_edits": 26,
+          "reference_characters": 148,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_14_125_1258084_1268617",
+          "language": "CS",
+          "word_edits": 6,
+          "reference_words": 25,
+          "character_edits": 27,
+          "reference_characters": 145,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_14_146_1471173_1487538",
+          "language": "CS",
+          "word_edits": 15,
+          "reference_words": 44,
+          "character_edits": 34,
+          "reference_characters": 221,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_14_256_2607979_2618922",
+          "language": "CS",
+          "word_edits": 7,
+          "reference_words": 24,
+          "character_edits": 18,
+          "reference_characters": 131,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_14_288_2961026_2974653",
+          "language": "CS",
+          "word_edits": 10,
+          "reference_words": 27,
+          "character_edits": 20,
+          "reference_characters": 127,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_14_295_3042038_3049404",
+          "language": "Arabic",
+          "word_edits": 5,
+          "reference_words": 17,
+          "character_edits": 6,
+          "reference_characters": 88,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_1_36_382051_396745",
+          "language": "Arabic",
+          "word_edits": 3,
+          "reference_words": 22,
+          "character_edits": 3,
+          "reference_characters": 105,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_1_83_957093_970428",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 23,
+          "character_edits": 1,
+          "reference_characters": 124,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_2_2_13975_26683",
+          "language": "CS",
+          "word_edits": 0,
+          "reference_words": 15,
+          "character_edits": 0,
+          "reference_characters": 99,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_3_22_294706_308047",
+          "language": "CS",
+          "word_edits": 5,
+          "reference_words": 29,
+          "character_edits": 9,
+          "reference_characters": 125,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_3_58_779517_794845",
+          "language": "CS",
+          "word_edits": 11,
+          "reference_words": 36,
+          "character_edits": 25,
+          "reference_characters": 161,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_4_36_437536_452111",
+          "language": "Arabic",
+          "word_edits": 7,
+          "reference_words": 30,
+          "character_edits": 10,
+          "reference_characters": 155,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_4_66_803496_816829",
+          "language": "CS",
+          "word_edits": 10,
+          "reference_words": 26,
+          "character_edits": 15,
+          "reference_characters": 121,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_5_26_348645_362367",
+          "language": "Arabic",
+          "word_edits": 3,
+          "reference_words": 25,
+          "character_edits": 3,
+          "reference_characters": 122,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_5_32_429437_442088",
+          "language": "CS",
+          "word_edits": 1,
+          "reference_words": 23,
+          "character_edits": 8,
+          "reference_characters": 107,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_5_9_111992_124361",
+          "language": "Arabic",
+          "word_edits": 0,
+          "reference_words": 14,
+          "character_edits": 0,
+          "reference_characters": 73,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_6_33_419038_435129",
+          "language": "Arabic",
+          "word_edits": 2,
+          "reference_words": 34,
+          "character_edits": 2,
+          "reference_characters": 160,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_7_33_416055_426102",
+          "language": "CS",
+          "word_edits": 4,
+          "reference_words": 22,
+          "character_edits": 7,
+          "reference_characters": 107,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_7_34_426102_436807",
+          "language": "CS",
+          "word_edits": 4,
+          "reference_words": 21,
+          "character_edits": 14,
+          "reference_characters": 108,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_7_46_578651_591839",
+          "language": "Arabic",
+          "word_edits": 3,
+          "reference_words": 26,
+          "character_edits": 5,
+          "reference_characters": 129,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_7_86_1095084_1111746",
+          "language": "CS",
+          "word_edits": 5,
+          "reference_words": 30,
+          "character_edits": 11,
+          "reference_characters": 151,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_8_122_1424725_1434630",
+          "language": "Arabic",
+          "word_edits": 5,
+          "reference_words": 18,
+          "character_edits": 6,
+          "reference_characters": 94,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_8_140_1637974_1644433",
+          "language": "Arabic",
+          "word_edits": 2,
+          "reference_words": 20,
+          "character_edits": 7,
+          "reference_characters": 98,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_8_1_0_14509",
+          "language": "CS",
+          "word_edits": 3,
+          "reference_words": 23,
+          "character_edits": 10,
+          "reference_characters": 119,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_8_20_207045_214500",
+          "language": "Arabic",
+          "word_edits": 3,
+          "reference_words": 13,
+          "character_edits": 8,
+          "reference_characters": 59,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_8_22_224441_234395",
+          "language": "Arabic",
+          "word_edits": 1,
+          "reference_words": 14,
+          "character_edits": 2,
+          "reference_characters": 79,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_8_61_646416_661102",
+          "language": "CS",
+          "word_edits": 6,
+          "reference_words": 28,
+          "character_edits": 19,
+          "reference_characters": 156,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_8_99_1136201_1145787",
+          "language": "Arabic",
+          "word_edits": 2,
+          "reference_words": 19,
+          "character_edits": 1,
+          "reference_characters": 91,
+          "status": "ok"
+        },
+        {
+          "candidate": "gpt-transcribe",
+          "clip_id": "ThinkWithHessa_9_61_924031_942204",
+          "language": "CS",
+          "word_edits": 7,
+          "reference_words": 35,
+          "character_edits": 15,
+          "reference_characters": 171,
+          "status": "ok"
+        }
+      ]
+    }
+  },
+  "candidates": {
+    "splitSha256": "7362f6cc9cd851b9ede2cc273638b510796b7f9925324573445d271f72b6358d",
+    "scores": [
+      {
+        "candidateId": "amazon-transcribe",
+        "clips": [
+          {
+            "clipId": "ThinkWithHessa_10_104_1221088_1236094",
+            "language": "Arabic",
+            "wordEdits": 6,
+            "referenceWords": 31,
+            "characterEdits": 8,
+            "referenceCharacters": 148,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_122_1415984_1428874",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 20,
+            "characterEdits": 6,
+            "referenceCharacters": 101,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_154_1808003_1816575",
+            "language": "Arabic",
+            "wordEdits": 5,
+            "referenceWords": 18,
+            "characterEdits": 6,
+            "referenceCharacters": 83,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_163_1898355_1910232",
+            "language": "CS",
+            "wordEdits": 9,
+            "referenceWords": 33,
+            "characterEdits": 36,
+            "referenceCharacters": 134,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_16_194181_203692",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 18,
+            "characterEdits": 22,
+            "referenceCharacters": 98,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_53_622117_636325",
+            "language": "Arabic",
+            "wordEdits": 17,
+            "referenceWords": 37,
+            "characterEdits": 24,
+            "referenceCharacters": 172,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_11_130_1724688_1742616",
+            "language": "Arabic",
+            "wordEdits": 12,
+            "referenceWords": 38,
+            "characterEdits": 14,
+            "referenceCharacters": 183,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_11_137_1828429_1840693",
+            "language": "Arabic",
+            "wordEdits": 2,
+            "referenceWords": 25,
+            "characterEdits": 3,
+            "referenceCharacters": 122,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_11_142_1899491_1915500",
+            "language": "Arabic",
+            "wordEdits": 3,
+            "referenceWords": 26,
+            "characterEdits": 6,
+            "referenceCharacters": 129,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_133_1968038_1981497",
+            "language": "CS",
+            "wordEdits": 13,
+            "referenceWords": 37,
+            "characterEdits": 44,
+            "referenceCharacters": 174,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_144_2118864_2130976",
+            "language": "Arabic",
+            "wordEdits": 6,
+            "referenceWords": 26,
+            "characterEdits": 7,
+            "referenceCharacters": 119,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_156_2289319_2299552",
+            "language": "Arabic",
+            "wordEdits": 8,
+            "referenceWords": 31,
+            "characterEdits": 6,
+            "referenceCharacters": 134,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_175_2538781_2549687",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 30,
+            "characterEdits": 1,
+            "referenceCharacters": 155,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_26_412072_425906",
+            "language": "Arabic",
+            "wordEdits": 6,
+            "referenceWords": 33,
+            "characterEdits": 6,
+            "referenceCharacters": 167,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_4_57052_74337",
+            "language": "Arabic",
+            "wordEdits": 12,
+            "referenceWords": 35,
+            "characterEdits": 17,
+            "referenceCharacters": 172,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_60_948046_962381",
+            "language": "CS",
+            "wordEdits": 16,
+            "referenceWords": 39,
+            "characterEdits": 30,
+            "referenceCharacters": 186,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_71_1117978_1131766",
+            "language": "Arabic",
+            "wordEdits": 11,
+            "referenceWords": 36,
+            "characterEdits": 29,
+            "referenceCharacters": 174,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_16_158276_169864",
+            "language": "CS",
+            "wordEdits": 0,
+            "referenceWords": 24,
+            "characterEdits": 0,
+            "referenceCharacters": 113,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_23_232989_246024",
+            "language": "Arabic",
+            "wordEdits": 2,
+            "referenceWords": 19,
+            "characterEdits": 4,
+            "referenceCharacters": 86,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_43_471009_482515",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 17,
+            "characterEdits": 8,
+            "referenceCharacters": 86,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_59_634599_645303",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 20,
+            "characterEdits": 1,
+            "referenceCharacters": 105,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_102_998057_1012161",
+            "language": "CS",
+            "wordEdits": 9,
+            "referenceWords": 30,
+            "characterEdits": 36,
+            "referenceCharacters": 148,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_125_1258084_1268617",
+            "language": "CS",
+            "wordEdits": 8,
+            "referenceWords": 25,
+            "characterEdits": 29,
+            "referenceCharacters": 145,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_146_1471173_1487538",
+            "language": "CS",
+            "wordEdits": 17,
+            "referenceWords": 44,
+            "characterEdits": 46,
+            "referenceCharacters": 221,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_256_2607979_2618922",
+            "language": "CS",
+            "wordEdits": 10,
+            "referenceWords": 24,
+            "characterEdits": 22,
+            "referenceCharacters": 131,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_288_2961026_2974653",
+            "language": "CS",
+            "wordEdits": 20,
+            "referenceWords": 27,
+            "characterEdits": 60,
+            "referenceCharacters": 127,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_295_3042038_3049404",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 17,
+            "characterEdits": 8,
+            "referenceCharacters": 88,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_1_36_382051_396745",
+            "language": "Arabic",
+            "wordEdits": 10,
+            "referenceWords": 22,
+            "characterEdits": 27,
+            "referenceCharacters": 105,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_1_83_957093_970428",
+            "language": "Arabic",
+            "wordEdits": 5,
+            "referenceWords": 23,
+            "characterEdits": 15,
+            "referenceCharacters": 124,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_2_2_13975_26683",
+            "language": "CS",
+            "wordEdits": 15,
+            "referenceWords": 15,
+            "characterEdits": 81,
+            "referenceCharacters": 99,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_3_22_294706_308047",
+            "language": "CS",
+            "wordEdits": 5,
+            "referenceWords": 29,
+            "characterEdits": 9,
+            "referenceCharacters": 125,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_3_58_779517_794845",
+            "language": "CS",
+            "wordEdits": 10,
+            "referenceWords": 36,
+            "characterEdits": 16,
+            "referenceCharacters": 161,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_4_36_437536_452111",
+            "language": "Arabic",
+            "wordEdits": 12,
+            "referenceWords": 30,
+            "characterEdits": 17,
+            "referenceCharacters": 155,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_4_66_803496_816829",
+            "language": "CS",
+            "wordEdits": 7,
+            "referenceWords": 26,
+            "characterEdits": 15,
+            "referenceCharacters": 121,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_5_26_348645_362367",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 25,
+            "characterEdits": 4,
+            "referenceCharacters": 122,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_5_32_429437_442088",
+            "language": "CS",
+            "wordEdits": 7,
+            "referenceWords": 23,
+            "characterEdits": 33,
+            "referenceCharacters": 107,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_5_9_111992_124361",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 14,
+            "characterEdits": 1,
+            "referenceCharacters": 73,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_6_33_419038_435129",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 34,
+            "characterEdits": 4,
+            "referenceCharacters": 160,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_33_416055_426102",
+            "language": "CS",
+            "wordEdits": 6,
+            "referenceWords": 22,
+            "characterEdits": 13,
+            "referenceCharacters": 107,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_34_426102_436807",
+            "language": "CS",
+            "wordEdits": 4,
+            "referenceWords": 21,
+            "characterEdits": 9,
+            "referenceCharacters": 108,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_46_578651_591839",
+            "language": "Arabic",
+            "wordEdits": 7,
+            "referenceWords": 26,
+            "characterEdits": 12,
+            "referenceCharacters": 129,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_86_1095084_1111746",
+            "language": "CS",
+            "wordEdits": 5,
+            "referenceWords": 30,
+            "characterEdits": 6,
+            "referenceCharacters": 151,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_122_1424725_1434630",
+            "language": "Arabic",
+            "wordEdits": 7,
+            "referenceWords": 18,
+            "characterEdits": 8,
+            "referenceCharacters": 94,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_140_1637974_1644433",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 20,
+            "characterEdits": 7,
+            "referenceCharacters": 98,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_1_0_14509",
+            "language": "CS",
+            "wordEdits": 4,
+            "referenceWords": 23,
+            "characterEdits": 11,
+            "referenceCharacters": 119,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_20_207045_214500",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 13,
+            "characterEdits": 2,
+            "referenceCharacters": 59,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_22_224441_234395",
+            "language": "Arabic",
+            "wordEdits": 3,
+            "referenceWords": 14,
+            "characterEdits": 4,
+            "referenceCharacters": 79,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_61_646416_661102",
+            "language": "CS",
+            "wordEdits": 4,
+            "referenceWords": 28,
+            "characterEdits": 9,
+            "referenceCharacters": 156,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_99_1136201_1145787",
+            "language": "Arabic",
+            "wordEdits": 6,
+            "referenceWords": 19,
+            "characterEdits": 7,
+            "referenceCharacters": 91,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_9_61_924031_942204",
+            "language": "CS",
+            "wordEdits": 11,
+            "referenceWords": 35,
+            "characterEdits": 33,
+            "referenceCharacters": 171,
+            "status": "ok"
+          }
+        ],
+        "summary": {
+          "wer": {
+            "estimate": 0.26952526799387444,
+            "lower": 0.22924855579203407,
+            "upper": 0.31236384489319113
+          },
+          "cer": {
+            "estimate": 0.12813717848791895,
+            "lower": 0.09665159783837152,
+            "upper": 0.16406774574484695
+          },
+          "perLanguageWer": {
+            "Arabic": {
+              "estimate": 0.23401360544217686,
+              "lower": 0.18938201388036488,
+              "upper": 0.2782285995774762
+            },
+            "CS": {
+              "estimate": 0.31523642732049034,
+              "lower": 0.24381059164628072,
+              "upper": 0.3951385734878853
+            }
+          },
+          "statusCounts": {
+            "ok": 50
+          }
+        },
+        "bestCandidateId": "gpt-transcribe",
+        "differenceToBest": {
+          "estimate": 0.09111791730474733,
+          "lower": 0.05714285714285716,
+          "upper": 0.12850717688536648
+        }
+      },
+      {
+        "candidateId": "faster-whisper-large-v3-turbo",
+        "clips": [
+          {
+            "clipId": "ThinkWithHessa_10_104_1221088_1236094",
+            "language": "Arabic",
+            "wordEdits": 7,
+            "referenceWords": 31,
+            "characterEdits": 13,
+            "referenceCharacters": 148,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_122_1415984_1428874",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 20,
+            "characterEdits": 4,
+            "referenceCharacters": 101,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_154_1808003_1816575",
+            "language": "Arabic",
+            "wordEdits": 0,
+            "referenceWords": 18,
+            "characterEdits": 0,
+            "referenceCharacters": 83,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_163_1898355_1910232",
+            "language": "CS",
+            "wordEdits": 8,
+            "referenceWords": 33,
+            "characterEdits": 31,
+            "referenceCharacters": 134,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_16_194181_203692",
+            "language": "Arabic",
+            "wordEdits": 5,
+            "referenceWords": 18,
+            "characterEdits": 6,
+            "referenceCharacters": 98,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_53_622117_636325",
+            "language": "Arabic",
+            "wordEdits": 14,
+            "referenceWords": 37,
+            "characterEdits": 20,
+            "referenceCharacters": 172,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_11_130_1724688_1742616",
+            "language": "Arabic",
+            "wordEdits": 12,
+            "referenceWords": 38,
+            "characterEdits": 15,
+            "referenceCharacters": 183,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_11_137_1828429_1840693",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 25,
+            "characterEdits": 1,
+            "referenceCharacters": 122,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_11_142_1899491_1915500",
+            "language": "Arabic",
+            "wordEdits": 3,
+            "referenceWords": 26,
+            "characterEdits": 10,
+            "referenceCharacters": 129,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_133_1968038_1981497",
+            "language": "CS",
+            "wordEdits": 13,
+            "referenceWords": 37,
+            "characterEdits": 19,
+            "referenceCharacters": 174,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_144_2118864_2130976",
+            "language": "Arabic",
+            "wordEdits": 8,
+            "referenceWords": 26,
+            "characterEdits": 10,
+            "referenceCharacters": 119,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_156_2289319_2299552",
+            "language": "Arabic",
+            "wordEdits": 6,
+            "referenceWords": 31,
+            "characterEdits": 11,
+            "referenceCharacters": 134,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_175_2538781_2549687",
+            "language": "Arabic",
+            "wordEdits": 3,
+            "referenceWords": 30,
+            "characterEdits": 2,
+            "referenceCharacters": 155,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_26_412072_425906",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 33,
+            "characterEdits": 8,
+            "referenceCharacters": 167,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_4_57052_74337",
+            "language": "Arabic",
+            "wordEdits": 10,
+            "referenceWords": 35,
+            "characterEdits": 20,
+            "referenceCharacters": 172,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_60_948046_962381",
+            "language": "CS",
+            "wordEdits": 12,
+            "referenceWords": 39,
+            "characterEdits": 20,
+            "referenceCharacters": 186,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_71_1117978_1131766",
+            "language": "Arabic",
+            "wordEdits": 9,
+            "referenceWords": 36,
+            "characterEdits": 25,
+            "referenceCharacters": 174,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_16_158276_169864",
+            "language": "CS",
+            "wordEdits": 2,
+            "referenceWords": 24,
+            "characterEdits": 5,
+            "referenceCharacters": 113,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_23_232989_246024",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 19,
+            "characterEdits": 7,
+            "referenceCharacters": 86,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_43_471009_482515",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 17,
+            "characterEdits": 1,
+            "referenceCharacters": 86,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_59_634599_645303",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 20,
+            "characterEdits": 1,
+            "referenceCharacters": 105,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_102_998057_1012161",
+            "language": "CS",
+            "wordEdits": 9,
+            "referenceWords": 30,
+            "characterEdits": 34,
+            "referenceCharacters": 148,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_125_1258084_1268617",
+            "language": "CS",
+            "wordEdits": 7,
+            "referenceWords": 25,
+            "characterEdits": 21,
+            "referenceCharacters": 145,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_146_1471173_1487538",
+            "language": "CS",
+            "wordEdits": 18,
+            "referenceWords": 44,
+            "characterEdits": 40,
+            "referenceCharacters": 221,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_256_2607979_2618922",
+            "language": "CS",
+            "wordEdits": 8,
+            "referenceWords": 24,
+            "characterEdits": 19,
+            "referenceCharacters": 131,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_288_2961026_2974653",
+            "language": "CS",
+            "wordEdits": 9,
+            "referenceWords": 27,
+            "characterEdits": 17,
+            "referenceCharacters": 127,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_295_3042038_3049404",
+            "language": "Arabic",
+            "wordEdits": 6,
+            "referenceWords": 17,
+            "characterEdits": 9,
+            "referenceCharacters": 88,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_1_36_382051_396745",
+            "language": "Arabic",
+            "wordEdits": 3,
+            "referenceWords": 22,
+            "characterEdits": 3,
+            "referenceCharacters": 105,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_1_83_957093_970428",
+            "language": "Arabic",
+            "wordEdits": 9,
+            "referenceWords": 23,
+            "characterEdits": 13,
+            "referenceCharacters": 124,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_2_2_13975_26683",
+            "language": "CS",
+            "wordEdits": 1,
+            "referenceWords": 15,
+            "characterEdits": 1,
+            "referenceCharacters": 99,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_3_22_294706_308047",
+            "language": "CS",
+            "wordEdits": 7,
+            "referenceWords": 29,
+            "characterEdits": 11,
+            "referenceCharacters": 125,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_3_58_779517_794845",
+            "language": "CS",
+            "wordEdits": 12,
+            "referenceWords": 36,
+            "characterEdits": 31,
+            "referenceCharacters": 161,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_4_36_437536_452111",
+            "language": "Arabic",
+            "wordEdits": 8,
+            "referenceWords": 30,
+            "characterEdits": 10,
+            "referenceCharacters": 155,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_4_66_803496_816829",
+            "language": "CS",
+            "wordEdits": 8,
+            "referenceWords": 26,
+            "characterEdits": 16,
+            "referenceCharacters": 121,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_5_26_348645_362367",
+            "language": "Arabic",
+            "wordEdits": 6,
+            "referenceWords": 25,
+            "characterEdits": 6,
+            "referenceCharacters": 122,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_5_32_429437_442088",
+            "language": "CS",
+            "wordEdits": 1,
+            "referenceWords": 23,
+            "characterEdits": 8,
+            "referenceCharacters": 107,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_5_9_111992_124361",
+            "language": "Arabic",
+            "wordEdits": 0,
+            "referenceWords": 14,
+            "characterEdits": 0,
+            "referenceCharacters": 73,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_6_33_419038_435129",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 34,
+            "characterEdits": 1,
+            "referenceCharacters": 160,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_33_416055_426102",
+            "language": "CS",
+            "wordEdits": 8,
+            "referenceWords": 22,
+            "characterEdits": 14,
+            "referenceCharacters": 107,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_34_426102_436807",
+            "language": "CS",
+            "wordEdits": 6,
+            "referenceWords": 21,
+            "characterEdits": 19,
+            "referenceCharacters": 108,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_46_578651_591839",
+            "language": "Arabic",
+            "wordEdits": 5,
+            "referenceWords": 26,
+            "characterEdits": 7,
+            "referenceCharacters": 129,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_86_1095084_1111746",
+            "language": "CS",
+            "wordEdits": 6,
+            "referenceWords": 30,
+            "characterEdits": 14,
+            "referenceCharacters": 151,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_122_1424725_1434630",
+            "language": "Arabic",
+            "wordEdits": 5,
+            "referenceWords": 18,
+            "characterEdits": 6,
+            "referenceCharacters": 94,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_140_1637974_1644433",
+            "language": "Arabic",
+            "wordEdits": 3,
+            "referenceWords": 20,
+            "characterEdits": 5,
+            "referenceCharacters": 98,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_1_0_14509",
+            "language": "CS",
+            "wordEdits": 7,
+            "referenceWords": 23,
+            "characterEdits": 25,
+            "referenceCharacters": 119,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_20_207045_214500",
+            "language": "Arabic",
+            "wordEdits": 3,
+            "referenceWords": 13,
+            "characterEdits": 5,
+            "referenceCharacters": 59,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_22_224441_234395",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 14,
+            "characterEdits": 2,
+            "referenceCharacters": 79,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_61_646416_661102",
+            "language": "CS",
+            "wordEdits": 7,
+            "referenceWords": 28,
+            "characterEdits": 20,
+            "referenceCharacters": 156,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_99_1136201_1145787",
+            "language": "Arabic",
+            "wordEdits": 10,
+            "referenceWords": 19,
+            "characterEdits": 10,
+            "referenceCharacters": 91,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_9_61_924031_942204",
+            "language": "CS",
+            "wordEdits": 9,
+            "referenceWords": 35,
+            "characterEdits": 14,
+            "referenceCharacters": 171,
+            "status": "ok"
+          }
+        ],
+        "summary": {
+          "wer": {
+            "estimate": 0.23736600306278713,
+            "lower": 0.20489091921441588,
+            "upper": 0.2671440851412198
+          },
+          "cer": {
+            "estimate": 0.0950896336710834,
+            "lower": 0.0786016720949493,
+            "upper": 0.11200724381832082
+          },
+          "perLanguageWer": {
+            "Arabic": {
+              "estimate": 0.20680272108843537,
+              "lower": 0.16365990990990992,
+              "upper": 0.24966746248294674
+            },
+            "CS": {
+              "estimate": 0.276707530647986,
+              "lower": 0.23574482838321972,
+              "upper": 0.31270386290114954
+            }
+          },
+          "statusCounts": {
+            "ok": 50
+          }
+        },
+        "bestCandidateId": "gpt-transcribe",
+        "differenceToBest": {
+          "estimate": 0.05895865237366002,
+          "lower": 0.032655056213506256,
+          "upper": 0.08597379749204566
+        }
+      },
+      {
+        "candidateId": "gpt-transcribe",
+        "clips": [
+          {
+            "clipId": "ThinkWithHessa_10_104_1221088_1236094",
+            "language": "Arabic",
+            "wordEdits": 5,
+            "referenceWords": 31,
+            "characterEdits": 7,
+            "referenceCharacters": 148,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_122_1415984_1428874",
+            "language": "Arabic",
+            "wordEdits": 7,
+            "referenceWords": 20,
+            "characterEdits": 8,
+            "referenceCharacters": 101,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_154_1808003_1816575",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 18,
+            "characterEdits": 7,
+            "referenceCharacters": 83,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_163_1898355_1910232",
+            "language": "CS",
+            "wordEdits": 0,
+            "referenceWords": 33,
+            "characterEdits": 0,
+            "referenceCharacters": 134,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_16_194181_203692",
+            "language": "Arabic",
+            "wordEdits": 0,
+            "referenceWords": 18,
+            "characterEdits": 0,
+            "referenceCharacters": 98,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_10_53_622117_636325",
+            "language": "Arabic",
+            "wordEdits": 13,
+            "referenceWords": 37,
+            "characterEdits": 15,
+            "referenceCharacters": 172,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_11_130_1724688_1742616",
+            "language": "Arabic",
+            "wordEdits": 12,
+            "referenceWords": 38,
+            "characterEdits": 13,
+            "referenceCharacters": 183,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_11_137_1828429_1840693",
+            "language": "Arabic",
+            "wordEdits": 0,
+            "referenceWords": 25,
+            "characterEdits": 0,
+            "referenceCharacters": 122,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_11_142_1899491_1915500",
+            "language": "Arabic",
+            "wordEdits": 2,
+            "referenceWords": 26,
+            "characterEdits": 3,
+            "referenceCharacters": 129,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_133_1968038_1981497",
+            "language": "CS",
+            "wordEdits": 5,
+            "referenceWords": 37,
+            "characterEdits": 5,
+            "referenceCharacters": 174,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_144_2118864_2130976",
+            "language": "Arabic",
+            "wordEdits": 6,
+            "referenceWords": 26,
+            "characterEdits": 9,
+            "referenceCharacters": 119,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_156_2289319_2299552",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 31,
+            "characterEdits": 4,
+            "referenceCharacters": 134,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_175_2538781_2549687",
+            "language": "Arabic",
+            "wordEdits": 0,
+            "referenceWords": 30,
+            "characterEdits": 0,
+            "referenceCharacters": 155,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_26_412072_425906",
+            "language": "Arabic",
+            "wordEdits": 4,
+            "referenceWords": 33,
+            "characterEdits": 4,
+            "referenceCharacters": 167,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_4_57052_74337",
+            "language": "Arabic",
+            "wordEdits": 8,
+            "referenceWords": 35,
+            "characterEdits": 10,
+            "referenceCharacters": 172,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_60_948046_962381",
+            "language": "CS",
+            "wordEdits": 10,
+            "referenceWords": 39,
+            "characterEdits": 18,
+            "referenceCharacters": 186,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_12_71_1117978_1131766",
+            "language": "Arabic",
+            "wordEdits": 8,
+            "referenceWords": 36,
+            "characterEdits": 11,
+            "referenceCharacters": 174,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_16_158276_169864",
+            "language": "CS",
+            "wordEdits": 0,
+            "referenceWords": 24,
+            "characterEdits": 0,
+            "referenceCharacters": 113,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_23_232989_246024",
+            "language": "Arabic",
+            "wordEdits": 2,
+            "referenceWords": 19,
+            "characterEdits": 4,
+            "referenceCharacters": 86,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_43_471009_482515",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 17,
+            "characterEdits": 1,
+            "referenceCharacters": 86,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_13_59_634599_645303",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 20,
+            "characterEdits": 1,
+            "referenceCharacters": 105,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_102_998057_1012161",
+            "language": "CS",
+            "wordEdits": 10,
+            "referenceWords": 30,
+            "characterEdits": 26,
+            "referenceCharacters": 148,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_125_1258084_1268617",
+            "language": "CS",
+            "wordEdits": 6,
+            "referenceWords": 25,
+            "characterEdits": 27,
+            "referenceCharacters": 145,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_146_1471173_1487538",
+            "language": "CS",
+            "wordEdits": 15,
+            "referenceWords": 44,
+            "characterEdits": 34,
+            "referenceCharacters": 221,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_256_2607979_2618922",
+            "language": "CS",
+            "wordEdits": 7,
+            "referenceWords": 24,
+            "characterEdits": 18,
+            "referenceCharacters": 131,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_288_2961026_2974653",
+            "language": "CS",
+            "wordEdits": 10,
+            "referenceWords": 27,
+            "characterEdits": 20,
+            "referenceCharacters": 127,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_14_295_3042038_3049404",
+            "language": "Arabic",
+            "wordEdits": 5,
+            "referenceWords": 17,
+            "characterEdits": 6,
+            "referenceCharacters": 88,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_1_36_382051_396745",
+            "language": "Arabic",
+            "wordEdits": 3,
+            "referenceWords": 22,
+            "characterEdits": 3,
+            "referenceCharacters": 105,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_1_83_957093_970428",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 23,
+            "characterEdits": 1,
+            "referenceCharacters": 124,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_2_2_13975_26683",
+            "language": "CS",
+            "wordEdits": 0,
+            "referenceWords": 15,
+            "characterEdits": 0,
+            "referenceCharacters": 99,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_3_22_294706_308047",
+            "language": "CS",
+            "wordEdits": 5,
+            "referenceWords": 29,
+            "characterEdits": 9,
+            "referenceCharacters": 125,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_3_58_779517_794845",
+            "language": "CS",
+            "wordEdits": 11,
+            "referenceWords": 36,
+            "characterEdits": 25,
+            "referenceCharacters": 161,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_4_36_437536_452111",
+            "language": "Arabic",
+            "wordEdits": 7,
+            "referenceWords": 30,
+            "characterEdits": 10,
+            "referenceCharacters": 155,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_4_66_803496_816829",
+            "language": "CS",
+            "wordEdits": 10,
+            "referenceWords": 26,
+            "characterEdits": 15,
+            "referenceCharacters": 121,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_5_26_348645_362367",
+            "language": "Arabic",
+            "wordEdits": 3,
+            "referenceWords": 25,
+            "characterEdits": 3,
+            "referenceCharacters": 122,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_5_32_429437_442088",
+            "language": "CS",
+            "wordEdits": 1,
+            "referenceWords": 23,
+            "characterEdits": 8,
+            "referenceCharacters": 107,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_5_9_111992_124361",
+            "language": "Arabic",
+            "wordEdits": 0,
+            "referenceWords": 14,
+            "characterEdits": 0,
+            "referenceCharacters": 73,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_6_33_419038_435129",
+            "language": "Arabic",
+            "wordEdits": 2,
+            "referenceWords": 34,
+            "characterEdits": 2,
+            "referenceCharacters": 160,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_33_416055_426102",
+            "language": "CS",
+            "wordEdits": 4,
+            "referenceWords": 22,
+            "characterEdits": 7,
+            "referenceCharacters": 107,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_34_426102_436807",
+            "language": "CS",
+            "wordEdits": 4,
+            "referenceWords": 21,
+            "characterEdits": 14,
+            "referenceCharacters": 108,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_46_578651_591839",
+            "language": "Arabic",
+            "wordEdits": 3,
+            "referenceWords": 26,
+            "characterEdits": 5,
+            "referenceCharacters": 129,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_7_86_1095084_1111746",
+            "language": "CS",
+            "wordEdits": 5,
+            "referenceWords": 30,
+            "characterEdits": 11,
+            "referenceCharacters": 151,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_122_1424725_1434630",
+            "language": "Arabic",
+            "wordEdits": 5,
+            "referenceWords": 18,
+            "characterEdits": 6,
+            "referenceCharacters": 94,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_140_1637974_1644433",
+            "language": "Arabic",
+            "wordEdits": 2,
+            "referenceWords": 20,
+            "characterEdits": 7,
+            "referenceCharacters": 98,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_1_0_14509",
+            "language": "CS",
+            "wordEdits": 3,
+            "referenceWords": 23,
+            "characterEdits": 10,
+            "referenceCharacters": 119,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_20_207045_214500",
+            "language": "Arabic",
+            "wordEdits": 3,
+            "referenceWords": 13,
+            "characterEdits": 8,
+            "referenceCharacters": 59,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_22_224441_234395",
+            "language": "Arabic",
+            "wordEdits": 1,
+            "referenceWords": 14,
+            "characterEdits": 2,
+            "referenceCharacters": 79,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_61_646416_661102",
+            "language": "CS",
+            "wordEdits": 6,
+            "referenceWords": 28,
+            "characterEdits": 19,
+            "referenceCharacters": 156,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_8_99_1136201_1145787",
+            "language": "Arabic",
+            "wordEdits": 2,
+            "referenceWords": 19,
+            "characterEdits": 1,
+            "referenceCharacters": 91,
+            "status": "ok"
+          },
+          {
+            "clipId": "ThinkWithHessa_9_61_924031_942204",
+            "language": "CS",
+            "wordEdits": 7,
+            "referenceWords": 35,
+            "characterEdits": 15,
+            "referenceCharacters": 171,
+            "status": "ok"
+          }
+        ],
+        "summary": {
+          "wer": {
+            "estimate": 0.1784073506891271,
+            "lower": 0.14486440575868922,
+            "upper": 0.2102466214783506
+          },
+          "cer": {
+            "estimate": 0.06734216679657054,
+            "lower": 0.052750013014732686,
+            "upper": 0.08375022801177455
+          },
+          "perLanguageWer": {
+            "Arabic": {
+              "estimate": 0.15510204081632653,
+              "lower": 0.1156620621520469,
+              "upper": 0.19341577322936973
+            },
+            "CS": {
+              "estimate": 0.2084063047285464,
+              "lower": 0.15266701856964973,
+              "upper": 0.25806744868035186
+            }
+          },
+          "statusCounts": {
+            "ok": 50
+          }
+        },
+        "bestCandidateId": "gpt-transcribe",
+        "differenceToBest": {
+          "estimate": 0,
+          "lower": 0,
+          "upper": 0
+        }
+      }
+    ]
+  },
+  "report": {
+    "class": "speech",
+    "runId": "screening-2026-09-28",
+    "facts": [
+      {
+        "candidateId": "amazon-transcribe",
+        "gitCommit": "1fd26ab338c403cc7e2fe9ee300ef050ed0690cf",
+        "datasetManifestSha256": "55fe0d05b4876a6f5e68ca0d8866f335b1a39d20e6073033f45fd57f74f69de6",
+        "splitSha256": "fc352a8a02891e50218d95e0a063ef93d4683beb35f91ccb44198c076a91a04e",
+        "registrySha256": "0243a954df4bc19dbf96c9817d06e4ca994df743bd3c55caa9ec8d983c0c98e2",
+        "scorerVersion": "1.2.0",
+        "priceDate": "2026-09-28",
+        "command": "pnpm --filter @aqarak/evaluation screen -- --class mc3_speech_to_text --split screening --candidates gpt-transcribe,amazon-transcribe --run-id screening-2026-09-28 --cap-usd 1 --concurrency 4",
+        "startedAt": "2026-09-28T03:20:08.341Z"
+      },
+      {
+        "candidateId": "faster-whisper-large-v3-turbo",
+        "gitCommit": "e4308769671500977b7643bf8f8a6357391b8bbc",
+        "datasetManifestSha256": "55fe0d05b4876a6f5e68ca0d8866f335b1a39d20e6073033f45fd57f74f69de6",
+        "splitSha256": "fc352a8a02891e50218d95e0a063ef93d4683beb35f91ccb44198c076a91a04e",
+        "registrySha256": "074aa98e6ed3f5014f42ce66104cd7c7b88bfd7a5aaf77bc588583ab2a575200",
+        "scorerVersion": "1.2.0",
+        "priceDate": "2026-09-28",
+        "command": "pnpm --filter @aqarak/evaluation screen -- --class mc3_speech_to_text --split screening --candidates faster-whisper-large-v3-turbo --run-id screening-2026-09-28 --cap-usd 1",
+        "startedAt": "2026-09-28T03:47:18.496Z"
+      },
+      {
+        "candidateId": "gpt-transcribe",
+        "gitCommit": "1fd26ab338c403cc7e2fe9ee300ef050ed0690cf",
+        "datasetManifestSha256": "55fe0d05b4876a6f5e68ca0d8866f335b1a39d20e6073033f45fd57f74f69de6",
+        "splitSha256": "fc352a8a02891e50218d95e0a063ef93d4683beb35f91ccb44198c076a91a04e",
+        "registrySha256": "0243a954df4bc19dbf96c9817d06e4ca994df743bd3c55caa9ec8d983c0c98e2",
+        "scorerVersion": "1.2.0",
+        "priceDate": "2026-09-28",
+        "command": "pnpm --filter @aqarak/evaluation screen -- --class mc3_speech_to_text --split screening --candidates gpt-transcribe,amazon-transcribe --run-id screening-2026-09-28 --cap-usd 1 --concurrency 4",
+        "startedAt": "2026-09-28T03:20:08.331Z"
+      }
+    ],
+    "limitations": [
+      "I evaluate the screening split only.",
+      "I report small n, with uncertainty intervals that may be wide.",
+      "I run local candidates on a laptop CPU or GPU.",
+      "I use linear interpolation for latency and real-time-factor quantiles over successful receipts. I show unavailable latency as empty CSV cells and as zero in the report table.",
+      "I use the last receipt per item as its final status and include every attempt in total cost. I count every missing receipt as not_run in the full split denominator."
+    ],
+    "candidates": [
+      {
+        "candidateId": "amazon-transcribe",
+        "items": 50,
+        "statusCounts": {
+          "ok": 50,
+          "schema_invalid": 0,
+          "refused": 0,
+          "incomplete": 0,
+          "provider_error": 0,
+          "timeout": 0,
+          "budget_stopped": 0,
+          "not_run": 0
+        },
+        "totalCostUsd": 0.106265,
+        "p50LatencySeconds": 15.129999999999999,
+        "p95LatencySeconds": 19.75885,
+        "screening": {
+          "candidateId": "amazon-transcribe",
+          "decision": "rejected",
+          "reasons": [
+            "Primary error rate 0.26952526799387444 exceeds 0.23192955589586525, the best 0.1784073506891271 times one plus three margins of 0.1."
+          ]
+        },
+        "schemaValidRate": {
+          "estimate": 1,
+          "lower": 0.9286524008666414,
+          "upper": 1
+        },
+        "primary": {
+          "name": "Pooled WER",
+          "interval": {
+            "estimate": 0.26952526799387444,
+            "lower": 0.22924855579203407,
+            "upper": 0.31236384489319113
+          }
+        },
+        "secondaries": {
+          "CER": {
+            "estimate": 0.12813717848791895,
+            "lower": 0.09665159783837152,
+            "upper": 0.16406774574484695
+          },
+          "Paired WER difference to best": {
+            "estimate": 0.09111791730474733,
+            "lower": 0.05714285714285716,
+            "upper": 0.12850717688536648
+          }
+        },
+        "perLanguageWer": {
+          "Arabic": {
+            "estimate": 0.23401360544217686,
+            "lower": 0.18938201388036488,
+            "upper": 0.2782285995774762
+          },
+          "CS": {
+            "estimate": 0.31523642732049034,
+            "lower": 0.24381059164628072,
+            "upper": 0.3951385734878853
+          }
+        }
+      },
+      {
+        "candidateId": "faster-whisper-large-v3-turbo",
+        "items": 50,
+        "statusCounts": {
+          "ok": 50,
+          "schema_invalid": 0,
+          "refused": 0,
+          "incomplete": 0,
+          "provider_error": 0,
+          "timeout": 0,
+          "budget_stopped": 0,
+          "not_run": 0
+        },
+        "totalCostUsd": 0,
+        "p50LatencySeconds": 7.282,
+        "p95LatencySeconds": 11.75735,
+        "screening": {
+          "candidateId": "faster-whisper-large-v3-turbo",
+          "decision": "rejected",
+          "reasons": [
+            "Primary error rate 0.23736600306278713 exceeds 0.23192955589586525, the best 0.1784073506891271 times one plus three margins of 0.1."
+          ]
+        },
+        "schemaValidRate": {
+          "estimate": 1,
+          "lower": 0.9286524008666414,
+          "upper": 1
+        },
+        "primary": {
+          "name": "Pooled WER",
+          "interval": {
+            "estimate": 0.23736600306278713,
+            "lower": 0.20489091921441588,
+            "upper": 0.2671440851412198
+          }
+        },
+        "secondaries": {
+          "CER": {
+            "estimate": 0.0950896336710834,
+            "lower": 0.0786016720949493,
+            "upper": 0.11200724381832082
+          },
+          "Paired WER difference to best": {
+            "estimate": 0.05895865237366002,
+            "lower": 0.032655056213506256,
+            "upper": 0.08597379749204566
+          }
+        },
+        "perLanguageWer": {
+          "Arabic": {
+            "estimate": 0.20680272108843537,
+            "lower": 0.16365990990990992,
+            "upper": 0.24966746248294674
+          },
+          "CS": {
+            "estimate": 0.276707530647986,
+            "lower": 0.23574482838321972,
+            "upper": 0.31270386290114954
+          }
+        }
+      },
+      {
+        "candidateId": "gpt-transcribe",
+        "items": 50,
+        "statusCounts": {
+          "ok": 50,
+          "schema_invalid": 0,
+          "refused": 0,
+          "incomplete": 0,
+          "provider_error": 0,
+          "timeout": 0,
+          "budget_stopped": 0,
+          "not_run": 0
+        },
+        "totalCostUsd": 0.049725,
+        "p50LatencySeconds": 1.6545,
+        "p95LatencySeconds": 2.7068499999999993,
+        "screening": {
+          "candidateId": "gpt-transcribe",
+          "decision": "survives",
+          "reasons": []
+        },
+        "schemaValidRate": {
+          "estimate": 1,
+          "lower": 0.9286524008666414,
+          "upper": 1
+        },
+        "primary": {
+          "name": "Pooled WER",
+          "interval": {
+            "estimate": 0.1784073506891271,
+            "lower": 0.14486440575868922,
+            "upper": 0.2102466214783506
+          }
+        },
+        "secondaries": {
+          "CER": {
+            "estimate": 0.06734216679657054,
+            "lower": 0.052750013014732686,
+            "upper": 0.08375022801177455
+          },
+          "Paired WER difference to best": {
+            "estimate": 0,
+            "lower": 0,
+            "upper": 0
+          }
+        },
+        "perLanguageWer": {
+          "Arabic": {
+            "estimate": 0.15510204081632653,
+            "lower": 0.1156620621520469,
+            "upper": 0.19341577322936973
+          },
+          "CS": {
+            "estimate": 0.2084063047285464,
+            "lower": 0.15266701856964973,
+            "upper": 0.25806744868035186
+          }
+        }
+      }
+    ]
+  }
+}
